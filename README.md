@@ -38,7 +38,7 @@ HEX5 e HEX4 indicaram os caracteres E3 (Estado 3). Em Após estado End o jogo vo
 • Um usuário pode em qualquer momento parar o jogo usando o botão de pressão KEY0 zerando a contagem de alvos,
 para assim re-iniciar de novo.<br/><br/>
 
-*O esquema geral do projeto é mostrado na Figura 1 e inclui sete blocos diferenciados:*
+*O esquema geral do projeto é mostrado na Figura 1 e inclui sete blocos diferenciados:*<br/>
 • Mapas: Quatro unidades onde se declaram os mapa de bits referentes aos mapas de obstáculos.<br/>
 • Contadores: Circuitos sequenciais encarregados de gerar três contagens: <br/>
 1. contagem decrescente em segundos de dois números em decimal 99 → 0, 
