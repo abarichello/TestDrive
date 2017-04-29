@@ -2,7 +2,9 @@
 Assignment for EEL5105
 
 ### Original assignment(Portuguese):
-#### Projeto.pdf
+#### Projeto(1).pdf
+
+//Check pdf for correct assignment
 
 *O projeto final consiste na implementação de um circuito na placa de desenvolvimento DE1 fazendo uso das estruturas
 e conhecimentos obtidos durante o curso. O circuito vai implementar a um jogo interativo similar a um jogo de teste de
