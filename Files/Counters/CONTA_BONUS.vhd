@@ -15,11 +15,11 @@ architecture bhv of CONTA_BONUS is
 	
 begin
 enter <= REG_OUT_31 and EN_TIME;
-process(CLK1,RST)
+process(CLOCK_M,RST)
 	begin
 		if RST = '1' then
 			counter <= "00011";
-		elsif CLK1'EVENT and CLK1 = '1' and enter = '1' then 
+		elsif CLOCK_M'EVENT and CLOCK_M = '1' and enter = '1' then 
 			counter <= counter - '1';
 		end if;
 	end process; 

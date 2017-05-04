@@ -58,113 +58,113 @@ P2: process(CS,SW) --state                                   --TODO REMOVE SW(1 
 			when E3 =>
 				if SW = "01" then
 					NS <= E4;
-				elsif SW = "10" then
+				elsif SW(1 downto 0) = "10" then
 					NS <= E2;
 				else
 					NS <= E3;
 				end if;
 				
 			when E4 =>
-				if SW = "01" then
+				if SW(1 downto 0) = "01" then
 					NS <= E5;
-				elsif SW = "10" then
+				elsif SW(1 downto 0) = "10" then
 					NS <= E3;
 				else
 					NS <= E4;
 				end if;
 			
 			when E5 =>
-				if SW = "01" then
+				if SW(1 downto 0) = "01" then
 						NS <= E6;
-					elsif SW = "10" then
+					elsif SW(1 downto 0) = "10" then
 						NS <= E4;
 					else
 						NS <= E5;
 					end if;
 					
 			when E6 =>
-				if SW = "01" then
+				if SW(1 downto 0) = "01" then
 					NS <= E7;
-				elsif SW = "10" then
+				elsif SW(1 downto 0) = "10" then
 					NS <= E5;
 				else
 					NS <= E6;
 				end if;
 				
 			when E7 =>
-				if SW = "01" then
+				if SW(1 downto 0) = "01" then
 					NS <= E8;
-				elsif SW = "10" then
+				elsif SW(1 downto 0) = "10" then
 					NS <= E6;
 				else
 					NS <= E7;
 				end if;
 				
 			when E8 =>
-				if SW = "01" then
+				if SW(1 downto 0) = "01" then
 					NS <= E9;
-				elsif SW = "10" then
+				elsif SW(1 downto 0) = "10" then
 					NS <= E7;
 				else
 					NS <= E8;
 				end if;
 				
 			when E9 =>
-				if SW = "01" then
+				if SW(1 downto 0) = "01" then
 					NS <= E10;
-				elsif SW = "10" then
+				elsif SW(1 downto 0) = "10" then
 					NS <= E8;
 				else
 					NS <= E9;
 				end if;
 				
 			when E10 =>
-				if SW = "01" then
+				if SW(1 downto 0) = "01" then
 					NS <= E11;
-				elsif SW = "10" then
+				elsif SW(1 downto 0) = "10" then
 					NS <= E9;
 				else
 					NS <= E10;
 				end if;
 				
 			when E11 =>
-				if SW = "01" then
+				if SW(1 downto 0) = "01" then
 					NS <= E12;
-				elsif SW = "10" then
+				elsif SW(1 downto 0) = "10" then
 					NS <= E10;
 				else
 					NS <= E11;
 				end if;
 				
 			when E12 =>
-				if SW = "01" then
+				if SW(1 downto 0) = "01" then
 					NS <= E13;
-				elsif SW = "10" then
+				elsif SW(1 downto 0) = "10" then
 					NS <= E11;
 				else
 					NS <= E12;
 				end if;
 				
 			when E13 =>
-				if SW = "01" then
+				if SW(1 downto 0) = "01" then
 					NS <= E14;
-				elsif SW = "10" then
+				elsif SW(1 downto 0) = "10" then
 					NS <= E12;
 				else
 					NS <= E13;
 				end if;
 				
 			when E14 =>
-				if SW = "01" then
+				if SW(1 downto 0) = "01" then
 					NS <= E15;
-				elsif SW = "10" then
+				elsif SW(1 downto 0) = "10" then
 					NS <= E13;
 				else
 					NS <= E14;
 				end if;
 				
 			when E15 =>
-				if SW = "10" then
+				if SW(1 downto 0) = "10" then
 					NS <= E14;
 				else
 					NS <= E15;
