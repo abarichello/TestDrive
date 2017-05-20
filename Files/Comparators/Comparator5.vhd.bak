@@ -1,15 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity Comparator0 is
+entity Comparator5 is
 port (
-	ZERO: in std_logic_vector(9 downto 0);
-	CNT_D: in std_logic_vector(9 downto 0);
+	ZERO: in std_logic_vector(4 downto 0);
+	CNT_B: in std_logic_vector(4 downto 0);
 	END_TIME: out std_logic
 );
-end Comparator0;
+end Comparator5;
 
-architecture compare0 of Comparator0 is
+architecture compare5 of Comparator5 is
 begin
 	process(ZERO,CNT_D)
 	begin
@@ -19,4 +19,4 @@ begin
 			END_TIME <= '0';
 		end if;
 	end process;
-end compare0; 
+end compare10; 
