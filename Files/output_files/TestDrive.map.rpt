@@ -1,23 +1,23 @@
-Analysis & Synthesis report for TestDrive
-Sun Apr 23 16:38:47 2017
-Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+Analysis & Elaboration report for TestDrive
+Sat May 20 14:07:17 2017
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -34,26 +34,42 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sun Apr 23 16:38:47 2017           ;
-; Quartus Prime Version       ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
-; Revision Name               ; TestDrive                                   ;
-; Top-level Entity Name       ; TestDrive                                   ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++---------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                  ;
++-------------------------------+-------------------------------------------------+
+; Analysis & Elaboration Status ; Failed - Sat May 20 14:07:17 2017               ;
+; Quartus Prime Version         ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
+; Revision Name                 ; TestDrive                                       ;
+; Top-level Entity Name         ; TestDrive                                       ;
+; Family                        ; Cyclone V                                       ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                       ;
+; Total registers               ; N/A until Partition Merge                       ;
+; Total pins                    ; N/A until Partition Merge                       ;
+; Total virtual pins            ; N/A until Partition Merge                       ;
+; Total block memory bits       ; N/A until Partition Merge                       ;
+; Total PLLs                    ; N/A until Partition Merge                       ;
+; Total DLLs                    ; N/A until Partition Merge                       ;
++-------------------------------+-------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -140,49 +156,42 @@ agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Sun Apr 23 16:38:34 2017
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+    Info: Processing started: Sat May 20 14:07:04 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file map4.vhd
-    Info (12022): Found design unit 1: map4-map4_struct File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/map4.vhd Line: 11
-    Info (12023): Found entity 1: map4 File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/map4.vhd Line: 4
+    Info (12022): Found design unit 1: map4-map4_struct File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/map4.vhd Line: 11
+    Info (12023): Found entity 1: map4 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/map4.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file map3.vhd
-    Info (12022): Found design unit 1: map3-map3_struct File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/map3.vhd Line: 11
-    Info (12023): Found entity 1: map3 File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/map3.vhd Line: 4
+    Info (12022): Found design unit 1: map3-map3_struct File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/map3.vhd Line: 11
+    Info (12023): Found entity 1: map3 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/map3.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file map2.vhd
-    Info (12022): Found design unit 1: map2-map2_struct File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/map2.vhd Line: 11
-    Info (12023): Found entity 1: map2 File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/map2.vhd Line: 4
+    Info (12022): Found design unit 1: map2-map2_struct File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/map2.vhd Line: 11
+    Info (12023): Found entity 1: map2 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/map2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file map1.vhd
-    Info (12022): Found design unit 1: map1-map1_struct File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/map1.vhd Line: 11
-    Info (12023): Found entity 1: map1 File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/map1.vhd Line: 4
+    Info (12022): Found design unit 1: map1-map1_struct File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/map1.vhd Line: 11
+    Info (12023): Found entity 1: map1 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/map1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buttonsync.vhd
-    Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/ButtonSync.vhd Line: 24
-    Info (12023): Found entity 1: ButtonSync File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/ButtonSync.vhd Line: 6
+    Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/ButtonSync.vhd Line: 24
+    Info (12023): Found entity 1: ButtonSync File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/ButtonSync.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mux4x1map.vhd
-    Info (12022): Found design unit 1: mux4x1MAP-mux File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/mux4x1MAP.vhd Line: 12
-    Info (12023): Found entity 1: mux4x1MAP File: C:/Users/(Barichello)/Documents/GitHub/TestDrive/TestDrive/Files/mux4x1MAP.vhd Line: 4
+    Info (12022): Found design unit 1: mux4x1MAP-mux File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/mux4x1MAP.vhd Line: 12
+    Info (12023): Found entity 1: mux4x1MAP File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/mux4x1MAP.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file comparator0.vhd
+    Info (12022): Found design unit 1: Comparator0-compare0 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparator0.vhd Line: 12
+    Info (12023): Found entity 1: Comparator0 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparator0.vhd Line: 4
 Error (12007): Top-level design entity "TestDrive" is undefined
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 868 megabytes
-    Error: Processing ended: Sun Apr 23 16:38:48 2017
-    Error: Elapsed time: 00:00:14
-    Error: Total CPU time (on all processors): 00:00:25
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 932 megabytes
+    Error: Processing ended: Sat May 20 14:07:17 2017
+    Error: Elapsed time: 00:00:13
+    Error: Total CPU time (on all processors): 00:00:26
 
 
