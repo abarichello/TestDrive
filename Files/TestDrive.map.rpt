@@ -1,5 +1,5 @@
 Analysis & Elaboration report for TestDrive
-Sat May 20 19:39:15 2017
+Sat May 20 20:11:58 2017
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                  ;
 +-------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat May 20 19:39:15 2017           ;
+; Analysis & Elaboration Status ; Successful - Sat May 20 20:11:58 2017           ;
 ; Quartus Prime Version         ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
 ; Revision Name                 ; TestDrive                                       ;
 ; Top-level Entity Name         ; topo                                            ;
@@ -162,7 +162,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
-    Info: Processing started: Sat May 20 19:39:03 2017
+    Info: Processing started: Sat May 20 20:11:45 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -184,12 +184,18 @@ Info (12021): Found 2 design units, including 1 entities, in source file maps/ma
 Info (12021): Found 2 design units, including 1 entities, in source file maps/map1.vhd
     Info (12022): Found design unit 1: map1-map1_struct File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/map1.vhd Line: 11
     Info (12023): Found entity 1: map1 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/map1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparator10.vhd
-    Info (12022): Found design unit 1: Comparator10-compare10 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator10.vhd Line: 12
-    Info (12023): Found entity 1: Comparator10 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator10.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparator5.vhd
-    Info (12022): Found design unit 1: Comparator5-compare5 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator5.vhd Line: 12
-    Info (12023): Found entity 1: Comparator5 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator5.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparator1.vhd
+    Info (12022): Found design unit 1: Comparator1-compare1 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator1.vhd Line: 11
+    Info (12023): Found entity 1: Comparator1 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparator2.vhd
+    Info (12022): Found design unit 1: Comparator2-compare2 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator2.vhd Line: 11
+    Info (12023): Found entity 1: Comparator2 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparator3.vhd
+    Info (12022): Found design unit 1: Comparator3-compare3 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator3.vhd Line: 11
+    Info (12023): Found entity 1: Comparator3 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator3.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparators.vhd
+    Info (12022): Found design unit 1: COMPARATORS-topo_COMPARATORS File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/COMPARATORS.vhd Line: 12
+    Info (12023): Found entity 1: COMPARATORS File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/COMPARATORS.vhd Line: 5
 Info (12127): Elaborating entity "topo" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
 Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
@@ -224,9 +230,9 @@ Warning (20013): Ignored 24 assignments for entity "ghrd_top" -- entity does not
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity ghrd_top -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity ghrd_top -section_id Top was ignored
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 930 megabytes
-    Info: Processing ended: Sat May 20 19:39:15 2017
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 932 megabytes
+    Info: Processing ended: Sat May 20 20:11:58 2017
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:27
 
 
