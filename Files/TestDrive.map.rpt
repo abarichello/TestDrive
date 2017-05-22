@@ -1,5 +1,5 @@
 Analysis & Elaboration report for TestDrive
-Sat May 20 20:11:58 2017
+Mon May 22 19:35:09 2017
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                  ;
 +-------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat May 20 20:11:58 2017           ;
+; Analysis & Elaboration Status ; Failed - Mon May 22 19:35:09 2017               ;
 ; Quartus Prime Version         ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
 ; Revision Name                 ; TestDrive                                       ;
 ; Top-level Entity Name         ; topo                                            ;
@@ -162,7 +162,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
-    Info: Processing started: Sat May 20 20:11:45 2017
+    Info: Processing started: Mon May 22 19:34:57 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -194,45 +194,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file compara
     Info (12022): Found design unit 1: Comparator3-compare3 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator3.vhd Line: 11
     Info (12023): Found entity 1: Comparator3 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator3.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparators.vhd
-    Info (12022): Found design unit 1: COMPARATORS-topo_COMPARATORS File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/COMPARATORS.vhd Line: 12
+    Info (12022): Found design unit 1: COMPARATORS-topo_COMPARATORS File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/COMPARATORS.vhd Line: 14
     Info (12023): Found entity 1: COMPARATORS File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/COMPARATORS.vhd Line: 5
-Info (12127): Elaborating entity "topo" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(11): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 11
-Warning (20013): Ignored 24 assignments for entity "ghrd_top" -- entity does not exist in design
-    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity ghrd_top -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity ghrd_top -section_id Top was ignored
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 932 megabytes
-    Info: Processing ended: Sat May 20 20:11:58 2017
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:27
+Info (12021): Found 2 design units, including 1 entities, in source file comparators/adder.vhd
+    Info (12022): Found design unit 1: Adder-add File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Adder.vhd Line: 13
+    Info (12023): Found entity 1: Adder File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Adder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file counters/fsm_clock.vhd
+    Info (12022): Found design unit 1: FSM_Clock-bhv File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Counters/FSM_Clock.vhd Line: 12
+    Info (12023): Found entity 1: FSM_Clock File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Counters/FSM_Clock.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file maps/topo_maps.vhd
+    Info (12022): Found design unit 1: topo_MAPS-topo_map File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/topo_MAPS.vhd Line: 14
+    Info (12023): Found entity 1: topo_MAPS File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/topo_MAPS.vhd Line: 5
+Error (10482): VHDL error at FSM_Clock.vhd(42): object "contagem" is used but not declared File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Counters/FSM_Clock.vhd Line: 42
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 929 megabytes
+    Error: Processing ended: Mon May 22 19:35:09 2017
+    Error: Elapsed time: 00:00:12
+    Error: Total CPU time (on all processors): 00:00:26
 
 
