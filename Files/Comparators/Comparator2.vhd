@@ -12,7 +12,7 @@ architecture compare2 of Comparator2 is
 begin
 	process(CNT_U)
 	begin
-		if (CNT_U = "0010001000") then
+		if (CNT_U = "0010000000") then
 			TARGET <= '1';
 		else
 			TARGET <= '0';

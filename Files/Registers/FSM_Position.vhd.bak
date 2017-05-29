@@ -1,24 +1,20 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity FSM_Control is
+entity FSM_Position is
 port (
-	BTN0,BTN1,TARGET,END_TIME,END_BONUS,CLOCK_50: in std_logic;
-	SEL_LED,SET_ROL,EN_TIME,RST: out std_logic;
-	STATES: out std_logic_vector(4 downto 0);
-	SEL_DISP: out std_logic_vector(1 downto 0)
+	EN_TIME,CLOCK_M,RST: in std_logic;
+	SPEED: 					in std_logic_vector(2 downto 0);
+	SW:		in std_logic_vector(1 downto 0);
+	UP_DOWN:					out std_logic_vector(3 downto 0)
 );
-end FSM_Control;
+end FSM_Position;
 
-architecture bhv of FSM_Control is
-type STATES_E is (E0,E1,E2,E3);
+architecture bhv of FSM_Position is
+type STATES_E is (E0,E1,E2,E3,E4,E5,E6,E7,E8,E9,E10,E11,E12,E13,E14,E15);
 signal CS,NS: STATES_E; --CS = current state, NS = next state.
-signal reset,enter: std_logic;
 
 begin
-	reset <= BTN0;
-	enter <= BTN1;
-	
 	--3 process FSM.
 	P1: process(clock_50, reset) --clock
 	begin
