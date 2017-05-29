@@ -10,49 +10,50 @@ entity FSM_Clock is
 end FSM_Clock;
 	
 architecture bhv of FSM_Clock is
-		type STATES is (E0 ,E1,E2,E3,E4);
-		signal EA,PE: STATES;
-		signal C50: std_logic;
-		signal contador: std_logic_vector(27 downto 0);
-	--	TODO finish this.
+		signal cont1,cont2,cont3,cont4,cont5: integer := 1;
+begin
+	
+P1:process(CLOCK_50)
 	begin
-		P1:process(CLOCK_50)
-		begin
-			if CLOCK_50'event and CLOCK_50= '0' then
-				EA <= E0;
-				contador <= x"0000000";
-			end if;
-				if C50 = '1' then
-					EA <= PE;
-				end if;
-				contador <= contador + 1;
-				if contador = x"2FAF07F" then
-					contador <= x"0000000";
-					C50 <='1';
-				else
-					C50 <='0';
-				end if;
-			
-		end process;
+		cont1 <= cont1 + 1;
+		cont2 <= cont2 + 1;
+		cont3 <= cont3 + 1;
+		cont4 <= cont4 + 1;
+		cont5 <= cont5 + 1;
 		
-		P2: process(EA)
-		begin
-			case EA is
-				when E0 =>
-				--	contagem <= "0001";
-				--	PE <= E1;
-				when E1 =>
-				--	contagem <= "0010";
-				--	PE <= E2;
-				when E2 =>
-				--	contagem <= "0011";
-				--	PE <= E3;
-				when E3 =>
-				--	contagem <= "0100";
-				--	PE <= E4;
-				when E4 =>
-				--	contagem <= "0101";
-				--	PE <= E0;
-			end case;
-		end process; 
+		if cont1 = 50000000 then
+			CLK1 <= '1';
+			cont1 <= 0;
+		else
+			CLK1 <= '0';
+		end if;
+		
+		if cont2 = 25000000 then
+			CLK1 <= '1';
+			cont1 <= 0;
+		else
+			CLK1 <= '0';
+		end if;
+		
+		if cont3 = 16666666 then
+			CLK3 <= '1';
+			cont3 <= 0;
+		else
+			CLK3 <= '0';
+		end if;
+		
+		if cont4 = 12500000 then
+			CLK4 <= '1';
+			cont4 <= 0;
+		else
+			CLK4 <= '0';
+		end if;
+		
+		if cont5 = 10000000 then
+			CLK5 <= '1';
+			cont5 <= 0;
+		else
+			CLK5 <= '0';
+		end if;
+	end process; 
 end bhv;
