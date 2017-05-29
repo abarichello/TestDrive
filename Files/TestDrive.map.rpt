@@ -1,30 +1,36 @@
-Analysis & Elaboration report for TestDrive
-Mon May 22 22:39:43 2017
-Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+Analysis & Synthesis report for TestDrive
+Mon May 29 11:05:52 2017
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
+Subscription Agreement, the Altera Quartus II License Agreement,
 the Altera MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
@@ -34,42 +40,31 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                  ;
-+-------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon May 22 22:39:43 2017           ;
-; Quartus Prime Version         ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
-; Revision Name                 ; TestDrive                                       ;
-; Top-level Entity Name         ; topo                                            ;
-; Family                        ; Cyclone V                                       ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                       ;
-; Total registers               ; N/A until Partition Merge                       ;
-; Total pins                    ; N/A until Partition Merge                       ;
-; Total virtual pins            ; N/A until Partition Merge                       ;
-; Total block memory bits       ; N/A until Partition Merge                       ;
-; Total PLLs                    ; N/A until Partition Merge                       ;
-; Total DLLs                    ; N/A until Partition Merge                       ;
-+-------------------------------+-------------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++---------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon May 29 11:05:52 2017      ;
+; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name                   ; TestDrive                                  ;
+; Top-level Entity Name           ; topo                                       ;
+; Family                          ; Cyclone V                                  ;
+; Logic utilization (in ALMs)     ; N/A                                        ;
+; Total registers                 ; 0                                          ;
+; Total pins                      ; 67                                         ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 0                                          ;
+; Total DSP Blocks                ; 0                                          ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI PMA TX Serializers   ; 0                                          ;
+; Total PLLs                      ; 0                                          ;
+; Total DLLs                      ; 0                                          ;
++---------------------------------+--------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -156,67 +151,215 @@ agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; topo.vhd                         ; yes             ; User VHDL File  ; /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimate of Logic utilization (ALMs needed) ; 0        ;
+;                                             ;          ;
+; Combinational ALUT usage for logic          ; 0        ;
+;     -- 7 input functions                    ; 0        ;
+;     -- 6 input functions                    ; 0        ;
+;     -- 5 input functions                    ; 0        ;
+;     -- 4 input functions                    ; 0        ;
+;     -- <=3 input functions                  ; 0        ;
+;                                             ;          ;
+; Dedicated logic registers                   ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 67       ;
+;                                             ;          ;
+; Total DSP Blocks                            ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; clock_50 ;
+; Maximum fan-out                             ; 1        ;
+; Total fan-out                               ; 67       ;
+; Average fan-out                             ; 0.50     ;
++---------------------------------------------+----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                       ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; |topo                      ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 67   ; 0            ; |topo               ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+; boundary_port         ; 67                          ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
-    Info: Processing started: Mon May 22 22:39:30 2017
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive --analysis_and_elaboration
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file debouncer/buttonsync.vhd
-    Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Debouncer/ButtonSync.vhd Line: 24
-    Info (12023): Found entity 1: ButtonSync File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Debouncer/ButtonSync.vhd Line: 6
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Mon May 29 11:05:35 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file Debouncer/ButtonSync.vhd
+    Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl
+    Info (12023): Found entity 1: ButtonSync
 Info (12021): Found 2 design units, including 1 entities, in source file topo.vhd
-    Info (12022): Found design unit 1: topo-topo_stru File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 15
-    Info (12023): Found entity 1: topo File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file maps/map4.vhd
-    Info (12022): Found design unit 1: map4-map4_struct File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/map4.vhd Line: 11
-    Info (12023): Found entity 1: map4 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/map4.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file maps/map3.vhd
-    Info (12022): Found design unit 1: map3-map3_struct File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/map3.vhd Line: 11
-    Info (12023): Found entity 1: map3 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/map3.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file maps/map2.vhd
-    Info (12022): Found design unit 1: map2-map2_struct File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/map2.vhd Line: 11
-    Info (12023): Found entity 1: map2 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/map2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file maps/map1.vhd
-    Info (12022): Found design unit 1: map1-map1_struct File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/map1.vhd Line: 11
-    Info (12023): Found entity 1: map1 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/map1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparator1.vhd
-    Info (12022): Found design unit 1: Comparator1-compare1 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator1.vhd Line: 11
-    Info (12023): Found entity 1: Comparator1 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparator2.vhd
-    Info (12022): Found design unit 1: Comparator2-compare2 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator2.vhd Line: 11
-    Info (12023): Found entity 1: Comparator2 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparator3.vhd
-    Info (12022): Found design unit 1: Comparator3-compare3 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator3.vhd Line: 11
-    Info (12023): Found entity 1: Comparator3 File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Comparator3.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparators.vhd
-    Info (12022): Found design unit 1: COMPARATORS-topo_COMPARATORS File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/COMPARATORS.vhd Line: 14
-    Info (12023): Found entity 1: COMPARATORS File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/COMPARATORS.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file comparators/adder.vhd
-    Info (12022): Found design unit 1: Adder-add File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Adder.vhd Line: 13
-    Info (12023): Found entity 1: Adder File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Comparators/Adder.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file counters/fsm_clock.vhd
-    Info (12022): Found design unit 1: FSM_Clock-bhv File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Counters/FSM_Clock.vhd Line: 12
-    Info (12023): Found entity 1: FSM_Clock File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Counters/FSM_Clock.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file maps/topo_maps.vhd
-    Info (12022): Found design unit 1: topo_MAPS-topo_map File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/topo_MAPS.vhd Line: 14
-    Info (12023): Found entity 1: topo_MAPS File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Maps/topo_MAPS.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file controller/fsm_control.vhd
-    Info (12022): Found design unit 1: FSM_Control-bhv File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Controller/FSM_Control.vhd Line: 14
-    Info (12023): Found entity 1: FSM_Control File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/Controller/FSM_Control.vhd Line: 4
+    Info (12022): Found design unit 1: topo-topo_stru
+    Info (12023): Found entity 1: topo
+Info (12021): Found 2 design units, including 1 entities, in source file Maps/map4.vhd
+    Info (12022): Found design unit 1: map4-map4_struct
+    Info (12023): Found entity 1: map4
+Info (12021): Found 2 design units, including 1 entities, in source file Maps/map3.vhd
+    Info (12022): Found design unit 1: map3-map3_struct
+    Info (12023): Found entity 1: map3
+Info (12021): Found 2 design units, including 1 entities, in source file Maps/map2.vhd
+    Info (12022): Found design unit 1: map2-map2_struct
+    Info (12023): Found entity 1: map2
+Info (12021): Found 2 design units, including 1 entities, in source file Maps/map1.vhd
+    Info (12022): Found design unit 1: map1-map1_struct
+    Info (12023): Found entity 1: map1
+Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Comparator1.vhd
+    Info (12022): Found design unit 1: Comparator1-compare1
+    Info (12023): Found entity 1: Comparator1
+Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Comparator2.vhd
+    Info (12022): Found design unit 1: Comparator2-compare2
+    Info (12023): Found entity 1: Comparator2
+Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Comparator3.vhd
+    Info (12022): Found design unit 1: Comparator3-compare3
+    Info (12023): Found entity 1: Comparator3
+Info (12021): Found 2 design units, including 1 entities, in source file Comparators/COMPARATORS.vhd
+    Info (12022): Found design unit 1: COMPARATORS-topo_COMPARATORS
+    Info (12023): Found entity 1: COMPARATORS
+Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Adder.vhd
+    Info (12022): Found design unit 1: Adder-add
+    Info (12023): Found entity 1: Adder
+Info (12021): Found 2 design units, including 1 entities, in source file Counters/FSM_Clock.vhd
+    Info (12022): Found design unit 1: FSM_Clock-bhv
+    Info (12023): Found entity 1: FSM_Clock
+Info (12021): Found 2 design units, including 1 entities, in source file Maps/topo_MAPS.vhd
+    Info (12022): Found design unit 1: topo_MAPS-topo_map
+    Info (12023): Found entity 1: topo_MAPS
+Info (12021): Found 2 design units, including 1 entities, in source file Controller/FSM_Control.vhd
+    Info (12022): Found design unit 1: FSM_Control-bhv
+    Info (12023): Found entity 1: FSM_Control
 Info (12127): Elaborating entity "topo" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(11): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/Barichello/quartus/quartus/TestDrive/Files/topo.vhd Line: 11
-Warning (20013): Ignored 24 assignments for entity "ghrd_top" -- entity does not exist in design
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(11): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX0[0]" is stuck at GND
+    Warning (13410): Pin "HEX0[1]" is stuck at GND
+    Warning (13410): Pin "HEX0[2]" is stuck at GND
+    Warning (13410): Pin "HEX0[3]" is stuck at GND
+    Warning (13410): Pin "HEX0[4]" is stuck at GND
+    Warning (13410): Pin "HEX0[5]" is stuck at GND
+    Warning (13410): Pin "HEX0[6]" is stuck at GND
+    Warning (13410): Pin "HEX1[0]" is stuck at GND
+    Warning (13410): Pin "HEX1[1]" is stuck at GND
+    Warning (13410): Pin "HEX1[2]" is stuck at GND
+    Warning (13410): Pin "HEX1[3]" is stuck at GND
+    Warning (13410): Pin "HEX1[4]" is stuck at GND
+    Warning (13410): Pin "HEX1[5]" is stuck at GND
+    Warning (13410): Pin "HEX1[6]" is stuck at GND
+    Warning (13410): Pin "HEX2[0]" is stuck at GND
+    Warning (13410): Pin "HEX2[1]" is stuck at GND
+    Warning (13410): Pin "HEX2[2]" is stuck at GND
+    Warning (13410): Pin "HEX2[3]" is stuck at GND
+    Warning (13410): Pin "HEX2[4]" is stuck at GND
+    Warning (13410): Pin "HEX2[5]" is stuck at GND
+    Warning (13410): Pin "HEX2[6]" is stuck at GND
+    Warning (13410): Pin "HEX3[0]" is stuck at GND
+    Warning (13410): Pin "HEX3[1]" is stuck at GND
+    Warning (13410): Pin "HEX3[2]" is stuck at GND
+    Warning (13410): Pin "HEX3[3]" is stuck at GND
+    Warning (13410): Pin "HEX3[4]" is stuck at GND
+    Warning (13410): Pin "HEX3[5]" is stuck at GND
+    Warning (13410): Pin "HEX3[6]" is stuck at GND
+    Warning (13410): Pin "HEX4[0]" is stuck at GND
+    Warning (13410): Pin "HEX4[1]" is stuck at GND
+    Warning (13410): Pin "HEX4[2]" is stuck at GND
+    Warning (13410): Pin "HEX4[3]" is stuck at GND
+    Warning (13410): Pin "HEX4[4]" is stuck at GND
+    Warning (13410): Pin "HEX4[5]" is stuck at GND
+    Warning (13410): Pin "HEX4[6]" is stuck at GND
+    Warning (13410): Pin "HEX5[0]" is stuck at GND
+    Warning (13410): Pin "HEX5[1]" is stuck at GND
+    Warning (13410): Pin "HEX5[2]" is stuck at GND
+    Warning (13410): Pin "HEX5[3]" is stuck at GND
+    Warning (13410): Pin "HEX5[4]" is stuck at GND
+    Warning (13410): Pin "HEX5[5]" is stuck at GND
+    Warning (13410): Pin "HEX5[6]" is stuck at GND
+    Warning (13410): Pin "LEDR[0]" is stuck at GND
+    Warning (13410): Pin "LEDR[1]" is stuck at GND
+    Warning (13410): Pin "LEDR[2]" is stuck at GND
+    Warning (13410): Pin "LEDR[3]" is stuck at GND
+    Warning (13410): Pin "LEDR[4]" is stuck at GND
+    Warning (13410): Pin "LEDR[5]" is stuck at GND
+    Warning (13410): Pin "LEDR[6]" is stuck at GND
+    Warning (13410): Pin "LEDR[7]" is stuck at GND
+    Warning (13410): Pin "LEDR[8]" is stuck at GND
+    Warning (13410): Pin "LEDR[9]" is stuck at GND
+Warning (20013): Ignored assignments for entity "ghrd_top" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity ghrd_top -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity ghrd_top -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity ghrd_top -section_id Top was ignored
@@ -241,10 +384,31 @@ Warning (20013): Ignored 24 assignments for entity "ghrd_top" -- entity does not
     Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity ghrd_top -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity ghrd_top -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity ghrd_top -section_id Top was ignored
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 931 megabytes
-    Info: Processing ended: Mon May 22 22:39:43 2017
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:26
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 15 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clock_50"
+    Warning (15610): No output dependent on input pin "SW[0]"
+    Warning (15610): No output dependent on input pin "SW[1]"
+    Warning (15610): No output dependent on input pin "SW[2]"
+    Warning (15610): No output dependent on input pin "SW[3]"
+    Warning (15610): No output dependent on input pin "SW[4]"
+    Warning (15610): No output dependent on input pin "SW[5]"
+    Warning (15610): No output dependent on input pin "SW[6]"
+    Warning (15610): No output dependent on input pin "SW[7]"
+    Warning (15610): No output dependent on input pin "SW[8]"
+    Warning (15610): No output dependent on input pin "SW[9]"
+    Warning (15610): No output dependent on input pin "KEY[0]"
+    Warning (15610): No output dependent on input pin "KEY[1]"
+    Warning (15610): No output dependent on input pin "KEY[2]"
+    Warning (15610): No output dependent on input pin "KEY[3]"
+Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 52 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 102 warnings
+    Info: Peak virtual memory: 1070 megabytes
+    Info: Processing ended: Mon May 29 11:05:52 2017
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:36
 
 
