@@ -1,0 +1,573 @@
+# do TestDrive_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim LE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying /home/labsdg-admin/altera/15.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /home/labsdg-admin/altera/15.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:08:24 on May 29,2017
+# vcom -reportprogress 300 -93 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity topo
+# -- Compiling architecture topo_stru of topo
+# End time: 15:08:24 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:08:37 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_ASC
+# -- Compiling architecture bhv of CONTA_ASC
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "SPEED".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "EN_TIME".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): Bad expression in left operand of infix expression "and".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "SPEED".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): Bad expression in left operand of infix expression "and".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "SPEED".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): Type error resolving infix expression "and" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(27): Illegal target for signal assignment.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(27): (vcom-1136) Unknown identifier "CNT_D".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(28): VHDL Compiler exiting
+# End time: 15:08:37 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:10:15 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_ASC
+# -- Compiling architecture bhv of CONTA_ASC
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "SPEED".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "EN_TIME".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): Bad expression in left operand of infix expression "and".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "SPEED".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): Bad expression in left operand of infix expression "and".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "SPEED".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): Type error resolving infix expression "and" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(27): Illegal target for signal assignment.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(27): (vcom-1136) Unknown identifier "CNT_D".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(28): VHDL Compiler exiting
+# End time: 15:10:15 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:10:17 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_ASC
+# -- Compiling architecture bhv of CONTA_ASC
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "SPEED".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "EN_TIME".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): Bad expression in left operand of infix expression "and".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "SPEED".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): Bad expression in left operand of infix expression "and".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): (vcom-1136) Unknown identifier "SPEED".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(17): Type error resolving infix expression "and" as type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(27): Illegal target for signal assignment.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(27): (vcom-1136) Unknown identifier "CNT_D".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(28): VHDL Compiler exiting
+# End time: 15:10:17 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:10:25 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FSM_Clock
+# -- Compiling architecture bhv of FSM_Clock
+# End time: 15:10:25 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:10:29 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_ASC
+# -- Compiling architecture bhv of CONTA_ASC
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(28): Illegal target for signal assignment.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(28): (vcom-1136) Unknown identifier "CNT_D".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(18): (vcom-1152) Index value 3 is out of index range 2 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(29): VHDL Compiler exiting
+# End time: 15:10:29 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:10:54 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_ASC
+# -- Compiling architecture bhv of CONTA_ASC
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(18): (vcom-1152) Index value 3 is out of index range 2 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(29): VHDL Compiler exiting
+# End time: 15:10:54 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:11:48 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_ASC
+# -- Compiling architecture bhv of CONTA_ASC
+# End time: 15:11:48 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.conta_asc
+# vsim -i -l msim_transcript -do "TestDrive_run_msim_rtl_vhdl.do" 
+# Start time: 15:11:55 on May 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.conta_asc(bhv)
+add wave  \
+sim:/conta_asc/CLOCK_M
+add wave  \
+sim:/conta_asc/EN \
+sim:/conta_asc/EN_TIME \
+sim:/conta_asc/RST \
+sim:/conta_asc/SPEED
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:35:39 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_ASC
+# -- Compiling architecture bhv of CONTA_ASC
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(24): Type error resolving function call "rising_edge" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(24): near "CLOCK_M": expecting THEN
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(32): VHDL Compiler exiting
+# End time: 15:35:39 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:35:43 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_ASC
+# -- Compiling architecture bhv of CONTA_ASC
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(24): Type error resolving function call "rising_edge" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(24): near "CLOCK_M": expecting THEN
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(32): VHDL Compiler exiting
+# End time: 15:35:43 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:36:01 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_ASC
+# -- Compiling architecture bhv of CONTA_ASC
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(24): Type error resolving function call "rising_edge" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(24): near "CLOCK_M": expecting THEN
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(32): VHDL Compiler exiting
+# End time: 15:36:01 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:37:05 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_ASC
+# -- Compiling architecture bhv of CONTA_ASC
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(30): near "process": expecting IF
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd(32): near "bhv": expecting PROCESS
+# End time: 15:37:05 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:37:32 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_ASC
+# -- Compiling architecture bhv of CONTA_ASC
+# End time: 15:37:33 on May 29,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.conta_asc
+# vsim 
+# Start time: 15:38:11 on May 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.conta_asc(bhv)
+add wave  \
+sim:/conta_asc/CLOCK_M \
+sim:/conta_asc/EN_TIME \
+sim:/conta_asc/RST \
+sim:/conta_asc/SPEED
+force -freeze sim:/conta_asc/CLOCK_M 1 0, 0 {50 ps} -r 100
+run
+force -freeze sim:/conta_asc/EN_TIME 1 0
+force -freeze sim:/conta_asc/EN_TIME 1 0
+force -freeze sim:/conta_asc/RST 1 0
+force -freeze sim:/conta_asc/SPEED 001 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ps  Iteration: 0  Instance: /conta_asc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ps  Iteration: 0  Instance: /conta_asc
+add wave  \
+sim:/conta_asc/CNT_U \
+sim:/conta_asc/counter \
+sim:/conta_asc/enter
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 300 ps  Iteration: 0  Instance: /conta_asc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 300 ps  Iteration: 0  Instance: /conta_asc
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 400 ps  Iteration: 0  Instance: /conta_asc
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 400 ps  Iteration: 0  Instance: /conta_asc
+force -freeze sim:/conta_asc/RST 0 0
+run
+run
+run
+run
+force -freeze sim:/conta_asc/RST 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/conta_asc/SPEED 000 0
+run
+run
+run
+run
+run
+run
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:47:47 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_DES
+# -- Compiling architecture bhv of CONTA_DES
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd(15): near "P1": expecting BEGIN
+# End time: 15:47:47 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:47:47 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_DES
+# -- Compiling architecture bhv of CONTA_DES
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd(15): near "P1": expecting BEGIN
+# End time: 15:47:47 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:49:55 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_DES
+# -- Compiling architecture bhv of CONTA_DES
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd(20): No feasible entries for infix operator "and".
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd(20): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd(29): VHDL Compiler exiting
+# End time: 15:49:55 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:51:42 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_DES
+# -- Compiling architecture bhv of CONTA_DES
+# End time: 15:51:42 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:51:44 on May 29,2017
+# vcom -reportprogress 300 -work work /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CONTA_DES
+# -- Compiling architecture bhv of CONTA_DES
+# End time: 15:51:44 on May 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.conta_des
+# vsim 
+# Start time: 15:51:49 on May 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.conta_des(bhv)
+add wave  \
+sim:/conta_des/CLK1 \
+sim:/conta_des/CNT_D \
+sim:/conta_des/EN_TIME \
+sim:/conta_des/RST \
+sim:/conta_des/counter
+force -freeze sim:/conta_des/CLK1 1 0, 0 {50 ps} -r 100
+force -freeze sim:/conta_des/EN_TIME 1 0
+force -freeze sim:/conta_des/RST 1 0
+run
+run
+run
+run
+force -freeze sim:/conta_des/RST 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/conta_des/EN_TIME 0 0
+run
+run
+run
+run
+run
+run
+run
