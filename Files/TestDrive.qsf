@@ -314,3 +314,5 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_
 set_global_assignment -name VHDL_FILE Counters/CONTA_ASC.vhd
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE Counters/CONTA_BONUS.vhd
+set_global_assignment -name VHDL_FILE Counters/topo_COUNTERS.vhd

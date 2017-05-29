@@ -13,10 +13,9 @@ end CONTA_ASC;
 architecture bhv of CONTA_ASC is
 	signal counter: std_logic_vector(9 downto 0);
 	signal enter: std_logic;
+	
 begin
-
 enter <= (SPEED(2) or SPEED(1) or SPEED(0)) and (EN_TIME);
-
 P1:process(CLOCK_M,RST)
 	begin
 		if RST = '1' then

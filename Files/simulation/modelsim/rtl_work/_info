@@ -51,26 +51,26 @@ R12
 !i113 1
 R13
 R14
-Econta_des
-Z15 w1496083900
+Econta_bonus
+Z15 w1496085031
 R2
 R3
 R4
 R5
 R0
-Z16 8/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd
-Z17 F/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd
+Z16 8/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_BONUS.vhd
+Z17 F/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_BONUS.vhd
 l0
 L5
-VS0]_nR]e:ohTKW]J@4n2e2
-!s100 5VmnlH=;8b`IVg8QWcDe>0
+V^SdB4ccb<;>hgNaXVRGjk0
+!s100 zNZfT2?g?=@XRjCn58S4o2
 R8
 32
-Z18 !s110 1496083904
+Z18 !s110 1496085033
 !i10b 1
-Z19 !s108 1496083904.682270
-Z20 !s90 -reportprogress|300|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd|
-Z21 !s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd|
+Z19 !s108 1496085033.845576
+Z20 !s90 -reportprogress|300|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_BONUS.vhd|
+Z21 !s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_BONUS.vhd|
 !i113 1
 R13
 R14
@@ -79,11 +79,11 @@ R2
 R3
 R4
 R5
-Z22 DEx4 work 9 conta_des 0 22 S0]_nR]e:ohTKW]J@4n2e2
-l14
+DEx4 work 11 conta_bonus 0 22 ^SdB4ccb<;>hgNaXVRGjk0
+l16
 L12
-Z23 VL6D_gAMQeIE^[_RY7RQnR1
-Z24 !s100 01REZ_TD:;S[SeSgg60[d0
+Vl[HU]Id3l>CWc3i?RYl@d0
+!s100 :XV5jj9Q]OUL`4OK?3EoG3
 R8
 32
 R18
@@ -94,26 +94,26 @@ R21
 !i113 1
 R13
 R14
-Efsm_clock
-Z25 w1496068194
+Econta_des
+Z22 w1496083900
 R2
 R3
 R4
 R5
 R0
-Z26 8/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd
-Z27 F/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd
+Z23 8/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd
+Z24 F/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd
 l0
 L5
-Va5cN5gA>[DAZHNeUW5>zh3
-!s100 K5kh]S?H11bKA36mlba0I1
+VS0]_nR]e:ohTKW]J@4n2e2
+!s100 5VmnlH=;8b`IVg8QWcDe>0
 R8
 32
-Z28 !s110 1496081425
+Z25 !s110 1496083904
 !i10b 1
-Z29 !s108 1496081425.229473
-Z30 !s90 -reportprogress|300|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd|
-Z31 !s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd|
+Z26 !s108 1496083904.682270
+Z27 !s90 -reportprogress|300|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd|
+Z28 !s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd|
 !i113 1
 R13
 R14
@@ -122,43 +122,86 @@ R2
 R3
 R4
 R5
-DEx4 work 9 fsm_clock 0 22 a5cN5gA>[DAZHNeUW5>zh3
+DEx4 work 9 conta_des 0 22 S0]_nR]e:ohTKW]J@4n2e2
 l14
 L12
-VAo?7;G=maSiA1kWG_fNX22
-!s100 U9cZC1oAn[CTL<MgBWo0Z0
+VL6D_gAMQeIE^[_RY7RQnR1
+!s100 01REZ_TD:;S[SeSgg60[d0
 R8
 32
-R28
+R25
 !i10b 1
-R29
-R30
-R31
+R26
+R27
+R28
 !i113 1
 R13
 R14
-Etopo
-Z32 w1496064705
+Efsm_clock
+Z29 w1496087141
 R2
 R3
 R4
 R5
 R0
-Z33 8/home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd
-Z34 F/home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd
+Z30 8/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd
+Z31 F/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd
+l0
+L5
+Va5cN5gA>[DAZHNeUW5>zh3
+!s100 K5kh]S?H11bKA36mlba0I1
+R8
+32
+Z32 !s110 1496087145
+!i10b 1
+Z33 !s108 1496087145.857817
+Z34 !s90 -reportprogress|300|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd|
+Z35 !s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd|
+!i113 1
+R13
+R14
+Abhv
+R2
+R3
+R4
+R5
+Z36 DEx4 work 9 fsm_clock 0 22 a5cN5gA>[DAZHNeUW5>zh3
+l14
+L12
+Vg@NKH`?86_JRW=3fOlZIX2
+!s100 QabjNODUz=lgDT=54^<DP1
+R8
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R13
+R14
+Etopo
+Z37 w1496064705
+R2
+R3
+R4
+R5
+R0
+Z38 8/home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd
+Z39 F/home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd
 l0
 L5
 VDFB8`>k[gQ]JLz=ie^6XE1
 !s100 :O7OiTlaiF^zR6LNdXn4R0
 R8
 31
-Z35 !s110 1496081304
+Z40 !s110 1496081304
 !i10b 1
-Z36 !s108 1496081304.446371
-Z37 !s90 -reportprogress|300|-93|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd|
-Z38 !s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd|
+Z41 !s108 1496081304.446371
+Z42 !s90 -reportprogress|300|-93|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd|
+Z43 !s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd|
 !i113 1
-Z39 o-93 -work work
+Z44 o-93 -work work
 R14
 Atopo_stru
 R2
@@ -172,11 +215,54 @@ VI?J4>HNjj?1`e9_OBUn<J0
 !s100 6ZekU`][DXWSVjNo]X7>o2
 R8
 31
-R35
+R40
 !i10b 1
-R36
-R37
-R38
+R41
+R42
+R43
 !i113 1
-R39
+R44
+R14
+Etopo_counters
+Z45 w1496086820
+R2
+R3
+R4
+R5
+R0
+Z46 8/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/topo_COUNTERS.vhd
+Z47 F/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/topo_COUNTERS.vhd
+l0
+L5
+VLaX<Z_DoYG5DabNF_S98]1
+!s100 c0oBhcRdA:e:aCgSXF:Fn1
+R8
+32
+Z48 !s110 1496086853
+!i10b 1
+Z49 !s108 1496086853.549353
+Z50 !s90 -reportprogress|300|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/topo_COUNTERS.vhd|
+Z51 !s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/topo_COUNTERS.vhd|
+!i113 1
+R13
+R14
+Atopo_stru
+R2
+R3
+R4
+R5
+DEx4 work 13 topo_counters 0 22 LaX<Z_DoYG5DabNF_S98]1
+l47
+L15
+VKafdE3<OIjF5IIe@7=z>70
+!s100 k7A^8E9FCXdi>LR^T5;kU3
+R8
+32
+R48
+!i10b 1
+R49
+R50
+R51
+!i113 1
+R13
 R14
