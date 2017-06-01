@@ -5,7 +5,7 @@ entity FSM_Speed is
 port (
 	EN_TIME,CLOCK_50,RST: in std_logic;
 	X: 						 in std_logic_vector(1 downto 0);
-	SPEED:					 out std_logic_vector(3 downto 0)
+	SPEED:					 out std_logic_vector(2 downto 0)
 );
 end FSM_Speed;
 
@@ -19,12 +19,12 @@ begin
 	begin
 		if RST = '1' then
 			CS <= E0;
-		elsif CLOCK_50'event and CLOCK_50 = '0' then
+		elsif CLOCK_50'event and CLOCK_50 = '0' and EN_TIME = '1' then
 			CS <= NS;
 		end if;
 	end process;
 
-P2: process(CS,X) --state                                   --TODO REMOVE SW(1 DOWNTO 0)
+P2: process(CS,X) --state  
 	begin
 		case CS is
 			when E0 =>

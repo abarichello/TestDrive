@@ -1,6 +1,6 @@
 Analysis & Synthesis report for TestDrive
-Thu May  4 08:42:14 2017
-Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Thu Jun  1 16:11:24 2017
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
 ---------------------
@@ -23,14 +23,14 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
+Subscription Agreement, the Altera Quartus II License Agreement,
 the Altera MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
@@ -40,27 +40,27 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May  4 08:42:14 2017       ;
-; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
-; Revision Name                   ; TestDrive                                   ;
-; Top-level Entity Name           ; topo                                        ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 67                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++---------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Jun  1 16:11:24 2017      ;
+; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name                   ; TestDrive                                  ;
+; Top-level Entity Name           ; topo                                       ;
+; Family                          ; Cyclone V                                  ;
+; Logic utilization (in ALMs)     ; N/A                                        ;
+; Total registers                 ; 0                                          ;
+; Total pins                      ; 67                                         ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 0                                          ;
+; Total DSP Blocks                ; 0                                          ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI PMA TX Serializers   ; 0                                          ;
+; Total PLLs                      ; 0                                          ;
+; Total DLLs                      ; 0                                          ;
++---------------------------------+--------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -198,13 +198,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |topo                      ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 67   ; 0            ; |topo               ; topo        ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                       ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; |topo                      ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 67   ; 0            ; |topo               ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -251,133 +251,133 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu May  4 08:41:58 2017
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Thu Jun  1 16:11:08 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file Debouncer/ButtonSync.vhd
-    Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Debouncer/ButtonSync.vhd Line: 24
-    Info (12023): Found entity 1: ButtonSync File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Debouncer/ButtonSync.vhd Line: 6
+    Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl
+    Info (12023): Found entity 1: ButtonSync
 Info (12021): Found 2 design units, including 1 entities, in source file topo.vhd
-    Info (12022): Found design unit 1: topo-topo_stru File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 15
-    Info (12023): Found entity 1: topo File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 5
+    Info (12022): Found design unit 1: topo-topo_stru
+    Info (12023): Found entity 1: topo
 Info (12021): Found 2 design units, including 1 entities, in source file Maps/map4.vhd
-    Info (12022): Found design unit 1: map4-map4_struct File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Maps/map4.vhd Line: 11
-    Info (12023): Found entity 1: map4 File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Maps/map4.vhd Line: 4
+    Info (12022): Found design unit 1: map4-map4_struct
+    Info (12023): Found entity 1: map4
 Info (12021): Found 2 design units, including 1 entities, in source file Maps/map3.vhd
-    Info (12022): Found design unit 1: map3-map3_struct File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Maps/map3.vhd Line: 11
-    Info (12023): Found entity 1: map3 File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Maps/map3.vhd Line: 4
+    Info (12022): Found design unit 1: map3-map3_struct
+    Info (12023): Found entity 1: map3
 Info (12021): Found 2 design units, including 1 entities, in source file Maps/map2.vhd
-    Info (12022): Found design unit 1: map2-map2_struct File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Maps/map2.vhd Line: 11
-    Info (12023): Found entity 1: map2 File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Maps/map2.vhd Line: 4
+    Info (12022): Found design unit 1: map2-map2_struct
+    Info (12023): Found entity 1: map2
 Info (12021): Found 2 design units, including 1 entities, in source file Maps/map1.vhd
-    Info (12022): Found design unit 1: map1-map1_struct File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Maps/map1.vhd Line: 11
-    Info (12023): Found entity 1: map1 File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Maps/map1.vhd Line: 4
+    Info (12022): Found design unit 1: map1-map1_struct
+    Info (12023): Found entity 1: map1
 Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Comparator1.vhd
-    Info (12022): Found design unit 1: Comparator1-compare1 File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Comparators/Comparator1.vhd Line: 11
-    Info (12023): Found entity 1: Comparator1 File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Comparators/Comparator1.vhd Line: 4
+    Info (12022): Found design unit 1: Comparator1-compare1
+    Info (12023): Found entity 1: Comparator1
 Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Comparator2.vhd
-    Info (12022): Found design unit 1: Comparator2-compare2 File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Comparators/Comparator2.vhd Line: 11
-    Info (12023): Found entity 1: Comparator2 File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Comparators/Comparator2.vhd Line: 4
+    Info (12022): Found design unit 1: Comparator2-compare2
+    Info (12023): Found entity 1: Comparator2
 Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Comparator3.vhd
-    Info (12022): Found design unit 1: Comparator3-compare3 File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Comparators/Comparator3.vhd Line: 11
-    Info (12023): Found entity 1: Comparator3 File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Comparators/Comparator3.vhd Line: 4
+    Info (12022): Found design unit 1: Comparator3-compare3
+    Info (12023): Found entity 1: Comparator3
 Info (12021): Found 2 design units, including 1 entities, in source file Comparators/COMPARATORS.vhd
-    Info (12022): Found design unit 1: COMPARATORS-topo_COMPARATORS File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Comparators/COMPARATORS.vhd Line: 14
-    Info (12023): Found entity 1: COMPARATORS File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Comparators/COMPARATORS.vhd Line: 5
+    Info (12022): Found design unit 1: COMPARATORS-topo_COMPARATORS
+    Info (12023): Found entity 1: COMPARATORS
 Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Adder.vhd
-    Info (12022): Found design unit 1: Adder-add File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Comparators/Adder.vhd Line: 13
-    Info (12023): Found entity 1: Adder File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Comparators/Adder.vhd Line: 5
+    Info (12022): Found design unit 1: Adder-add
+    Info (12023): Found entity 1: Adder
 Info (12021): Found 2 design units, including 1 entities, in source file Counters/FSM_Clock.vhd
-    Info (12022): Found design unit 1: FSM_Clock-bhv File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd Line: 12
-    Info (12023): Found entity 1: FSM_Clock File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/FSM_Clock.vhd Line: 5
+    Info (12022): Found design unit 1: FSM_Clock-bhv
+    Info (12023): Found entity 1: FSM_Clock
 Info (12021): Found 2 design units, including 1 entities, in source file Maps/topo_MAPS.vhd
-    Info (12022): Found design unit 1: topo_MAPS-topo_map File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Maps/topo_MAPS.vhd Line: 14
-    Info (12023): Found entity 1: topo_MAPS File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Maps/topo_MAPS.vhd Line: 5
+    Info (12022): Found design unit 1: topo_MAPS-topo_map
+    Info (12023): Found entity 1: topo_MAPS
 Info (12021): Found 2 design units, including 1 entities, in source file Controller/FSM_Control.vhd
-    Info (12022): Found design unit 1: FSM_Control-bhv File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Controller/FSM_Control.vhd Line: 13
-    Info (12023): Found entity 1: FSM_Control File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Controller/FSM_Control.vhd Line: 4
+    Info (12022): Found design unit 1: FSM_Control-bhv
+    Info (12023): Found entity 1: FSM_Control
 Info (12021): Found 2 design units, including 1 entities, in source file Counters/CONTA_DES.vhd
-    Info (12022): Found design unit 1: CONTA_DES-bhv File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd Line: 12
-    Info (12023): Found entity 1: CONTA_DES File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_DES.vhd Line: 5
+    Info (12022): Found design unit 1: CONTA_DES-bhv
+    Info (12023): Found entity 1: CONTA_DES
 Info (12021): Found 2 design units, including 1 entities, in source file Counters/CONTA_ASC.vhd
-    Info (12022): Found design unit 1: CONTA_ASC-bhv File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd Line: 13
-    Info (12023): Found entity 1: CONTA_ASC File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_ASC.vhd Line: 5
+    Info (12022): Found design unit 1: CONTA_ASC-bhv
+    Info (12023): Found entity 1: CONTA_ASC
 Info (12021): Found 2 design units, including 1 entities, in source file Counters/CONTA_BONUS.vhd
-    Info (12022): Found design unit 1: CONTA_BONUS-bhv File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_BONUS.vhd Line: 12
-    Info (12023): Found entity 1: CONTA_BONUS File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/CONTA_BONUS.vhd Line: 5
+    Info (12022): Found design unit 1: CONTA_BONUS-bhv
+    Info (12023): Found entity 1: CONTA_BONUS
 Info (12021): Found 2 design units, including 1 entities, in source file Counters/topo_COUNTERS.vhd
-    Info (12022): Found design unit 1: topo_COUNTERS-topo_stru File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/topo_COUNTERS.vhd Line: 15
-    Info (12023): Found entity 1: topo_COUNTERS File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Counters/topo_COUNTERS.vhd Line: 5
+    Info (12022): Found design unit 1: topo_COUNTERS-topo_stru
+    Info (12023): Found entity 1: topo_COUNTERS
 Info (12021): Found 2 design units, including 1 entities, in source file Registers/FSM_Position.vhd
-    Info (12022): Found design unit 1: FSM_Position-bhv File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/FSM_Position.vhd Line: 13
-    Info (12023): Found entity 1: FSM_Position File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/FSM_Position.vhd Line: 4
+    Info (12022): Found design unit 1: FSM_Position-bhv
+    Info (12023): Found entity 1: FSM_Position
 Info (12021): Found 2 design units, including 1 entities, in source file Registers/FSM_Speed.vhd
-    Info (12022): Found design unit 1: FSM_Speed-bhv File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/FSM_Speed.vhd Line: 12
-    Info (12023): Found entity 1: FSM_Speed File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/FSM_Speed.vhd Line: 4
+    Info (12022): Found design unit 1: FSM_Speed-bhv
+    Info (12023): Found entity 1: FSM_Speed
 Info (12127): Elaborating entity "topo" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at topo.vhd(11): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(10): used implicit default value for signal "HEX5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(11): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 10
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 11
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 11
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 11
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 11
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 11
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 11
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 11
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 11
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 11
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 11
-Warning (20013): Ignored 24 assignments for entity "ghrd_top" -- entity does not exist in design
+    Warning (13410): Pin "HEX0[0]" is stuck at GND
+    Warning (13410): Pin "HEX0[1]" is stuck at GND
+    Warning (13410): Pin "HEX0[2]" is stuck at GND
+    Warning (13410): Pin "HEX0[3]" is stuck at GND
+    Warning (13410): Pin "HEX0[4]" is stuck at GND
+    Warning (13410): Pin "HEX0[5]" is stuck at GND
+    Warning (13410): Pin "HEX0[6]" is stuck at GND
+    Warning (13410): Pin "HEX1[0]" is stuck at GND
+    Warning (13410): Pin "HEX1[1]" is stuck at GND
+    Warning (13410): Pin "HEX1[2]" is stuck at GND
+    Warning (13410): Pin "HEX1[3]" is stuck at GND
+    Warning (13410): Pin "HEX1[4]" is stuck at GND
+    Warning (13410): Pin "HEX1[5]" is stuck at GND
+    Warning (13410): Pin "HEX1[6]" is stuck at GND
+    Warning (13410): Pin "HEX2[0]" is stuck at GND
+    Warning (13410): Pin "HEX2[1]" is stuck at GND
+    Warning (13410): Pin "HEX2[2]" is stuck at GND
+    Warning (13410): Pin "HEX2[3]" is stuck at GND
+    Warning (13410): Pin "HEX2[4]" is stuck at GND
+    Warning (13410): Pin "HEX2[5]" is stuck at GND
+    Warning (13410): Pin "HEX2[6]" is stuck at GND
+    Warning (13410): Pin "HEX3[0]" is stuck at GND
+    Warning (13410): Pin "HEX3[1]" is stuck at GND
+    Warning (13410): Pin "HEX3[2]" is stuck at GND
+    Warning (13410): Pin "HEX3[3]" is stuck at GND
+    Warning (13410): Pin "HEX3[4]" is stuck at GND
+    Warning (13410): Pin "HEX3[5]" is stuck at GND
+    Warning (13410): Pin "HEX3[6]" is stuck at GND
+    Warning (13410): Pin "HEX4[0]" is stuck at GND
+    Warning (13410): Pin "HEX4[1]" is stuck at GND
+    Warning (13410): Pin "HEX4[2]" is stuck at GND
+    Warning (13410): Pin "HEX4[3]" is stuck at GND
+    Warning (13410): Pin "HEX4[4]" is stuck at GND
+    Warning (13410): Pin "HEX4[5]" is stuck at GND
+    Warning (13410): Pin "HEX4[6]" is stuck at GND
+    Warning (13410): Pin "HEX5[0]" is stuck at GND
+    Warning (13410): Pin "HEX5[1]" is stuck at GND
+    Warning (13410): Pin "HEX5[2]" is stuck at GND
+    Warning (13410): Pin "HEX5[3]" is stuck at GND
+    Warning (13410): Pin "HEX5[4]" is stuck at GND
+    Warning (13410): Pin "HEX5[5]" is stuck at GND
+    Warning (13410): Pin "HEX5[6]" is stuck at GND
+    Warning (13410): Pin "LEDR[0]" is stuck at GND
+    Warning (13410): Pin "LEDR[1]" is stuck at GND
+    Warning (13410): Pin "LEDR[2]" is stuck at GND
+    Warning (13410): Pin "LEDR[3]" is stuck at GND
+    Warning (13410): Pin "LEDR[4]" is stuck at GND
+    Warning (13410): Pin "LEDR[5]" is stuck at GND
+    Warning (13410): Pin "LEDR[6]" is stuck at GND
+    Warning (13410): Pin "LEDR[7]" is stuck at GND
+    Warning (13410): Pin "LEDR[8]" is stuck at GND
+    Warning (13410): Pin "LEDR[9]" is stuck at GND
+Warning (20013): Ignored assignments for entity "ghrd_top" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity ghrd_top -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity ghrd_top -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity ghrd_top -section_id Top was ignored
@@ -405,28 +405,28 @@ Warning (20013): Ignored 24 assignments for entity "ghrd_top" -- entity does not
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 15 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clock_50" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[0]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[1]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[2]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[3]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[4]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[5]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[6]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[7]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[9]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 8
-    Warning (15610): No output dependent on input pin "KEY[0]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 9
-    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 9
-    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 9
-    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd Line: 9
+    Warning (15610): No output dependent on input pin "clock_50"
+    Warning (15610): No output dependent on input pin "SW[0]"
+    Warning (15610): No output dependent on input pin "SW[1]"
+    Warning (15610): No output dependent on input pin "SW[2]"
+    Warning (15610): No output dependent on input pin "SW[3]"
+    Warning (15610): No output dependent on input pin "SW[4]"
+    Warning (15610): No output dependent on input pin "SW[5]"
+    Warning (15610): No output dependent on input pin "SW[6]"
+    Warning (15610): No output dependent on input pin "SW[7]"
+    Warning (15610): No output dependent on input pin "SW[8]"
+    Warning (15610): No output dependent on input pin "SW[9]"
+    Warning (15610): No output dependent on input pin "KEY[0]"
+    Warning (15610): No output dependent on input pin "KEY[1]"
+    Warning (15610): No output dependent on input pin "KEY[2]"
+    Warning (15610): No output dependent on input pin "KEY[3]"
 Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 102 warnings
-    Info: Peak virtual memory: 1298 megabytes
-    Info: Processing ended: Thu May  4 08:42:14 2017
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 102 warnings
+    Info: Peak virtual memory: 1065 megabytes
+    Info: Processing ended: Thu Jun  1 16:11:24 2017
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:35
+    Info: Total CPU time (on all processors): 00:00:38
 
 

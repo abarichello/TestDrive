@@ -27,7 +27,7 @@ enter <= ((SPEED(2) or SPEED(1) or SPEED(0)) and EN_TIME);
 		end if;
 	end process;
 
-P2: process(CS,SW) --state                                   --TODO REMOVE SW(1 DOWNTO 0)
+P2: process(CS,SW) --state
 	begin
 		case CS is
 			when E0 =>
