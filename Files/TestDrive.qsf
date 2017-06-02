@@ -319,4 +319,9 @@ set_global_assignment -name VHDL_FILE Registers/FSM_Position.vhd
 set_global_assignment -name VHDL_FILE Registers/FSM_Speed.vhd
 set_global_assignment -name VHDL_FILE Registers/REG_IN.vhd
 set_global_assignment -name VHDL_FILE Registers/topo_REGISTERS.vhd
+set_global_assignment -name VHDL_FILE "Selectors and Decoders/mux8x1.vhd"
+set_global_assignment -name VHDL_FILE "Selectors and Decoders/mux4x1_32.vhd"
+set_global_assignment -name VHDL_FILE "Selectors and Decoders/mux16x1.vhd"
+set_global_assignment -name VHDL_FILE "Selectors and Decoders/mux2x1.vhd"
+set_global_assignment -name VHDL_FILE "Selectors and Decoders/Decod7seg.vhd"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
