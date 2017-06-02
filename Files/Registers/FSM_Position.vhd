@@ -5,7 +5,7 @@ entity FSM_Position is
 port (
 	EN_TIME,CLOCK_M,RST: in std_logic;
 	SPEED: 					in std_logic_vector(2 downto 0);
-	SW:		in std_logic_vector(1 downto 0);
+	SW:						in std_logic_vector(1 downto 0);
 	UP_DOWN:					out std_logic_vector(3 downto 0)
 );
 end FSM_Position;

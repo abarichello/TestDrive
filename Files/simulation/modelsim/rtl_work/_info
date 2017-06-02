@@ -8,35 +8,35 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/labsdg-admin/Documentos/barichello/TestDrive/Files/simulation/modelsim
-Efsm_speed
-Z1 w1496344262
+Ereg_in_15
+Z1 w1496435694
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z4 8/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/FSM_Speed.vhd
-Z5 F/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/FSM_Speed.vhd
+Z4 8/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/REG_IN.vhd
+Z5 F/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/REG_IN.vhd
 l0
 L4
-VaPK4o^D[V_ESN?gRGDfW90
-!s100 ST05H;6AhPJ?m8A4@6z5e1
+V;FJ5=bK^nYIJoJ>3mMQh41
+!s100 Hg_Wgjkm;l0>RbR[;Q2RJ3
 Z6 OV;C;10.3d;59
 32
-Z7 !s110 1496344269
+Z7 !s110 1496435790
 !i10b 1
-Z8 !s108 1496344269.911909
-Z9 !s90 -reportprogress|300|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/FSM_Speed.vhd|
-Z10 !s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/FSM_Speed.vhd|
+Z8 !s108 1496435790.388303
+Z9 !s90 -reportprogress|300|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/REG_IN.vhd|
+Z10 !s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/REG_IN.vhd|
 !i113 1
 Z11 o-work work
 Z12 tExplicit 1
 Abhv
 R2
 R3
-DEx4 work 9 fsm_speed 0 22 aPK4o^D[V_ESN?gRGDfW90
-l16
-L12
-Vzb>ZgPGVo8GgzC<f60nL^3
-!s100 [c^5jlEY]c3GN6@9=7V@13
+DEx4 work 9 reg_in_15 0 22 ;FJ5=bK^nYIJoJ>3mMQh41
+l17
+L13
+V3H2=ll384B39?JMgkaf9^2
+!s100 dOP2BSEW]=81BgdU?1l<i2
 R6
 32
 R7
@@ -44,27 +44,6 @@ R7
 R8
 R9
 R10
-!i113 1
-R11
-R12
-Ereg_in_15
-w1496345352
-R2
-R3
-R0
-8/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/REG_IN.vhd
-F/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/REG_IN.vhd
-l0
-L5
-VUI0=ek20^;JCA^z07Q>GQ1
-!s100 F2=```:blb3aMBS8N7HWV3
-R6
-32
-!s110 1496345353
-!i10b 1
-!s108 1496345353.493800
-!s90 -reportprogress|300|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/REG_IN.vhd|
-!s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/Registers/REG_IN.vhd|
 !i113 1
 R11
 R12
@@ -83,9 +62,9 @@ VDFB8`>k[gQ]JLz=ie^6XE1
 !s100 :O7OiTlaiF^zR6LNdXn4R0
 R6
 31
-Z18 !s110 1496343797
+Z18 !s110 1496435773
 !i10b 1
-Z19 !s108 1496343796.981228
+Z19 !s108 1496435773.759281
 Z20 !s90 -reportprogress|300|-93|-work|work|/home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd|
 Z21 !s107 /home/labsdg-admin/Documentos/barichello/TestDrive/Files/topo.vhd|
 !i113 1
