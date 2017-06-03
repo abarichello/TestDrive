@@ -297,6 +297,7 @@ set_global_assignment -name PARTITION_COLOR 16764057 -entity ghrd_top -section_i
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity ghrd_top -section_id Top
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE Comparators/topo_COMPARATORS.vhd
 set_global_assignment -name VHDL_FILE Debouncer/ButtonSync.vhd
 set_global_assignment -name VHDL_FILE topo.vhd
 set_global_assignment -name VHDL_FILE Maps/map4.vhd
@@ -306,7 +307,6 @@ set_global_assignment -name VHDL_FILE Maps/map1.vhd
 set_global_assignment -name VHDL_FILE Comparators/Comparator1.vhd
 set_global_assignment -name VHDL_FILE Comparators/Comparator2.vhd
 set_global_assignment -name VHDL_FILE Comparators/Comparator3.vhd
-set_global_assignment -name VHDL_FILE Comparators/COMPARATORS.vhd
 set_global_assignment -name VHDL_FILE Comparators/Adder.vhd
 set_global_assignment -name VHDL_FILE Counters/FSM_Clock.vhd
 set_global_assignment -name VHDL_FILE Maps/topo_MAPS.vhd
