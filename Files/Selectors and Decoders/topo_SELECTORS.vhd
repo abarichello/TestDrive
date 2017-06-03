@@ -30,7 +30,7 @@ port (
 	--reg outs
 	REG_OUT_0, REG_OUT_1, REG_OUT_2, REG_OUT_3, REG_OUT_4, REG_OUT_5,
 	REG_OUT_6, REG_OUT_7, REG_OUT_8, REG_OUT_9, REG_OUT_10,
-	REG_OUT_11, REG_OUT_12, REG_OUT_13, REG_OUT_14,REG_OUT_15: in std_logic_vector(31 downto 0)
+	REG_OUT_11, REG_OUT_12, REG_OUT_13, REG_OUT_14,REG_OUT_15: in std_logic_vector(31 downto 0);
 	
 	SEL_DISP: 						in std_logic_vector(1 downto 0);
 	SEL_LED: 						in std_logic;
@@ -48,6 +48,8 @@ end topo_SELECTORS;
 architecture topo of topo_SELECTORS is
 signal signalspeed: std_logic_vector(2 downto 0);
 signal signalX: std_logic_vector(1 downto 0);
+signal mux1_0,mux1_1,screensignal,HX: std_logic_vector(29 downto 0);
+signal mux2_0,mux2_1: std_logic_vector(9 downto 0);
 
 component mux2x1 
 generic (N: natural := 30);
@@ -101,26 +103,40 @@ port(
 end component;
 	
 begin --todo
-	 L0: mux2x1 port map ();
-	 L1: mux2x1 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_32 port map ();
-	 L1: mux4x1_30 port map ();
-	 L1: mux8x1 port map ();
-	 L1: mux16x1 port map ();
-	 L1: Decod7seg port map ();
+
+mux1_0 <= "11011" & "00" & SPEED & "00000" & '0' & UP_DOWN & CNT_U;
+mux1_1 <= "01110" & STATES & "01011" & CNT_B & CNT_D;
+mux2_0 <= CLK5 & REG_OUT(30 downto 22);
+mux2_1 <= "0000000000";
+mux30_1 <= "01110" & STATES & "101100101010111000" & SW(8) & SW(7);
+mux30_2 <= "01110" & STATES & "11111000000111101111";
+mux30_3 <= "01110" & STATES & "1011111010" & POINT;
+
+	  L0: mux2x1 port map (mux1_0, mux1_1, SW(9), screensignal);
+	  L1: mux2x1 port map (mux2_0, mux2_1, SEL_LED, LED_OUT);
+	  L2: mux4x1_32 port map ();
+	  L3: mux4x1_32 port map ();
+	  L4: mux4x1_32 port map ();
+	  L5: mux4x1_32 port map ();
+	  L6: mux4x1_32 port map ();
+	  L7: mux4x1_32 port map ();
+	  L8: mux4x1_32 port map ();
+	  L9: mux4x1_32 port map ();
+	 L10: mux4x1_32 port map ();
+	 L11: mux4x1_32 port map ();
+	 L12: mux4x1_32 port map ();
+	 L13: mux4x1_32 port map ();
+	 L14: mux4x1_32 port map ();
+	 L15: mux4x1_32 port map ();
+	 L16: mux4x1_32 port map ();
+	 L17: mux4x1_32 port map ();
+	 L18: mux4x1_30 port map (screensignal, mux30_1, mux30_2, mux30_3,SEL_DISP,HX); --30.
+	 L19: mux8x1 port map (CLK1,CLK1,CLK2,CLK3,CLK4,CLK5,CLK1,CLK1, signalspeed, CLOCK_M);
+	 L20: mux16x1 port map (
+		REG_OUT_0, REG_OUT_1, REG_OUT_2, REG_OUT_3, REG_OUT_4, REG_OUT_5,
+		REG_OUT_6, REG_OUT_7, REG_OUT_8, REG_OUT_9, REG_OUT_10,
+		REG_OUT_11, REG_OUT_12, REG_OUT_13, REG_OUT_14,REG_OUT_15,
+		UP_DOWN, REG_OUT
+	 );
+	 L21: Decod7seg port map ();
 end topo; 
