@@ -50,7 +50,7 @@ port(
 );
 end component;
 	
-begin --todo
+begin 
 
 signalX <= BTN3 & BTN2; 
 
