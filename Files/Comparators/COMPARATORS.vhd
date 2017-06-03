@@ -41,8 +41,7 @@ architecture topo_COMPARATORS of COMPARATORS is
 		POINT:     out std_logic_vector(9 downto 0)
 	);
 	end component;
-
-
+	
 begin
 	L0: comparators1 port map (CNT_D,END_TIME);
 	L1: comparators2 port map (CNT_U,TARGET);
