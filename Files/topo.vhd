@@ -69,9 +69,15 @@ port(
 );
 end component;
 
+component Decod7seg
+port(
+	C:  in std_logic_vector(4 downto 0);
+	F:  out std_logic_vector(6 downto 0)
+);
+
 component topo_SELECTORS
 port(
-SW:								in std_logic_vector(9 downto 7);
+	SW:								in std_logic_vector(9 downto 7);
 	--map1
 	MAP1_0,MAP1_1,MAP1_2,MAP1_3,MAP1_4,MAP1_5,MAP1_6,
 	MAP1_7,MAP1_8,MAP1_9,MAP1_10,MAP1_11,MAP1_12,
@@ -115,24 +121,26 @@ SW:								in std_logic_vector(9 downto 7);
 );
 end component;
 
-signal sSETROL,sENTIME,sCLOCKM,SCLOCK50: std_logic;
+signal sSETROL,sENTIME,sCLOCKM,sSELLED,sSETROL: std_logic;
 signal sSPEED: std_logic_vector(2 downto 0);
-signal CLOCKS_SIGNAL, sCNTB: std_logic_vector(4 downto 0);
-signal sCNTD, sCNTU: std_logic_vector(9 downto 0);
+signal CLOCKS_SIGNAL, sCNTB, sSTATES: std_logic_vector(4 downto 0);
+signal sCNTD, sCNTU, sLEDOUT: std_logic_vector(9 downto 0);
+signal sSELDISP: std_logic_vector(1 downto 0);
+signal sH: std_logic_vector(41 downto 0);
 
 begin
 CLOCKS_SIGNAL <= CLK5 & CLK4 & CLK3 & CLK2 & CLK1;
 
 	L0:
 		topo_REGISTERS port map ( --missing reg ins and outs.
-			sSETROL, sENTIME, KEY(2), KEY(3), sCLOCKM, SCLOCK50,KEY(0),
+			sSETROL, sENTIME, sBTN2, sBTN3, sCLOCKM, CLOCK_50,sBTN0,
 			SW(1 downto 0), , , , , , , , , , , , , , , , ,
 			sSPEED, sUPDOWN, , , , , , , , , , , , , , , , ,
 		);		
 
 	L1: 
 		topo_COUNTERS port map ( --missing REG OUT 31
-			KEY(0),sENTIME,sCLOCKM, sCLOCK50, ,
+			sBTN0,sENTIME,sCLOCKM, CLOCK_50, ,
 			sSPEED, CLK1, CLK2, CLK3, CLK4, CLK5,
 			sCNTD, sCNTU, sCNTB
 		);
@@ -146,14 +154,71 @@ CLOCKS_SIGNAL <= CLK5 & CLK4 & CLK3 & CLK2 & CLK1;
 
 	L3: 
 		topo_MAPS port map (
-		
-		
+			MAP1_0,MAP1_1,MAP1_2,MAP1_3,MAP1_4,MAP1_5,MAP1_6,MAP1_7,MAP1_8,MAP1_9,MAP1_10,MAP1_11,MAP1_12,MAP1_13,MAP1_14,MAP1_15,
+			MAP2_0,MAP2_1,MAP2_2,MAP2_3,MAP2_4,MAP2_5,MAP2_6,MAP2_7,MAP2_8,MAP2_9,MAP2_10,MAP2_11,MAP2_12,MAP2_13,MAP2_14,MAP2_15,
+			MAP3_0,MAP3_1,MAP3_2,MAP3_3,MAP3_4,MAP3_5,MAP3_6,MAP3_7,MAP3_8,MAP3_9,MAP3_10,MAP3_11,MAP3_12,MAP3_13,MAP3_14,MAP3_15,
+			MAP4_0,MAP4_1,MAP4_2,MAP4_3,MAP4_4,MAP4_5,MAP4_6,MAP4_7,MAP4_8,MAP4_9,MAP4_10,MAP4_11,MAP4_12,MAP4_13,MAP4_14,MAP4_15
 		);
 		
-	--L4: FSM_Control 		 port map ();
-	--L5: topo_SELECTORS 	 port map ();
-	--L6: ButtonSync 			 port map ();
-	--L7: LEDR 					 port map();
-	--L8:
+	L4: 
+		FSM_Control port map (
+			sBTN0, sBTN1, sTARGET, sENDTIME, sENDBONUS, CLOCK_50,
+			sSELLED, sSETROL, sENTIME,
+			sSTATES, sSELDISP
+		);
+	
+	L5:
+		topo_SELECTORS port map (
+			SW(9 downto 7),
+			, --map1 (x16)
+			, --map2 (x16)
+			, --map3 (x16)
+			, --map4 (x16)
+			sCNTD, sCNTU, sPOINT,
+			, --reg outs (x16)
+			sSELDISP, sSELLED, sSPEED, sUPDOWN, sCNTB, sSTATES, CLOCKS_SIGNAL,
+			sCLOCKM, sLEDOUT, sH,
+			, --reg ins (x16)
+			, --reg out exit (32 bits) 
+		);
+		
+	L6: 
+		ButtonSync port map (
+			KEY(0),KEY(1),KEY(2),KEY(3),CLOCK_50,
+			sBTN0,sBTN1,sBTN2,sBTN3
+		);
+		
+	L7: 
+		Decod7seg port map(
+			sH(41 downto 35), HEX5
+		);
+	
+	L8: 
+		Decod7seg port map(
+			sH(34 downto 28), HEX4
+		);
+		
+	L9: 
+		Decod7seg port map(
+			sH(27 downto 21), HEX3
+		);
+		
+	L10: 
+		Decod7seg port map(
+			sH(20 downto 14), HEX2
+		);
+		
+	L11: 
+		Decod7seg port map(
+			sH(13 downto 7), HEX1
+		);
+		
+	L12: 
+		Decod7seg port map(
+			sH(6 downto 0), HEX0
+		);
+		
+	LEDR <= sLEDOUT;
+		
 
 end topo_stru; 

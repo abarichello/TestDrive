@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TestDrive
-Sat Jun 03 19:57:47 2017
+Sun Jun 04 14:19:01 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sat Jun 03 19:57:47 2017          ;
+; Analysis & Synthesis Status ; Failed - Sun Jun 04 14:19:01 2017          ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name               ; TestDrive                                  ;
 ; Top-level Entity Name       ; topo                                       ;
@@ -155,7 +155,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sat Jun 03 19:57:44 2017
+    Info: Processing started: Sun Jun 04 14:18:58 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file comparators/topo_comparators.vhd
@@ -164,9 +164,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file compara
 Info (12021): Found 2 design units, including 1 entities, in source file debouncer/buttonsync.vhd
     Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl
     Info (12023): Found entity 1: ButtonSync
-Error (10500): VHDL syntax error at topo.vhd(129) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 129
-Error (10500): VHDL syntax error at topo.vhd(130) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 130
-Error (10500): VHDL syntax error at topo.vhd(135) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 135
+Error (10500): VHDL syntax error at topo.vhd(78) near text "component";  expecting "end" File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 78
+Error (10500): VHDL syntax error at topo.vhd(137) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 137
+Error (10500): VHDL syntax error at topo.vhd(138) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 138
+Error (10500): VHDL syntax error at topo.vhd(143) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 143
+Error (10500): VHDL syntax error at topo.vhd(173) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 173
+Error (10500): VHDL syntax error at topo.vhd(178) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 178
+Error (10500): VHDL syntax error at topo.vhd(181) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 181
 Info (12021): Found 0 design units, including 0 entities, in source file topo.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file maps/map4.vhd
     Info (12022): Found design unit 1: map4-map4_struct
@@ -246,10 +250,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file selecto
 Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/topo_selectors.vhd
     Info (12022): Found design unit 1: topo_SELECTORS-topo
     Info (12023): Found entity 1: topo_SELECTORS
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 7 errors, 1 warning
     Error: Peak virtual memory: 580 megabytes
-    Error: Processing ended: Sat Jun 03 19:57:47 2017
-    Error: Elapsed time: 00:00:03
-    Error: Total CPU time (on all processors): 00:00:03
+    Error: Processing ended: Sun Jun 04 14:19:02 2017
+    Error: Elapsed time: 00:00:04
+    Error: Total CPU time (on all processors): 00:00:04
 
 
