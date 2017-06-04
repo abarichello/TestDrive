@@ -2,32 +2,32 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-entity COMPARATORS is
+entity topo_COMPARATORS is
 port (
 	CNT_U,CNT_D: in std_logic_vector(9 downto 0);
 	CNT_B: 		 in std_logic_vector(4 downto 0);
 	END_BONUS,END_TIME,TARGET: out std_logic;
 	POINT: out std_logic_vector(9 downto 0)
 );
-end COMPARATORS;
+end topo_COMPARATORS;
 
-architecture topo_COMPARATORS of COMPARATORS is
+architecture topo_COMPARATORS of topo_COMPARATORS is
 
-	component Comparators1
+	component Comparator1
 	port (
 		CNT_D:    in std_logic_vector(9 downto 0);
 		END_TIME: out std_logic
 		);
 	end component;
 	
-	component Comparators2
+	component Comparator2
 	port (
 		CNT_U:  in std_logic_vector(9 downto 0);
 		TARGET: out std_logic
 	);
 	end component;
 	
-	component Comparators3
+	component Comparator3
 	port (
 		CNT_B:     in std_logic_vector(4 downto 0);
 		END_BONUS: out std_logic
@@ -43,9 +43,9 @@ architecture topo_COMPARATORS of COMPARATORS is
 	end component;
 	
 begin
-	L0: comparators1 port map (CNT_D,END_TIME);
-	L1: comparators2 port map (CNT_U,TARGET);
-	L2: comparators3 port map (CNT_B,END_BONUS);
-	L3: adder port map (CNT_U,CNT_B,POINT);
+	L0: Comparator1 port map (CNT_D,END_TIME);
+	L1: Comparator2 port map (CNT_U,TARGET);
+	L2: Comparator3 port map (CNT_B,END_BONUS);
+	L3: Adder port map (CNT_U,CNT_B,POINT);
 	
 end topo_COMPARATORS; 

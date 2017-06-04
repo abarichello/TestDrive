@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TestDrive
-Sun Jun 04 18:20:04 2017
+Sun Jun 04 20:26:13 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,7 +10,47 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |topo|ButtonSync:L6|btn3state
+  9. State Machine - |topo|ButtonSync:L6|btn2state
+ 10. State Machine - |topo|ButtonSync:L6|btn1state
+ 11. State Machine - |topo|ButtonSync:L6|btn0state
+ 12. State Machine - |topo|FSM_Control:L4|CS
+ 13. State Machine - |topo|topo_REGISTERS:L0|FSM_Speed:L1|CS
+ 14. State Machine - |topo|topo_REGISTERS:L0|FSM_Position:L0|CS
+ 15. Logic Cells Representing Combinational Loops
+ 16. Registers Removed During Synthesis
+ 17. General Register Statistics
+ 18. Inverted Register Statistics
+ 19. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 20. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux2x1:L0
+ 21. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux2x1_10:L1
+ 22. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L2
+ 23. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L3
+ 24. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L4
+ 25. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L5
+ 26. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L6
+ 27. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L7
+ 28. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L8
+ 29. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L9
+ 30. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L10
+ 31. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L11
+ 32. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L12
+ 33. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L13
+ 34. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L14
+ 35. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L15
+ 36. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L16
+ 37. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L17
+ 38. Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_30:L18
+ 39. Port Connectivity Checks: "topo_SELECTORS:L5|mux16x1:L20"
+ 40. Port Connectivity Checks: "topo_SELECTORS:L5|mux4x1_30:L18"
+ 41. Port Connectivity Checks: "topo_SELECTORS:L5|mux2x1_10:L1"
+ 42. Port Connectivity Checks: "topo_SELECTORS:L5|mux2x1:L0"
+ 43. Port Connectivity Checks: "topo_SELECTORS:L5"
+ 44. Elapsed Time Per Partition
+ 45. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +73,27 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                             ;
-+-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sun Jun 04 18:20:04 2017          ;
-; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
-; Revision Name               ; TestDrive                                  ;
-; Top-level Entity Name       ; topo                                       ;
-; Family                      ; Cyclone V                                  ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                  ;
-; Total registers             ; N/A until Partition Merge                  ;
-; Total pins                  ; N/A until Partition Merge                  ;
-; Total virtual pins          ; N/A until Partition Merge                  ;
-; Total block memory bits     ; N/A until Partition Merge                  ;
-; Total PLLs                  ; N/A until Partition Merge                  ;
-; Total DLLs                  ; N/A until Partition Merge                  ;
-+-----------------------------+--------------------------------------------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++---------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Jun 04 20:26:13 2017      ;
+; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                   ; TestDrive                                  ;
+; Top-level Entity Name           ; topo                                       ;
+; Family                          ; Cyclone V                                  ;
+; Logic utilization (in ALMs)     ; N/A                                        ;
+; Total registers                 ; 566                                        ;
+; Total pins                      ; 67                                         ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 0                                          ;
+; Total DSP Blocks                ; 0                                          ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI TX Channels          ; 0                                          ;
+; Total PLLs                      ; 0                                          ;
+; Total DLLs                      ; 0                                          ;
++---------------------------------+--------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -149,18 +194,658 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                              ; Library ;
++-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
+; Comparators/topo_COMPARATORS.vhd          ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Comparators/topo_COMPARATORS.vhd          ;         ;
+; Debouncer/ButtonSync.vhd                  ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Debouncer/ButtonSync.vhd                  ;         ;
+; topo.vhd                                  ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd                                  ;         ;
+; Maps/map4.vhd                             ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Maps/map4.vhd                             ;         ;
+; Maps/map3.vhd                             ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Maps/map3.vhd                             ;         ;
+; Maps/map2.vhd                             ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Maps/map2.vhd                             ;         ;
+; Maps/map1.vhd                             ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Maps/map1.vhd                             ;         ;
+; Comparators/Comparator1.vhd               ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Comparators/Comparator1.vhd               ;         ;
+; Comparators/Comparator2.vhd               ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Comparators/Comparator2.vhd               ;         ;
+; Comparators/Comparator3.vhd               ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Comparators/Comparator3.vhd               ;         ;
+; Comparators/Adder.vhd                     ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Comparators/Adder.vhd                     ;         ;
+; Counters/FSM_Clock.vhd                    ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/FSM_Clock.vhd                    ;         ;
+; Maps/topo_MAPS.vhd                        ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Maps/topo_MAPS.vhd                        ;         ;
+; Controller/FSM_Control.vhd                ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Controller/FSM_Control.vhd                ;         ;
+; Counters/CONTA_DES.vhd                    ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/CONTA_DES.vhd                    ;         ;
+; Counters/CONTA_ASC.vhd                    ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/CONTA_ASC.vhd                    ;         ;
+; Counters/CONTA_BONUS.vhd                  ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/CONTA_BONUS.vhd                  ;         ;
+; Counters/topo_COUNTERS.vhd                ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/topo_COUNTERS.vhd                ;         ;
+; Registers/FSM_Position.vhd                ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/FSM_Position.vhd                ;         ;
+; Registers/FSM_Speed.vhd                   ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/FSM_Speed.vhd                   ;         ;
+; Registers/REG_IN.vhd                      ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd                      ;         ;
+; Registers/topo_REGISTERS.vhd              ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/topo_REGISTERS.vhd              ;         ;
+; Selectors and Decoders/mux8x1.vhd         ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux8x1.vhd         ;         ;
+; Selectors and Decoders/mux4x1_32.vhd      ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux4x1_32.vhd      ;         ;
+; Selectors and Decoders/mux16x1.vhd        ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux16x1.vhd        ;         ;
+; Selectors and Decoders/mux2x1.vhd         ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux2x1.vhd         ;         ;
+; Selectors and Decoders/Decod7seg.vhd      ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/Decod7seg.vhd      ;         ;
+; Selectors and Decoders/mux4x1_30.vhd      ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux4x1_30.vhd      ;         ;
+; Selectors and Decoders/topo_SELECTORS.vhd ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/topo_SELECTORS.vhd ;         ;
+; Selectors and Decoders/mux2x1_10.vhd      ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux2x1_10.vhd      ;         ;
++-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                  ;
++---------------------------------------------+--------------------------------+
+; Resource                                    ; Usage                          ;
++---------------------------------------------+--------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 485                            ;
+;                                             ;                                ;
+; Combinational ALUT usage for logic          ; 863                            ;
+;     -- 7 input functions                    ; 9                              ;
+;     -- 6 input functions                    ; 69                             ;
+;     -- 5 input functions                    ; 324                            ;
+;     -- 4 input functions                    ; 36                             ;
+;     -- <=3 input functions                  ; 425                            ;
+;                                             ;                                ;
+; Dedicated logic registers                   ; 566                            ;
+;                                             ;                                ;
+; I/O pins                                    ; 67                             ;
+; Total DSP Blocks                            ; 0                              ;
+; Maximum fan-out node                        ; topo_SELECTORS:L5|mux8x1:L19|m ;
+; Maximum fan-out                             ; 538                            ;
+; Total fan-out                               ; 5511                           ;
+; Average fan-out                             ; 3.53                           ;
++---------------------------------------------+--------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                            ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
+; |topo                      ; 863 (0)           ; 566 (0)      ; 0                 ; 0          ; 67   ; 0            ; |topo                                    ; work         ;
+;    |ButtonSync:L6|         ; 8 (8)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |topo|ButtonSync:L6                      ; work         ;
+;    |FSM_Control:L4|        ; 7 (7)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |topo|FSM_Control:L4                     ; work         ;
+;    |topo_COMPARATORS:L2|   ; 15 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2                ; work         ;
+;       |Adder:L3|           ; 9 (9)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2|Adder:L3       ; work         ;
+;       |Comparator1:L0|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2|Comparator1:L0 ; work         ;
+;       |Comparator2:L1|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2|Comparator2:L1 ; work         ;
+;    |topo_COUNTERS:L1|      ; 119 (0)           ; 20 (0)       ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1                   ; work         ;
+;       |CONTA_ASC:L2|       ; 18 (18)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|CONTA_ASC:L2      ; work         ;
+;       |CONTA_DES:L1|       ; 20 (20)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|CONTA_DES:L1      ; work         ;
+;       |FSM_Clock:L0|       ; 81 (81)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|FSM_Clock:L0      ; work         ;
+;    |topo_REGISTERS:L0|     ; 616 (0)           ; 534 (0)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0                  ; work         ;
+;       |FSM_Position:L0|    ; 27 (27)           ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|FSM_Position:L0  ; work         ;
+;       |FSM_Speed:L1|       ; 6 (6)             ; 6 (6)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|FSM_Speed:L1     ; work         ;
+;       |REG_IN:L10|         ; 29 (29)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L10       ; work         ;
+;       |REG_IN:L11|         ; 37 (37)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L11       ; work         ;
+;       |REG_IN:L12|         ; 29 (29)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L12       ; work         ;
+;       |REG_IN:L13|         ; 30 (30)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L13       ; work         ;
+;       |REG_IN:L14|         ; 29 (29)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L14       ; work         ;
+;       |REG_IN:L15|         ; 42 (42)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L15       ; work         ;
+;       |REG_IN:L16|         ; 23 (23)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L16       ; work         ;
+;       |REG_IN:L17|         ; 54 (54)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L17       ; work         ;
+;       |REG_IN:L2|          ; 53 (53)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L2        ; work         ;
+;       |REG_IN:L3|          ; 34 (34)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L3        ; work         ;
+;       |REG_IN:L4|          ; 38 (38)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L4        ; work         ;
+;       |REG_IN:L5|          ; 34 (34)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L5        ; work         ;
+;       |REG_IN:L6|          ; 33 (33)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L6        ; work         ;
+;       |REG_IN:L7|          ; 46 (46)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L7        ; work         ;
+;       |REG_IN:L8|          ; 40 (40)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L8        ; work         ;
+;       |REG_IN:L9|          ; 32 (32)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L9        ; work         ;
+;    |topo_SELECTORS:L5|     ; 98 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5                  ; work         ;
+;       |Decod7seg:L22|      ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L22    ; work         ;
+;       |Decod7seg:L23|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L23    ; work         ;
+;       |Decod7seg:L24|      ; 9 (9)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L24    ; work         ;
+;       |Decod7seg:L25|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L25    ; work         ;
+;       |Decod7seg:L26|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L26    ; work         ;
+;       |mux2x1_10:L1|       ; 46 (46)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux2x1_10:L1     ; work         ;
+;       |mux4x1_30:L18|      ; 19 (19)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_30:L18    ; work         ;
+;       |mux4x1_32:L8|       ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_32:L8     ; work         ;
+;       |mux4x1_32:L9|       ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_32:L9     ; work         ;
+;       |mux8x1:L19|         ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux8x1:L19       ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |topo|ButtonSync:L6|btn3state                                                     ;
++-------------------------+------------------------+----------------------+-------------------------+
+; Name                    ; btn3state.EsperaSoltar ; btn3state.SaidaAtiva ; btn3state.EsperaApertar ;
++-------------------------+------------------------+----------------------+-------------------------+
+; btn3state.EsperaApertar ; 0                      ; 0                    ; 0                       ;
+; btn3state.SaidaAtiva    ; 0                      ; 1                    ; 1                       ;
+; btn3state.EsperaSoltar  ; 1                      ; 0                    ; 1                       ;
++-------------------------+------------------------+----------------------+-------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |topo|ButtonSync:L6|btn2state                                                     ;
++-------------------------+------------------------+----------------------+-------------------------+
+; Name                    ; btn2state.EsperaSoltar ; btn2state.SaidaAtiva ; btn2state.EsperaApertar ;
++-------------------------+------------------------+----------------------+-------------------------+
+; btn2state.EsperaApertar ; 0                      ; 0                    ; 0                       ;
+; btn2state.SaidaAtiva    ; 0                      ; 1                    ; 1                       ;
+; btn2state.EsperaSoltar  ; 1                      ; 0                    ; 1                       ;
++-------------------------+------------------------+----------------------+-------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |topo|ButtonSync:L6|btn1state                                                     ;
++-------------------------+------------------------+----------------------+-------------------------+
+; Name                    ; btn1state.EsperaSoltar ; btn1state.SaidaAtiva ; btn1state.EsperaApertar ;
++-------------------------+------------------------+----------------------+-------------------------+
+; btn1state.EsperaApertar ; 0                      ; 0                    ; 0                       ;
+; btn1state.SaidaAtiva    ; 0                      ; 1                    ; 1                       ;
+; btn1state.EsperaSoltar  ; 1                      ; 0                    ; 1                       ;
++-------------------------+------------------------+----------------------+-------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |topo|ButtonSync:L6|btn0state                                                     ;
++-------------------------+------------------------+----------------------+-------------------------+
+; Name                    ; btn0state.EsperaSoltar ; btn0state.SaidaAtiva ; btn0state.EsperaApertar ;
++-------------------------+------------------------+----------------------+-------------------------+
+; btn0state.EsperaApertar ; 0                      ; 0                    ; 0                       ;
+; btn0state.SaidaAtiva    ; 0                      ; 1                    ; 1                       ;
+; btn0state.EsperaSoltar  ; 1                      ; 0                    ; 1                       ;
++-------------------------+------------------------+----------------------+-------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------+
+; State Machine - |topo|FSM_Control:L4|CS ;
++-------+-------+-------+-------+---------+
+; Name  ; CS.E3 ; CS.E2 ; CS.E1 ; CS.E0   ;
++-------+-------+-------+-------+---------+
+; CS.E0 ; 0     ; 0     ; 0     ; 0       ;
+; CS.E1 ; 0     ; 0     ; 1     ; 1       ;
+; CS.E2 ; 0     ; 1     ; 0     ; 1       ;
+; CS.E3 ; 1     ; 0     ; 0     ; 1       ;
++-------+-------+-------+-------+---------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------+
+; State Machine - |topo|topo_REGISTERS:L0|FSM_Speed:L1|CS ;
++-------+-------+-------+-------+-------+-------+---------+
+; Name  ; CS.E5 ; CS.E4 ; CS.E3 ; CS.E2 ; CS.E1 ; CS.E0   ;
++-------+-------+-------+-------+-------+-------+---------+
+; CS.E0 ; 0     ; 0     ; 0     ; 0     ; 0     ; 0       ;
+; CS.E1 ; 0     ; 0     ; 0     ; 0     ; 1     ; 1       ;
+; CS.E2 ; 0     ; 0     ; 0     ; 1     ; 0     ; 1       ;
+; CS.E3 ; 0     ; 0     ; 1     ; 0     ; 0     ; 1       ;
+; CS.E4 ; 0     ; 1     ; 0     ; 0     ; 0     ; 1       ;
+; CS.E5 ; 1     ; 0     ; 0     ; 0     ; 0     ; 1       ;
++-------+-------+-------+-------+-------+-------+---------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |topo|topo_REGISTERS:L0|FSM_Position:L0|CS                                                                                   ;
++--------+--------+--------+--------+--------+--------+--------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+; Name   ; CS.E15 ; CS.E14 ; CS.E13 ; CS.E12 ; CS.E11 ; CS.E10 ; CS.E9 ; CS.E8 ; CS.E0 ; CS.E6 ; CS.E5 ; CS.E4 ; CS.E3 ; CS.E2 ; CS.E1 ; CS.E7 ;
++--------+--------+--------+--------+--------+--------+--------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+; CS.E7  ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ;
+; CS.E1  ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 1     ;
+; CS.E2  ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 1     ;
+; CS.E3  ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 1     ;
+; CS.E4  ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 1     ;
+; CS.E5  ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; CS.E6  ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; CS.E0  ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; CS.E8  ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; CS.E9  ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; CS.E10 ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; CS.E11 ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; CS.E12 ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; CS.E13 ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; CS.E14 ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
+; CS.E15 ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 0     ; 1     ;
++--------+--------+--------+--------+--------+--------+--------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                ;
++--------------------------------------------------------+----+
+; Logic Cell Name                                        ;    ;
++--------------------------------------------------------+----+
+; topo_COUNTERS:L1|FSM_Clock:L0|CLK5                     ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|CLK1                     ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|Add4~0                   ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[2]~0               ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[29]~1              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[6]~2               ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[20]~3              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[23]~4              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[27]~5              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[9]~6               ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[0]~7               ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[1]~8               ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[24]~9              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[3]~10              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[4]~11              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[5]~12              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[10]~13             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[11]~14             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[25]~15             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[26]~16             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[30]~17             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[19]~18             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[18]~19             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[17]~20             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[8]~21              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[7]~22              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[16]~23             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[15]~24             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[28]~25             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[22]~26             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[21]~27             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[14]~28             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[13]~29             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont5[12]~30             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|Add0~0                   ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[2]~0               ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[26]~1              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[23]~2              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[22]~3              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[21]~4              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[27]~5              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[19]~6              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[18]~7              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[17]~8              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[16]~9              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[15]~10             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[14]~11             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[13]~12             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[28]~13             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[12]~14             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[29]~15             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[30]~16             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[24]~17             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[0]~18              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[1]~19              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[3]~20              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[4]~21              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[5]~22              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[20]~23             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[6]~24              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[7]~25              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[8]~26              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[9]~27              ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[11]~28             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[10]~29             ;    ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[25]~30             ;    ;
+; Number of logic cells representing combinational loops ; 66 ;
++--------------------------------------------------------+----+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                          ;
++-----------------------------------------------+---------------------------------------------+
+; Register name                                 ; Reason for Removal                          ;
++-----------------------------------------------+---------------------------------------------+
+; topo_COUNTERS:L1|CONTA_BONUS:L3|counter[2..4] ; Stuck at GND due to stuck port clock_enable ;
+; topo_COUNTERS:L1|CONTA_BONUS:L3|counter[0,1]  ; Stuck at VCC due to stuck port clock_enable ;
+; ButtonSync:L6|btn3state.EsperaSoltar          ; Lost fanout                                 ;
+; ButtonSync:L6|btn2state.EsperaSoltar          ; Lost fanout                                 ;
+; ButtonSync:L6|btn1state.EsperaSoltar          ; Lost fanout                                 ;
+; ButtonSync:L6|btn0state.EsperaSoltar          ; Lost fanout                                 ;
+; Total Number of Removed Registers = 9         ;                                             ;
++-----------------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 566   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 558   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 556   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------+
+; Inverted Register Statistics                       ;
++------------------------------------------+---------+
+; Inverted Register                        ; Fan out ;
++------------------------------------------+---------+
+; topo_COUNTERS:L1|CONTA_DES:L1|counter[3] ; 3       ;
+; topo_COUNTERS:L1|CONTA_DES:L1|counter[0] ; 3       ;
+; topo_COUNTERS:L1|CONTA_DES:L1|counter[5] ; 8       ;
+; topo_COUNTERS:L1|CONTA_DES:L1|counter[8] ; 5       ;
+; Total number of inverted registers = 4   ;         ;
++------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L23|F[0]  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[10] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[13] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L23|F[6]  ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[4]  ;
+; 17:1               ; 9 bits    ; 99 LEs        ; 99 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux2x1_10:L1|m[7]   ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L26|F[4]  ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L25|F[6]  ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L24|F[4]  ;
+; 17:1               ; 3 bits    ; 33 LEs        ; 33 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L26|F[0]  ;
+; 17:1               ; 3 bits    ; 33 LEs        ; 33 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L25|F[2]  ;
+; 17:1               ; 3 bits    ; 33 LEs        ; 33 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L24|F[1]  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux2x1:L0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; n              ; 30    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux2x1_10:L1 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 10    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L2 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L3 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L4 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L5 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L6 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L7 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L8 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L9 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L10 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L11 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L12 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L13 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L14 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L15 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L16 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_32:L17 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topo_SELECTORS:L5|mux4x1_30:L18 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 30    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "topo_SELECTORS:L5|mux16x1:L20"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; x[21..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x[31]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "topo_SELECTORS:L5|mux4x1_30:L18" ;
++-----------+-------+----------+------------------------------+
+; Port      ; Type  ; Severity ; Details                      ;
++-----------+-------+----------+------------------------------+
+; x[28..26] ; Input ; Info     ; Stuck at VCC                 ;
+; x[17..16] ; Input ; Info     ; Stuck at VCC                 ;
+; x[7..5]   ; Input ; Info     ; Stuck at VCC                 ;
+; x[15..14] ; Input ; Info     ; Stuck at GND                 ;
+; x[4..2]   ; Input ; Info     ; Stuck at GND                 ;
+; x[29]     ; Input ; Info     ; Stuck at GND                 ;
+; x[25]     ; Input ; Info     ; Stuck at GND                 ;
+; x[19]     ; Input ; Info     ; Stuck at VCC                 ;
+; x[18]     ; Input ; Info     ; Stuck at GND                 ;
+; x[13]     ; Input ; Info     ; Stuck at VCC                 ;
+; x[12]     ; Input ; Info     ; Stuck at GND                 ;
+; x[11]     ; Input ; Info     ; Stuck at VCC                 ;
+; x[10]     ; Input ; Info     ; Stuck at GND                 ;
+; x[9]      ; Input ; Info     ; Stuck at VCC                 ;
+; x[8]      ; Input ; Info     ; Stuck at GND                 ;
+; y[28..26] ; Input ; Info     ; Stuck at VCC                 ;
+; y[19..15] ; Input ; Info     ; Stuck at VCC                 ;
+; y[8..5]   ; Input ; Info     ; Stuck at VCC                 ;
+; y[3..0]   ; Input ; Info     ; Stuck at VCC                 ;
+; y[14..9]  ; Input ; Info     ; Stuck at GND                 ;
+; y[29]     ; Input ; Info     ; Stuck at GND                 ;
+; y[25]     ; Input ; Info     ; Stuck at GND                 ;
+; y[4]      ; Input ; Info     ; Stuck at GND                 ;
+; z[28..26] ; Input ; Info     ; Stuck at VCC                 ;
+; z[17..13] ; Input ; Info     ; Stuck at VCC                 ;
+; z[29]     ; Input ; Info     ; Stuck at GND                 ;
+; z[25]     ; Input ; Info     ; Stuck at GND                 ;
+; z[19]     ; Input ; Info     ; Stuck at VCC                 ;
+; z[18]     ; Input ; Info     ; Stuck at GND                 ;
+; z[12]     ; Input ; Info     ; Stuck at GND                 ;
+; z[11]     ; Input ; Info     ; Stuck at VCC                 ;
+; z[10]     ; Input ; Info     ; Stuck at GND                 ;
++-----------+-------+----------+------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "topo_SELECTORS:L5|mux2x1_10:L1" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; x    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "topo_SELECTORS:L5|mux2x1:L0" ;
++-----------+-------+----------+--------------------------+
+; Port      ; Type  ; Severity ; Details                  ;
++-----------+-------+----------+--------------------------+
+; w[29..28] ; Input ; Info     ; Stuck at VCC             ;
+; w[26..25] ; Input ; Info     ; Stuck at VCC             ;
+; w[24..23] ; Input ; Info     ; Stuck at GND             ;
+; w[19..14] ; Input ; Info     ; Stuck at GND             ;
+; w[27]     ; Input ; Info     ; Stuck at GND             ;
+; x[28..26] ; Input ; Info     ; Stuck at VCC             ;
+; x[16..15] ; Input ; Info     ; Stuck at VCC             ;
+; x[29]     ; Input ; Info     ; Stuck at GND             ;
+; x[25]     ; Input ; Info     ; Stuck at GND             ;
+; x[19]     ; Input ; Info     ; Stuck at GND             ;
+; x[18]     ; Input ; Info     ; Stuck at VCC             ;
+; x[17]     ; Input ; Info     ; Stuck at GND             ;
++-----------+-------+----------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "topo_SELECTORS:L5"                                                                          ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; reg_out_exit ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:06     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Jun 04 18:20:00 2017
+    Info: Processing started: Sun Jun 04 20:26:00 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file comparators/topo_comparators.vhd
-    Info (12022): Found design unit 1: COMPARATORS-topo_COMPARATORS
-    Info (12023): Found entity 1: COMPARATORS
+    Info (12022): Found design unit 1: topo_COMPARATORS-topo_COMPARATORS
+    Info (12023): Found entity 1: topo_COMPARATORS
 Info (12021): Found 2 design units, including 1 entities, in source file debouncer/buttonsync.vhd
     Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl
     Info (12023): Found entity 1: ButtonSync
@@ -219,8 +904,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file registe
     Info (12022): Found design unit 1: FSM_Speed-bhv
     Info (12023): Found entity 1: FSM_Speed
 Info (12021): Found 2 design units, including 1 entities, in source file registers/reg_in.vhd
-    Info (12022): Found design unit 1: REG_IN_15-bhv
-    Info (12023): Found entity 1: REG_IN_15
+    Info (12022): Found design unit 1: REG_IN-bhv
+    Info (12023): Found entity 1: REG_IN
 Info (12021): Found 2 design units, including 1 entities, in source file registers/topo_registers.vhd
     Info (12022): Found design unit 1: topo_REGISTERS-topo
     Info (12023): Found entity 1: topo_REGISTERS
@@ -245,15 +930,21 @@ Info (12021): Found 2 design units, including 1 entities, in source file selecto
 Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/topo_selectors.vhd
     Info (12022): Found design unit 1: topo_SELECTORS-topo
     Info (12023): Found entity 1: topo_SELECTORS
+Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/mux2x1_10.vhd
+    Info (12022): Found design unit 1: mux2x1_10-mux
+    Info (12023): Found entity 1: mux2x1_10
 Info (12127): Elaborating entity "topo" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at topo.vhd(141): used implicit default value for signal "sREGROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at topo.vhd(159): object "sREGOUT" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at topo.vhd(156): object "sREGOUT" assigned a value but never read
 Info (12128): Elaborating entity "topo_REGISTERS" for hierarchy "topo_REGISTERS:L0"
 Warning (10541): VHDL Signal Declaration warning at topo_REGISTERS.vhd(14): used implicit default value for signal "SPEED" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "FSM_Position" for hierarchy "topo_REGISTERS:L0|FSM_Position:L0"
 Warning (10492): VHDL Process Statement warning at FSM_Position.vhd(25): signal "enter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "FSM_Speed" for hierarchy "topo_REGISTERS:L0|FSM_Speed:L1"
 Warning (10492): VHDL Process Statement warning at FSM_Speed.vhd(22): signal "EN_TIME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "REG_IN" for hierarchy "topo_REGISTERS:L0|REG_IN:L2"
+Warning (10492): VHDL Process Statement warning at REG_IN.vhd(25): signal "REG_IN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at REG_IN.vhd(26): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "topo_COUNTERS" for hierarchy "topo_COUNTERS:L1"
 Info (12128): Elaborating entity "FSM_Clock" for hierarchy "topo_COUNTERS:L1|FSM_Clock:L0"
 Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(18): signal "cont1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -272,6 +963,11 @@ Info (12128): Elaborating entity "CONTA_ASC" for hierarchy "topo_COUNTERS:L1|CON
 Warning (10492): VHDL Process Statement warning at CONTA_ASC.vhd(23): signal "enter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "CONTA_BONUS" for hierarchy "topo_COUNTERS:L1|CONTA_BONUS:L3"
 Warning (10492): VHDL Process Statement warning at CONTA_BONUS.vhd(22): signal "enter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "topo_COMPARATORS" for hierarchy "topo_COMPARATORS:L2"
+Info (12128): Elaborating entity "Comparator1" for hierarchy "topo_COMPARATORS:L2|Comparator1:L0"
+Info (12128): Elaborating entity "Comparator2" for hierarchy "topo_COMPARATORS:L2|Comparator2:L1"
+Info (12128): Elaborating entity "Comparator3" for hierarchy "topo_COMPARATORS:L2|Comparator3:L2"
+Info (12128): Elaborating entity "Adder" for hierarchy "topo_COMPARATORS:L2|Adder:L3"
 Info (12128): Elaborating entity "topo_MAPS" for hierarchy "topo_MAPS:L3"
 Info (12128): Elaborating entity "map1" for hierarchy "topo_MAPS:L3|map1:L0"
 Info (12128): Elaborating entity "map2" for hierarchy "topo_MAPS:L3|map2:L1"
@@ -284,13 +980,355 @@ Warning (10492): VHDL Process Statement warning at FSM_Control.vhd(50): signal "
 Info (12128): Elaborating entity "topo_SELECTORS" for hierarchy "topo_SELECTORS:L5"
 Warning (10541): VHDL Signal Declaration warning at topo_SELECTORS.vhd(47): used implicit default value for signal "REG_OUT_EXIT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at topo_SELECTORS.vhd(52): used implicit default value for signal "signalspeed" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Error (10393): VHDL error at topo_SELECTORS.vhd(113): left bound (30) of slice must belong to range (9 downto 0) of corresponding object File: C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/topo_SELECTORS.vhd Line: 113
-Error (10658): VHDL Operator error at topo_SELECTORS.vhd(113): failed to evaluate call to operator ""&"" File: C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/topo_SELECTORS.vhd Line: 113
-Error (12152): Can't elaborate user hierarchy "topo_SELECTORS:L5" File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 208
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 24 warnings
-    Error: Peak virtual memory: 596 megabytes
-    Error: Processing ended: Sun Jun 04 18:20:04 2017
-    Error: Elapsed time: 00:00:04
-    Error: Total CPU time (on all processors): 00:00:04
+Info (12128): Elaborating entity "mux2x1" for hierarchy "topo_SELECTORS:L5|mux2x1:L0"
+Info (12128): Elaborating entity "mux2x1_10" for hierarchy "topo_SELECTORS:L5|mux2x1_10:L1"
+Info (12128): Elaborating entity "mux4x1_32" for hierarchy "topo_SELECTORS:L5|mux4x1_32:L2"
+Info (12128): Elaborating entity "mux4x1_30" for hierarchy "topo_SELECTORS:L5|mux4x1_30:L18"
+Info (12128): Elaborating entity "mux8x1" for hierarchy "topo_SELECTORS:L5|mux8x1:L19"
+Info (12128): Elaborating entity "mux16x1" for hierarchy "topo_SELECTORS:L5|mux16x1:L20"
+Info (12128): Elaborating entity "Decod7seg" for hierarchy "topo_SELECTORS:L5|Decod7seg:L21"
+Info (12128): Elaborating entity "ButtonSync" for hierarchy "ButtonSync:L6"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer topo_SELECTORS:L5|mux8x1:L19|m
+    Warning (19017): Found clock multiplexer topo_SELECTORS:L5|mux8x1:L19|m~0
+    Warning (19017): Found clock multiplexer topo_SELECTORS:L5|mux8x1:L19|m~1
+    Warning (19017): Found clock multiplexer topo_SELECTORS:L5|mux8x1:L19|m~2
+    Warning (19017): Found clock multiplexer topo_SELECTORS:L5|mux8x1:L19|m~3
+    Warning (19017): Found clock multiplexer topo_SELECTORS:L5|mux8x1:L19|m~4
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[22]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[22]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[22]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[22]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[22]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[22]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[22]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[22]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[22]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[22]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L14|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[22]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[22]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[23]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[23]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[23]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[23]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[23]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[23]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[23]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[23]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[23]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[23]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[23]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[23]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[23]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[23]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[23]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[23]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[23]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[23]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L14|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L16|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L16|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[24]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[24]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L14|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L10|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L16|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L16|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[25]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[25]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[26]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[26]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[26]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[26]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[26]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[26]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[26]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[26]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[26]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[26]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[26]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[26]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[26]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[26]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[26]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[26]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[27]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[27]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[27]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[27]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[27]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[27]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[27]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[27]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[27]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[27]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[28]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[28]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[28]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[28]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[28]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[28]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[28]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[28]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[28]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[28]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[29]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[29]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[29]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[29]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[29]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[29]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[29]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[29]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[29]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[29]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[30]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[30]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[30]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[30]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[30]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[30]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[30]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[30]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[30]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[30]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[21]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[21]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[21]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[21]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[21]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[21]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[21]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[21]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[21]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[21]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[21]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[21]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[21]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[21]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[21]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[21]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[21]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[21]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[21]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[21]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[21]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[21]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[20]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[20]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[20]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[20]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[20]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[20]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[20]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[20]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[20]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[20]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[20]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[20]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[20]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[20]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[20]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[20]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[19]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[19]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[19]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[19]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[19]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[19]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[19]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[19]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[19]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[19]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[19]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[19]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[19]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[19]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L14|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[19]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[19]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[19]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[19]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[19]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[18]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[18]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[18]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[18]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[18]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[18]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[18]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[18]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[18]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[18]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[18]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[18]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[18]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[18]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[17]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[17]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[17]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[17]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[17]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[17]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[17]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[17]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[17]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[17]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[17]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[17]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[17]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[17]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L14|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[17]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[17]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[17]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[17]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[17]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[17]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L10|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L16|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L16|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[16]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[16]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[19]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[19]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L16|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L16|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[15]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[15]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L16|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L16|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[14]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[14]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[13]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[13]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[13]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[13]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[12]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[12]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[12]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[12]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[12]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[12]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[11]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[11]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[11]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[11]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[11]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[11]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[11]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[11]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[11]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[11]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[11]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[11]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[11]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[11]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[11]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[11]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[11]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[11]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[10]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[10]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[10]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[10]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[10]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[10]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[10]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[10]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[10]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[10]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[10]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[10]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[10]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[10]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[10]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[10]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[10]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[10]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[10]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[10]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[9]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[9]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[9]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[9]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[9]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[9]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[9]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[9]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[9]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[9]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[9]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[9]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[8]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[8]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[8]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[8]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[8]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[8]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[8]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[8]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[8]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[8]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[8]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[8]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L16|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L16|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L10|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[7]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[7]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L10|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L6|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L12|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[20]~17"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L16|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L16|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L10|signalshift[25]~3"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[23]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[6]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[6]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L17|signalshift[19]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[5]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[5]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[5]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[5]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[5]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[5]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[5]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[5]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[5]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[5]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[4]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[4]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[4]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[4]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[4]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[4]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[4]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[4]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[4]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[4]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[4]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[4]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L16|signalshift[4]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L16|signalshift[4]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[4]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[4]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[3]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[3]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[3]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[3]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[3]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[3]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[3]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[3]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L3|signalshift[3]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L3|signalshift[3]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L16|signalshift[3]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L16|signalshift[3]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[3]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[3]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[25]~5"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[2]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[2]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[2]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[2]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[2]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[2]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L4|signalshift[2]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L4|signalshift[2]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[2]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[2]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L12|signalshift[2]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L12|signalshift[2]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[2]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[2]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[2]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[2]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[2]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[2]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[2]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[2]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L8|signalshift[1]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L8|signalshift[1]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L9|signalshift[1]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L9|signalshift[1]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[1]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[1]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L16|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[1]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[1]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[1]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[1]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L4|signalshift[17]~21"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[1]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[1]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L5|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[1]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[1]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[0]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[0]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L7|signalshift[0]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L7|signalshift[0]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L11|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[0]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[0]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L10|signalshift[0]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L10|signalshift[0]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L11|signalshift[0]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L11|signalshift[0]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L2|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L15|signalshift[0]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L15|signalshift[0]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L6|signalshift[31]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L6|signalshift[31]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L5|signalshift[31]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L5|signalshift[31]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L2|signalshift[31]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L2|signalshift[31]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L13|signalshift[31]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L13|signalshift[31]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L16|signalshift[31]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L16|signalshift[31]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[31]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[31]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+    Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[31]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[31]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX4[1]" is stuck at GND
+    Warning (13410): Pin "HEX5[1]" is stuck at VCC
+    Warning (13410): Pin "HEX5[2]" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "topo_SELECTORS:L5|mux8x1:L19|m"
+Warning (20013): Ignored assignments for entity "ghrd_top" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity ghrd_top -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity ghrd_top -section_id Top was ignored
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 5 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[2]"
+    Warning (15610): No output dependent on input pin "SW[3]"
+    Warning (15610): No output dependent on input pin "SW[4]"
+    Warning (15610): No output dependent on input pin "SW[5]"
+    Warning (15610): No output dependent on input pin "SW[6]"
+Info (21057): Implemented 1105 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 1038 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 353 warnings
+    Info: Peak virtual memory: 613 megabytes
+    Info: Processing ended: Sun Jun 04 20:26:14 2017
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:12
 
 

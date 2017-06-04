@@ -52,11 +52,21 @@ architecture topo of topo_SELECTORS is
 signal signalspeed: std_logic_vector(2 downto 0);
 signal signalX: std_logic_vector(1 downto 0);
 signal mux1_0,mux1_1,screensignal,HX: std_logic_vector(29 downto 0);
-signal mux2_0,mux2_1, signalReg: std_logic_vector(9 downto 0);
+signal mux2_0,mux2_1: std_logic_vector(9 downto 0);
 signal mux30_1,mux30_2,mux30_3: std_logic_vector(29 downto 0);
+signal signalReg: std_logic_vector(31 downto 0);
 
 component mux2x1 
 generic (N: natural := 30);
+port( 
+	w,x: in std_logic_vector((N-1) downto 0);
+	s: in std_logic;
+	m: out std_logic_vector((N-1) downto 0)
+);
+end component;
+
+component mux2x1_10 
+generic (N: natural := 10);
 port( 
 	w,x: in std_logic_vector((N-1) downto 0);
 	s: in std_logic;
@@ -106,7 +116,7 @@ port(
 );
 end component;
 
-begin --todo
+begin
 
 mux1_0 <= "11011"  &   "00" &   SPEED & "00000" & '0' & UP_DOWN & CNT_U;
 mux1_1 <= "01110"  & STATES & "01011" & CNT_B   & CNT_D;
@@ -118,7 +128,7 @@ mux30_3 <= "01110" & STATES & "1011111010" & POINT;
 
 
 	  L0: mux2x1    port map (mux1_0,   mux1_1,   SW(9),  screensignal);
-	  L1: mux2x1    port map (mux2_0,   mux2_1, SEL_LED,  LED_OUT);
+	  L1: mux2x1_10 port map (mux2_0,   mux2_1, SEL_LED,  LED_OUT);
 	  L2: mux4x1_32 port map (MAP1_0,   MAP2_0,  MAP3_0,  MAP4_0, SW(8 downto 7), REG_IN_0);
 	  L3: mux4x1_32 port map (MAP1_1,   MAP2_1,  MAP3_1,  MAP4_1, SW(8 downto 7), REG_IN_1);
 	  L4: mux4x1_32 port map (MAP1_2,   MAP2_2,  MAP3_2,  MAP4_2, SW(8 downto 7), REG_IN_2);

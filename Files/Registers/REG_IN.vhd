@@ -1,16 +1,16 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity REG_IN_15 is
+entity REG_IN is
 port( 
 	SET_ROL,EN_TIME,CLOCK_M,RST: in std_logic;
 	REG_IN: 							  in std_logic_vector(31 downto 0);
 	SPEED: 							  in std_logic_vector(2 downto 0);
 	REG_OUT_EXIT: 					  out std_logic_vector(31 downto 0)
 );
-end REG_IN_15;
+end REG_IN;
 
-architecture bhv of REG_IN_15 is
+architecture bhv of REG_IN is
 	signal enable: std_logic;
 	signal signalshift: std_logic_vector(31 downto 0);
 
