@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TestDrive
-Sun Jun 04 14:19:01 2017
+Sun Jun 04 18:20:04 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sun Jun 04 14:19:01 2017          ;
+; Analysis & Synthesis Status ; Failed - Sun Jun 04 18:20:04 2017          ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name               ; TestDrive                                  ;
 ; Top-level Entity Name       ; topo                                       ;
@@ -155,7 +155,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Jun 04 14:18:58 2017
+    Info: Processing started: Sun Jun 04 18:20:00 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file comparators/topo_comparators.vhd
@@ -164,14 +164,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file compara
 Info (12021): Found 2 design units, including 1 entities, in source file debouncer/buttonsync.vhd
     Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl
     Info (12023): Found entity 1: ButtonSync
-Error (10500): VHDL syntax error at topo.vhd(78) near text "component";  expecting "end" File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 78
-Error (10500): VHDL syntax error at topo.vhd(137) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 137
-Error (10500): VHDL syntax error at topo.vhd(138) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 138
-Error (10500): VHDL syntax error at topo.vhd(143) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 143
-Error (10500): VHDL syntax error at topo.vhd(173) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 173
-Error (10500): VHDL syntax error at topo.vhd(178) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 178
-Error (10500): VHDL syntax error at topo.vhd(181) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 181
-Info (12021): Found 0 design units, including 0 entities, in source file topo.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file topo.vhd
+    Info (12022): Found design unit 1: topo-topo_stru
+    Info (12023): Found entity 1: topo
 Info (12021): Found 2 design units, including 1 entities, in source file maps/map4.vhd
     Info (12022): Found design unit 1: map4-map4_struct
     Info (12023): Found entity 1: map4
@@ -250,9 +245,51 @@ Info (12021): Found 2 design units, including 1 entities, in source file selecto
 Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/topo_selectors.vhd
     Info (12022): Found design unit 1: topo_SELECTORS-topo
     Info (12023): Found entity 1: topo_SELECTORS
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 7 errors, 1 warning
-    Error: Peak virtual memory: 580 megabytes
-    Error: Processing ended: Sun Jun 04 14:19:02 2017
+Info (12127): Elaborating entity "topo" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at topo.vhd(141): used implicit default value for signal "sREGROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at topo.vhd(159): object "sREGOUT" assigned a value but never read
+Info (12128): Elaborating entity "topo_REGISTERS" for hierarchy "topo_REGISTERS:L0"
+Warning (10541): VHDL Signal Declaration warning at topo_REGISTERS.vhd(14): used implicit default value for signal "SPEED" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "FSM_Position" for hierarchy "topo_REGISTERS:L0|FSM_Position:L0"
+Warning (10492): VHDL Process Statement warning at FSM_Position.vhd(25): signal "enter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "FSM_Speed" for hierarchy "topo_REGISTERS:L0|FSM_Speed:L1"
+Warning (10492): VHDL Process Statement warning at FSM_Speed.vhd(22): signal "EN_TIME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "topo_COUNTERS" for hierarchy "topo_COUNTERS:L1"
+Info (12128): Elaborating entity "FSM_Clock" for hierarchy "topo_COUNTERS:L1|FSM_Clock:L0"
+Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(18): signal "cont1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(19): signal "cont2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(20): signal "cont3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(21): signal "cont4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(22): signal "cont5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(24): signal "cont1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(31): signal "cont2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(38): signal "cont3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(45): signal "cont4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(52): signal "cont5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "CONTA_DES" for hierarchy "topo_COUNTERS:L1|CONTA_DES:L1"
+Warning (10492): VHDL Process Statement warning at CONTA_DES.vhd(20): signal "EN_TIME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "CONTA_ASC" for hierarchy "topo_COUNTERS:L1|CONTA_ASC:L2"
+Warning (10492): VHDL Process Statement warning at CONTA_ASC.vhd(23): signal "enter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "CONTA_BONUS" for hierarchy "topo_COUNTERS:L1|CONTA_BONUS:L3"
+Warning (10492): VHDL Process Statement warning at CONTA_BONUS.vhd(22): signal "enter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "topo_MAPS" for hierarchy "topo_MAPS:L3"
+Info (12128): Elaborating entity "map1" for hierarchy "topo_MAPS:L3|map1:L0"
+Info (12128): Elaborating entity "map2" for hierarchy "topo_MAPS:L3|map2:L1"
+Info (12128): Elaborating entity "map3" for hierarchy "topo_MAPS:L3|map3:L2"
+Info (12128): Elaborating entity "map4" for hierarchy "topo_MAPS:L3|map4:L3"
+Info (12128): Elaborating entity "FSM_Control" for hierarchy "FSM_Control:L4"
+Warning (10492): VHDL Process Statement warning at FSM_Control.vhd(50): signal "TARGET" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at FSM_Control.vhd(50): signal "END_TIME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at FSM_Control.vhd(50): signal "END_BONUS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "topo_SELECTORS" for hierarchy "topo_SELECTORS:L5"
+Warning (10541): VHDL Signal Declaration warning at topo_SELECTORS.vhd(47): used implicit default value for signal "REG_OUT_EXIT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at topo_SELECTORS.vhd(52): used implicit default value for signal "signalspeed" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Error (10393): VHDL error at topo_SELECTORS.vhd(113): left bound (30) of slice must belong to range (9 downto 0) of corresponding object File: C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/topo_SELECTORS.vhd Line: 113
+Error (10658): VHDL Operator error at topo_SELECTORS.vhd(113): failed to evaluate call to operator ""&"" File: C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/topo_SELECTORS.vhd Line: 113
+Error (12152): Can't elaborate user hierarchy "topo_SELECTORS:L5" File: C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd Line: 208
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 24 warnings
+    Error: Peak virtual memory: 596 megabytes
+    Error: Processing ended: Sun Jun 04 18:20:04 2017
     Error: Elapsed time: 00:00:04
     Error: Total CPU time (on all processors): 00:00:04
 

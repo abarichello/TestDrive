@@ -105,12 +105,12 @@ port(
 	F:  out std_logic_vector(6 downto 0)
 );
 end component;
-	
+
 begin --todo
 
 mux1_0 <= "11011"  &   "00" &   SPEED & "00000" & '0' & UP_DOWN & CNT_U;
 mux1_1 <= "01110"  & STATES & "01011" & CNT_B   & CNT_D;
-mux2_0 <=    CLOCKS_SIGNAL(4)  & signalReg(30 downto 22);
+mux2_0 <= CLOCKS_SIGNAL(4)  & signalReg(30 downto 22);
 mux2_1 <= "0000000000";
 mux30_1 <= "01110" & STATES & "101100101010111000" & SW(8) & SW(7);
 mux30_2 <= "01110" & STATES & "11111000000111101111";

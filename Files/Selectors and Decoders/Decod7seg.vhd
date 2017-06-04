@@ -3,7 +3,7 @@ use IEEE.Std_Logic_1164.all;
 
 entity Decod7seg is
 port (
-	C:  in std_logic_vector(4 downto 0);
+	C:  in std_logic_vector(6 downto 0);
 	F:  out std_logic_vector(6 downto 0)
 );
 end Decod7seg;

@@ -45,7 +45,7 @@ component CONTA_BONUS is
 end component;
 
 begin
-	L0: FSM_Clock port map(CLOCK_50,CLK1,CLK2,CLK3,CLK4,CLK5);
+	L0: FSM_Clock port map(CLOCK_50,CLK1_s,CLK2,CLK3,CLK4,CLK5);
 	L1: CONTA_DES port map(EN_TIME,CLK1_s,RST,CNT_D);
 	L2: CONTA_ASC port map(SPEED(2 downto 0),CLOCK_M,RST,EN_TIME,CNT_U);
 	L3: CONTA_BONUS port map(REG_OUT_31,CLOCK_M,RST,EN_TIME,CNT_B);
