@@ -104,14 +104,15 @@ port(
 	SPEED: 							in std_logic_vector(2 downto 0);
 	UP_DOWN: 						in std_logic_vector(3 downto 0);
 	CNT_B,STATES:     			in std_logic_vector(4 downto 0);
-	CLOCKS_SIGNAL:				   in std_logic_vector(4 downto 0);
+	CLk1,clk2,clk3,clk4,clk5:   in std_logic;
 	CLOCK_M: 						out std_logic;
 	LED_OUT: 						out std_logic_vector(9 downto 0);
 	H: 								out std_logic_vector(41 downto 0);
 	REG_IN_0,REG_IN_1,REG_IN_2,REG_IN_3,REG_IN_4,REG_IN_5,REG_IN_6,
 	REG_IN_7,REG_IN_8,REG_IN_9,REG_IN_10,REG_IN_11,REG_IN_12,
 	REG_IN_13,REG_IN_14,REG_IN_15: out std_logic_vector(31 downto 0);
-	REG_OUT_EXIT: 					out std_logic_vector(31 downto 0)
+	REG_OUT_EXIT: 					out std_logic_vector(31 downto 0);
+	REG_OUT_31:						out std_logic
 );
 end component;
 
@@ -139,10 +140,10 @@ port(
 end component;
 
 signal sSETROL,sENTIME,sCLOCKM,sSELLED,CLK5,CLK4,CLK3,CLK2,CLK1,
-sBTN0,sBTN1,sBTN2,sBTN3,sENDTIME,sTARGET,sENDBONUS,sRST: std_logic;
+sBTN0,sBTN1,sBTN2,sBTN3,sENDTIME,sTARGET,sENDBONUS,sRST,sREGOUT31: std_logic;
 signal sSPEED: std_logic_vector(2 downto 0);
 signal sUPDOWN: std_logic_vector(3 downto 0);
-signal CLOCKS_SIGNAL, sCNTB, sSTATES: std_logic_vector(4 downto 0);
+signal sCNTB, sSTATES: std_logic_vector(4 downto 0);
 signal sCNTD, sCNTU, sLEDOUT,sPOINT: std_logic_vector(9 downto 0);
 signal sSELDISP: std_logic_vector(1 downto 0);
 signal sH: std_logic_vector(41 downto 0);
@@ -160,10 +161,9 @@ sREG_IN_11, sREG_IN_12, sREG_IN_13, sREG_IN_14,sREG_IN_15
 :std_logic_vector(31 downto 0);
 
 begin
-CLOCKS_SIGNAL <= CLK5 & CLK4 & CLK3 & CLK2 & CLK1;
 
 	L0:
-		topo_REGISTERS port map ( --missing reg ins.
+		topo_REGISTERS port map ( 
 			sSETROL, sENTIME, sBTN2, sBTN3, sCLOCKM, CLOCK_50,sRST,
 			SW(1 downto 0),
 			sREG_IN_0, sREG_IN_1, sREG_IN_2, sREG_IN_3, sREG_IN_4, sREG_IN_5,
@@ -176,9 +176,10 @@ CLOCKS_SIGNAL <= CLK5 & CLK4 & CLK3 & CLK2 & CLK1;
 		);		
 
 	L1: 
-		topo_COUNTERS port map ( --missing REG OUT 31
-			sRST,sENTIME,sCLOCKM, CLOCK_50, sREGOUT(31),
-			sSPEED, CLK1, CLK2, CLK3, CLK4, CLK5,
+		topo_COUNTERS port map ( --clock problem
+			sRST,sENTIME,sCLOCKM, CLOCK_50, sREGOUT31,
+			sSPEED,
+			CLK1, CLK2, CLK3, CLK4, CLK5,
 			sCNTD, sCNTU, sCNTB
 		);
 	
@@ -216,12 +217,13 @@ CLOCKS_SIGNAL <= CLK5 & CLK4 & CLK3 & CLK2 & CLK1;
 			sREG_OUT_6, sREG_OUT_7, sREG_OUT_8, sREG_OUT_9, sREG_OUT_10,
 			sREG_OUT_11, sREG_OUT_12, sREG_OUT_13, sREG_OUT_14,sREG_OUT_15,
 			
-			sSELDISP, sSELLED, sSPEED, sUPDOWN, sCNTB, sSTATES, CLOCKS_SIGNAL,
+			sSELDISP, sSELLED, sSPEED, sUPDOWN, sCNTB, sSTATES, CLK1,Clk2,Clk3,CLk4,CLK5,
 			sCLOCKM, sLEDOUT, sH,
 			sREG_IN_0, sREG_IN_1, sREG_IN_2, sREG_IN_3, sREG_IN_4, sREG_IN_5,
 			sREG_IN_6, sREG_IN_7, sREG_IN_8, sREG_IN_9, sREG_IN_10,
 			sREG_IN_11, sREG_IN_12, sREG_IN_13, sREG_IN_14,sREG_IN_15, --reg ins x16
-			sREGOUT --reg out exit (32 bits) 
+			sREGOUT, --reg out exit (32 bits) 
+			sREGOUT31
 		);	
 		
 	L6: 

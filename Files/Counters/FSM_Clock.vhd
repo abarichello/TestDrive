@@ -22,7 +22,7 @@ P1:process(CLOCK_50)
 		cont4 <= cont4 + 1;
 		cont5 <= cont5 + 1;
 		
-		if cont1 = 5000000 then --5000000
+		if cont1 = 50000000 then --5000000
 			CLK1 <= '1';
 			cont1 <= 0;
 		else

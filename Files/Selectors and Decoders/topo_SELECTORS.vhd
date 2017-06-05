@@ -37,14 +37,15 @@ port (
 	SPEED: 							in std_logic_vector(2 downto 0);
 	UP_DOWN: 						in std_logic_vector(3 downto 0);
 	CNT_B,STATES:     			in std_logic_vector(4 downto 0);
-	CLOCKS_SIGNAL:				   in std_logic_vector(4 downto 0);
+	CLK1,CLK2,CLK3,CLK4,CLK5:  in std_logic;
 	CLOCK_M: 						out std_logic;
 	LED_OUT: 						out std_logic_vector(9 downto 0);
 	H: 								out std_logic_vector(41 downto 0);
 	REG_IN_0,REG_IN_1,REG_IN_2,REG_IN_3,REG_IN_4,REG_IN_5,REG_IN_6,
 	REG_IN_7,REG_IN_8,REG_IN_9,REG_IN_10,REG_IN_11,REG_IN_12,
 	REG_IN_13,REG_IN_14,REG_IN_15: out std_logic_vector(31 downto 0);
-	REG_OUT_EXIT: 					out std_logic_vector(31 downto 0)
+	REG_OUT_EXIT: 					out std_logic_vector(31 downto 0);
+	REG_OUT_31:						out std_logic
 );
 end topo_SELECTORS;
 
@@ -118,9 +119,11 @@ end component;
 
 begin
 
+signalspeed <= SPEED;
+REG_OUT_31 <= signalReg(31);
 mux1_0 <= "11011"  &   "00" &   SPEED & "00000" & '0' & UP_DOWN & CNT_U;
 mux1_1 <= "01110"  & STATES & "01011" & CNT_B   & CNT_D;
-mux2_0 <= CLOCKS_SIGNAL(4)  & signalReg(30 downto 22);
+mux2_0 <= CLK5  & signalReg(30 downto 22);
 mux2_1 <= "0000000000";
 mux30_1 <= "01110" & STATES & "101100101010111000" & SW(8) & SW(7);
 mux30_2 <= "01110" & STATES & "11111000000111101111";
@@ -147,8 +150,7 @@ mux30_3 <= "01110" & STATES & "1011111010" & POINT;
 	 L17: mux4x1_32 port map (MAP1_15, MAP2_15, MAP3_15, MAP4_15, SW(8 downto 7), REG_IN_15);
 	 L18: mux4x1_30 port map (screensignal, mux30_1, mux30_2, mux30_3, SEL_DISP, HX); --30.
 	 L19: mux8x1    port map (
-		CLOCKS_SIGNAL(0),CLOCKS_SIGNAL(0),CLOCKS_SIGNAL(1),CLOCKS_SIGNAL(2),
-		CLOCKS_SIGNAL(3),CLOCKS_SIGNAL(4),CLOCKS_SIGNAL(0),CLOCKS_SIGNAL(0), 
+		CLK1,CLK1,CLK2,CLK3,CLK4,CLK5,CLK1,CLK1, 
 		signalspeed, CLOCK_M
 	 );
 	 L20: mux16x1   port map (
