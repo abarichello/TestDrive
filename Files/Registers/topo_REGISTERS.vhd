@@ -72,4 +72,4 @@ SPEED <= signalspeed;
 	L15: REG_IN port map (SET_ROL, EN_TIME, CLOCK_M, RST, REG_IN_13,signalspeed, REG_OUT_13);
 	L16: REG_IN port map (SET_ROL, EN_TIME, CLOCK_M, RST, REG_IN_14,signalspeed, REG_OUT_14);
 	L17: REG_IN port map (SET_ROL, EN_TIME, CLOCK_M, RST, REG_IN_15,signalspeed, REG_OUT_15);
-end topo; 
+end topo;

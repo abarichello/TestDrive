@@ -3,38 +3,77 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\artur\Documents\GitHub\TestDrive\Files\simulation\modelsim
-Ereg_in
-Z1 w1496615035
-Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 dC:\Users\artur\Documents\GitHub\TestDrive\Files\simulation\modelsim
-Z5 8C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd
-Z6 FC:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd
+Efsm_clock
+Z1 w1496688729
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\artur\Documents\GitHub\TestDrive\Files\simulation\modelsim
+Z7 8C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/FSM_Clock.vhd
+Z8 FC:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/FSM_Clock.vhd
 l0
-L4
-V9Z_eEV1iI6g<=j9o=bdB[2
-!s100 ieBI<07[DD<LkHY;TQk9E1
-Z7 OV;C;10.1d;51
+L5
+VSKD[PBcTlOh^PU3j2a[8f2
+!s100 WJ6JSfTA>3CXafMb9Z[2B1
+Z9 OV;C;10.1d;51
 32
 !i10b 1
-Z8 !s108 1496673455.427000
-Z9 !s90 -reportprogress|300|-work|work|C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd|
-Z10 !s107 C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd|
-Z11 o-work work -O0
-Z12 tExplicit 1
+Z10 !s108 1496688877.329000
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/FSM_Clock.vhd|
+Z12 !s107 C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/FSM_Clock.vhd|
+Z13 o-work work -O0
+Z14 tExplicit 1
 Abhv
 R2
 R3
+R4
+R5
+Z15 DEx4 work 9 fsm_clock 0 22 SKD[PBcTlOh^PU3j2a[8f2
+l14
+L12
+V3O`h6QQ_zLY@Vm1DW3R3T1
+!s100 Q^hg4a0^D_ji4g<U:>^WO3
+R9
+32
+!i10b 1
+R10
+R11
+R12
+R13
+R14
+Ereg_in
+Z16 w1496615035
+R4
+R5
+R6
+Z17 8C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd
+Z18 FC:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd
+l0
+L4
+V9Z_eEV1iI6g<=j9o=bdB[2
+R9
+32
+Z19 !s108 1496673455.427000
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd|
+Z21 !s107 C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd|
+R13
+R14
+!s100 ieBI<07[DD<LkHY;TQk9E1
+!i10b 1
+Abhv
+R4
+R5
 DEx4 work 6 reg_in 0 22 9Z_eEV1iI6g<=j9o=bdB[2
 l17
 L13
 VSVT:L4@z1<8_UO0Sl_I=23
-!s100 1X3NV58c=T1C=[UUoAOCm3
-R7
-32
-!i10b 1
-R8
 R9
-R10
-R11
-R12
+32
+R19
+R20
+R21
+R13
+R14
+!s100 1X3NV58c=T1C=[UUoAOCm3
+!i10b 1

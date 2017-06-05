@@ -3,131 +3,211 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'clock_50'
-Slack : -0.919
-TNS   : -10.401
+Slack : -7.001
+TNS   : -195.718
+
+Type  : Slow 1100mV 85C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -3.610
+TNS   : -1441.131
+
+Type  : Slow 1100mV 85C Model Hold 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -4.509
+TNS   : -1454.743
 
 Type  : Slow 1100mV 85C Model Hold 'clock_50'
-Slack : -0.679
-TNS   : -0.679
+Slack : -0.592
+TNS   : -0.592
 
 Type  : Slow 1100mV 85C Model Recovery 'FSM_Control:L4|CS.E1'
-Slack : -5.511
-TNS   : -59.268
+Slack : -6.423
+TNS   : -56.851
+
+Type  : Slow 1100mV 85C Model Recovery 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -3.758
+TNS   : -1972.530
 
 Type  : Slow 1100mV 85C Model Recovery 'clock_50'
-Slack : -0.890
-TNS   : -9.161
+Slack : -1.531
+TNS   : -15.919
+
+Type  : Slow 1100mV 85C Model Removal 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -4.234
+TNS   : -2211.347
 
 Type  : Slow 1100mV 85C Model Removal 'clock_50'
-Slack : 0.940
+Slack : 0.929
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'FSM_Control:L4|CS.E1'
-Slack : 3.163
+Slack : 2.749
 TNS   : 0.000
 
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -0.418
+TNS   : -352.292
+
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_50'
-Slack : -0.394
-TNS   : -11.076
+Slack : -0.412
+TNS   : -46.170
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
-Slack : 0.424
+Slack : 0.298
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'clock_50'
-Slack : -0.894
-TNS   : -10.221
+Slack : -6.663
+TNS   : -193.918
+
+Type  : Slow 1100mV 0C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -3.905
+TNS   : -1540.061
+
+Type  : Slow 1100mV 0C Model Hold 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -4.334
+TNS   : -1350.881
 
 Type  : Slow 1100mV 0C Model Hold 'clock_50'
-Slack : -0.618
-TNS   : -0.618
+Slack : -0.713
+TNS   : -0.713
 
 Type  : Slow 1100mV 0C Model Recovery 'FSM_Control:L4|CS.E1'
-Slack : -5.477
-TNS   : -58.558
+Slack : -6.493
+TNS   : -57.360
+
+Type  : Slow 1100mV 0C Model Recovery 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -3.913
+TNS   : -2056.464
 
 Type  : Slow 1100mV 0C Model Recovery 'clock_50'
-Slack : -0.711
-TNS   : -8.066
+Slack : -1.497
+TNS   : -15.382
+
+Type  : Slow 1100mV 0C Model Removal 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -3.923
+TNS   : -2044.614
 
 Type  : Slow 1100mV 0C Model Removal 'clock_50'
-Slack : 0.996
+Slack : 0.956
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'FSM_Control:L4|CS.E1'
-Slack : 3.113
+Slack : 2.767
 TNS   : 0.000
 
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -0.501
+TNS   : -368.442
+
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_50'
-Slack : -0.394
-TNS   : -12.177
+Slack : -0.442
+TNS   : -50.117
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
-Slack : 0.377
+Slack : 0.283
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'clock_50'
-Slack : -0.050
-TNS   : -0.350
+Slack : -3.562
+TNS   : -82.630
+
+Type  : Fast 1100mV 85C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -2.834
+TNS   : -1062.497
+
+Type  : Fast 1100mV 85C Model Hold 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -2.412
+TNS   : -645.789
 
 Type  : Fast 1100mV 85C Model Hold 'clock_50'
-Slack : -0.174
-TNS   : -0.174
+Slack : -0.234
+TNS   : -0.234
 
 Type  : Fast 1100mV 85C Model Recovery 'FSM_Control:L4|CS.E1'
-Slack : -2.985
-TNS   : -29.908
+Slack : -3.815
+TNS   : -30.187
+
+Type  : Fast 1100mV 85C Model Recovery 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -2.831
+TNS   : -1111.290
 
 Type  : Fast 1100mV 85C Model Recovery 'clock_50'
-Slack : -0.062
-TNS   : -0.431
+Slack : -0.682
+TNS   : -6.112
+
+Type  : Fast 1100mV 85C Model Removal 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -2.533
+TNS   : -1319.284
 
 Type  : Fast 1100mV 85C Model Removal 'clock_50'
-Slack : 0.473
+Slack : 0.339
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'FSM_Control:L4|CS.E1'
-Slack : 2.047
+Slack : 1.809
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_50'
-Slack : -0.092
-TNS   : -1.437
+Slack : -0.433
+TNS   : -7.540
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -0.239
+TNS   : -79.497
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
-Slack : 0.479
+Slack : 0.344
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'clock_50'
-Slack : 0.045
-TNS   : 0.000
+Slack : -3.189
+TNS   : -72.189
+
+Type  : Fast 1100mV 0C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -2.791
+TNS   : -1053.617
+
+Type  : Fast 1100mV 0C Model Hold 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -2.289
+TNS   : -585.412
 
 Type  : Fast 1100mV 0C Model Hold 'clock_50'
-Slack : -0.229
-TNS   : -0.229
+Slack : -0.352
+TNS   : -0.352
 
 Type  : Fast 1100mV 0C Model Recovery 'FSM_Control:L4|CS.E1'
-Slack : -2.842
-TNS   : -28.655
+Slack : -3.619
+TNS   : -29.029
+
+Type  : Fast 1100mV 0C Model Recovery 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -2.757
+TNS   : -1187.701
 
 Type  : Fast 1100mV 0C Model Recovery 'clock_50'
-Slack : 0.030
-TNS   : 0.000
+Slack : -0.574
+TNS   : -5.043
+
+Type  : Fast 1100mV 0C Model Removal 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -2.298
+TNS   : -1194.751
 
 Type  : Fast 1100mV 0C Model Removal 'clock_50'
-Slack : 0.442
+Slack : 0.306
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'FSM_Control:L4|CS.E1'
-Slack : 2.033
+Slack : 1.793
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_50'
-Slack : -0.089
-TNS   : -1.620
+Slack : -0.445
+TNS   : -7.658
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -0.234
+TNS   : -75.791
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
-Slack : 0.473
+Slack : 0.360
 TNS   : 0.000
 
 ------------------------------------------------------------

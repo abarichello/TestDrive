@@ -50,4 +50,4 @@ begin
 	L2: CONTA_ASC port map(SPEED(2 downto 0),CLOCK_M,RST,EN_TIME,CNT_U);
 	L3: CONTA_BONUS port map(REG_OUT_31,CLOCK_M,RST,EN_TIME,CNT_B);
 	CLK1 <= CLK1_s;
-end topo_stru; 
+end topo_stru;

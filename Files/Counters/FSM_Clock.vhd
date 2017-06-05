@@ -15,45 +15,47 @@ begin
 	
 P1:process(CLOCK_50)
 	begin
+	if rising_edge(CLOCK_50) then
 		cont1 <= cont1 + 1;
 		cont2 <= cont2 + 1;
 		cont3 <= cont3 + 1;
 		cont4 <= cont4 + 1;
 		cont5 <= cont5 + 1;
 		
-		if cont1 = 5 then --50m
+		if cont1 = 5000000 then --5000000
 			CLK1 <= '1';
 			cont1 <= 0;
 		else
 			CLK1 <= '0';
 		end if;
 		
-		if cont2 = 4 then --25m
+		if cont2 = 25000000 then --25000000
 			CLK2 <= '1';
 			cont2 <= 0;
 		else
 			CLK2 <= '0';
 		end if;
 		
-		if cont3 = 3 then --16666666
+		if cont3 = 16666666 then --16666666
 			CLK3 <= '1';
 			cont3 <= 0;
 		else
 			CLK3 <= '0';
 		end if;
 		
-		if cont4 = 2 then --12500000
+		if cont4 = 12500000 then --12500000
 			CLK4 <= '1';
 			cont4 <= 0;
 		else
 			CLK4 <= '0';
 		end if;
 		
-		if cont5 = 1 then --10000000
+		if cont5 = 10000000 then --10000000
 			CLK5 <= '1';
 			cont5 <= 0;
 		else
 			CLK5 <= '0';
 		end if;
+	end if;
 	end process; 
 end bhv;

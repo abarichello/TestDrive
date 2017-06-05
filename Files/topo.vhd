@@ -139,7 +139,7 @@ port(
 end component;
 
 signal sSETROL,sENTIME,sCLOCKM,sSELLED,CLK5,CLK4,CLK3,CLK2,CLK1,
-sBTN0,sBTN1,sBTN2,sBTN3,sREGROM,sENDTIME,sTARGET,sENDBONUS,sRST: std_logic;
+sBTN0,sBTN1,sBTN2,sBTN3,sENDTIME,sTARGET,sENDBONUS,sRST: std_logic;
 signal sSPEED: std_logic_vector(2 downto 0);
 signal sUPDOWN: std_logic_vector(3 downto 0);
 signal CLOCKS_SIGNAL, sCNTB, sSTATES: std_logic_vector(4 downto 0);
@@ -177,7 +177,7 @@ CLOCKS_SIGNAL <= CLK5 & CLK4 & CLK3 & CLK2 & CLK1;
 
 	L1: 
 		topo_COUNTERS port map ( --missing REG OUT 31
-			sRST,sENTIME,sCLOCKM, CLOCK_50, sREGROM,
+			sRST,sENTIME,sCLOCKM, CLOCK_50, sREGOUT(31),
 			sSPEED, CLK1, CLK2, CLK3, CLK4, CLK5,
 			sCNTD, sCNTU, sCNTB
 		);
@@ -215,13 +215,14 @@ CLOCKS_SIGNAL <= CLK5 & CLK4 & CLK3 & CLK2 & CLK1;
 			sREG_OUT_0, sREG_OUT_1, sREG_OUT_2, sREG_OUT_3, sREG_OUT_4, sREG_OUT_5,
 			sREG_OUT_6, sREG_OUT_7, sREG_OUT_8, sREG_OUT_9, sREG_OUT_10,
 			sREG_OUT_11, sREG_OUT_12, sREG_OUT_13, sREG_OUT_14,sREG_OUT_15,
+			
 			sSELDISP, sSELLED, sSPEED, sUPDOWN, sCNTB, sSTATES, CLOCKS_SIGNAL,
 			sCLOCKM, sLEDOUT, sH,
 			sREG_IN_0, sREG_IN_1, sREG_IN_2, sREG_IN_3, sREG_IN_4, sREG_IN_5,
 			sREG_IN_6, sREG_IN_7, sREG_IN_8, sREG_IN_9, sREG_IN_10,
 			sREG_IN_11, sREG_IN_12, sREG_IN_13, sREG_IN_14,sREG_IN_15, --reg ins x16
 			sREGOUT --reg out exit (32 bits) 
-		);
+		);	
 		
 	L6: 
 		ButtonSync port map (
