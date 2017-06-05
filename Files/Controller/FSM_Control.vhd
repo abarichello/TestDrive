@@ -22,7 +22,7 @@ begin
 	--3 process FSM.
 	P1: process(clock_50, reset) --clock
 	begin
-		if reset = '1' then
+		if reset = '0' then
 			CS <= E0;
 		elsif clock_50'event and clock_50 = '0' then
 			CS <= NS;

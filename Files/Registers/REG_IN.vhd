@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity REG_IN is
 port( 
@@ -23,9 +24,8 @@ enable <= ((SPEED(2) or SPEED(1) or SPEED(0)) and EN_TIME);
 			signalshift <= (others => '0');
 		elsif SET_ROL = '1' then
 			signalshift <= REG_IN;
-		elsif(CLOCK_M'event and CLOCK_M = '1') and enable = '1'then
-			signalshift(0) <= signalshift(31);
-			signalshift(31 downto 1) <= signalshift(30 downto 0);
+		elsif rising_edge(CLOCK_M) and enable = '1' and SET_ROL = '0' then
+			signalshift <= std_logic_vector(rotate_left(unsigned(signalshift),1));
 		end if;
 	end process;
 	REG_OUT_EXIT <= signalshift;

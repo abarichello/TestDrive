@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\artur\Documents\GitHub\TestDrive\Files\simulation\modelsim
+Ereg_in
+Z1 w1496615035
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\artur\Documents\GitHub\TestDrive\Files\simulation\modelsim
+Z5 8C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd
+Z6 FC:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd
+l0
+L4
+V9Z_eEV1iI6g<=j9o=bdB[2
+!s100 ieBI<07[DD<LkHY;TQk9E1
+Z7 OV;C;10.1d;51
+32
+!i10b 1
+Z8 !s108 1496673455.427000
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd|
+Z10 !s107 C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd|
+Z11 o-work work -O0
+Z12 tExplicit 1
+Abhv
+R2
+R3
+DEx4 work 6 reg_in 0 22 9Z_eEV1iI6g<=j9o=bdB[2
+l17
+L13
+VSVT:L4@z1<8_UO0Sl_I=23
+!s100 1X3NV58c=T1C=[UUoAOCm3
+R7
+32
+!i10b 1
+R8
+R9
+R10
+R11
+R12

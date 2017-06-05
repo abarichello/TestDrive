@@ -1,0 +1,133 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clock_50'
+Slack : -0.919
+TNS   : -10.401
+
+Type  : Slow 1100mV 85C Model Hold 'clock_50'
+Slack : -0.679
+TNS   : -0.679
+
+Type  : Slow 1100mV 85C Model Recovery 'FSM_Control:L4|CS.E1'
+Slack : -5.511
+TNS   : -59.268
+
+Type  : Slow 1100mV 85C Model Recovery 'clock_50'
+Slack : -0.890
+TNS   : -9.161
+
+Type  : Slow 1100mV 85C Model Removal 'clock_50'
+Slack : 0.940
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'FSM_Control:L4|CS.E1'
+Slack : 3.163
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_50'
+Slack : -0.394
+TNS   : -11.076
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clock_50'
+Slack : -0.894
+TNS   : -10.221
+
+Type  : Slow 1100mV 0C Model Hold 'clock_50'
+Slack : -0.618
+TNS   : -0.618
+
+Type  : Slow 1100mV 0C Model Recovery 'FSM_Control:L4|CS.E1'
+Slack : -5.477
+TNS   : -58.558
+
+Type  : Slow 1100mV 0C Model Recovery 'clock_50'
+Slack : -0.711
+TNS   : -8.066
+
+Type  : Slow 1100mV 0C Model Removal 'clock_50'
+Slack : 0.996
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'FSM_Control:L4|CS.E1'
+Slack : 3.113
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_50'
+Slack : -0.394
+TNS   : -12.177
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clock_50'
+Slack : -0.050
+TNS   : -0.350
+
+Type  : Fast 1100mV 85C Model Hold 'clock_50'
+Slack : -0.174
+TNS   : -0.174
+
+Type  : Fast 1100mV 85C Model Recovery 'FSM_Control:L4|CS.E1'
+Slack : -2.985
+TNS   : -29.908
+
+Type  : Fast 1100mV 85C Model Recovery 'clock_50'
+Slack : -0.062
+TNS   : -0.431
+
+Type  : Fast 1100mV 85C Model Removal 'clock_50'
+Slack : 0.473
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'FSM_Control:L4|CS.E1'
+Slack : 2.047
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_50'
+Slack : -0.092
+TNS   : -1.437
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
+Slack : 0.479
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clock_50'
+Slack : 0.045
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock_50'
+Slack : -0.229
+TNS   : -0.229
+
+Type  : Fast 1100mV 0C Model Recovery 'FSM_Control:L4|CS.E1'
+Slack : -2.842
+TNS   : -28.655
+
+Type  : Fast 1100mV 0C Model Recovery 'clock_50'
+Slack : 0.030
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'clock_50'
+Slack : 0.442
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'FSM_Control:L4|CS.E1'
+Slack : 2.033
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_50'
+Slack : -0.089
+TNS   : -1.620
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
+Slack : 0.473
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -53,9 +53,9 @@ end component;
 begin 
 
 signalX <= BTN3 & BTN2; 
-
+SPEED <= signalspeed;
 	 L0: FSM_Position port map (EN_TIME, CLOCK_M, RST, signalspeed, SW(1 downto 0), UP_DOWN);
-	 L1: FSM_Speed port map (EN_TIME , CLOCK_50,RST, signalX, signalspeed);
+	 L1: FSM_Speed port map (EN_TIME , CLOCK_50, RST, signalX, signalspeed);
 	 L2: REG_IN port map (SET_ROL, EN_TIME, CLOCK_M, RST, REG_IN_0, signalspeed, REG_OUT_0);
 	 L3: REG_IN port map (SET_ROL, EN_TIME, CLOCK_M, RST, REG_IN_1, signalspeed, REG_OUT_1);
 	 L4: REG_IN port map (SET_ROL, EN_TIME, CLOCK_M, RST, REG_IN_2, signalspeed, REG_OUT_2);

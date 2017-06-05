@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TestDrive
-Sun Jun 04 20:26:13 2017
+Mon Jun 05 12:14:40 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -76,7 +76,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Jun 04 20:26:13 2017      ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun 05 12:14:40 2017      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; TestDrive                                  ;
 ; Top-level Entity Name           ; topo                                       ;
@@ -101,7 +101,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
 ; Top-level entity name                                                           ; topo               ; TestDrive          ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -232,29 +232,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                  ;
-+---------------------------------------------+--------------------------------+
-; Resource                                    ; Usage                          ;
-+---------------------------------------------+--------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 485                            ;
-;                                             ;                                ;
-; Combinational ALUT usage for logic          ; 863                            ;
-;     -- 7 input functions                    ; 9                              ;
-;     -- 6 input functions                    ; 69                             ;
-;     -- 5 input functions                    ; 324                            ;
-;     -- 4 input functions                    ; 36                             ;
-;     -- <=3 input functions                  ; 425                            ;
-;                                             ;                                ;
-; Dedicated logic registers                   ; 566                            ;
-;                                             ;                                ;
-; I/O pins                                    ; 67                             ;
-; Total DSP Blocks                            ; 0                              ;
-; Maximum fan-out node                        ; topo_SELECTORS:L5|mux8x1:L19|m ;
-; Maximum fan-out                             ; 538                            ;
-; Total fan-out                               ; 5511                           ;
-; Average fan-out                             ; 3.53                           ;
-+---------------------------------------------+--------------------------------+
++-----------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                             ;
++---------------------------------------------+-------------------------------------------+
+; Resource                                    ; Usage                                     ;
++---------------------------------------------+-------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 491                                       ;
+;                                             ;                                           ;
+; Combinational ALUT usage for logic          ; 869                                       ;
+;     -- 7 input functions                    ; 9                                         ;
+;     -- 6 input functions                    ; 78                                        ;
+;     -- 5 input functions                    ; 324                                       ;
+;     -- 4 input functions                    ; 37                                        ;
+;     -- <=3 input functions                  ; 421                                       ;
+;                                             ;                                           ;
+; Dedicated logic registers                   ; 566                                       ;
+;                                             ;                                           ;
+; I/O pins                                    ; 67                                        ;
+; Total DSP Blocks                            ; 0                                         ;
+; Maximum fan-out node                        ; topo_REGISTERS:L0|FSM_Position:L0|enter~0 ;
+; Maximum fan-out                             ; 538                                       ;
+; Total fan-out                               ; 5562                                      ;
+; Average fan-out                             ; 3.54                                      ;
++---------------------------------------------+-------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -262,9 +262,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
-; |topo                      ; 863 (0)           ; 566 (0)      ; 0                 ; 0          ; 67   ; 0            ; |topo                                    ; work         ;
+; |topo                      ; 869 (0)           ; 566 (0)      ; 0                 ; 0          ; 67   ; 0            ; |topo                                    ; work         ;
 ;    |ButtonSync:L6|         ; 8 (8)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |topo|ButtonSync:L6                      ; work         ;
-;    |FSM_Control:L4|        ; 7 (7)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |topo|FSM_Control:L4                     ; work         ;
+;    |FSM_Control:L4|        ; 6 (6)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |topo|FSM_Control:L4                     ; work         ;
 ;    |topo_COMPARATORS:L2|   ; 15 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2                ; work         ;
 ;       |Adder:L3|           ; 9 (9)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2|Adder:L3       ; work         ;
 ;       |Comparator1:L0|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2|Comparator1:L0 ; work         ;
@@ -273,7 +273,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |CONTA_ASC:L2|       ; 18 (18)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|CONTA_ASC:L2      ; work         ;
 ;       |CONTA_DES:L1|       ; 20 (20)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|CONTA_DES:L1      ; work         ;
 ;       |FSM_Clock:L0|       ; 81 (81)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|FSM_Clock:L0      ; work         ;
-;    |topo_REGISTERS:L0|     ; 616 (0)           ; 534 (0)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0                  ; work         ;
+;    |topo_REGISTERS:L0|     ; 615 (0)           ; 534 (0)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0                  ; work         ;
 ;       |FSM_Position:L0|    ; 27 (27)           ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|FSM_Position:L0  ; work         ;
 ;       |FSM_Speed:L1|       ; 6 (6)             ; 6 (6)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|FSM_Speed:L1     ; work         ;
 ;       |REG_IN:L10|         ; 29 (29)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L10       ; work         ;
@@ -290,18 +290,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |REG_IN:L5|          ; 34 (34)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L5        ; work         ;
 ;       |REG_IN:L6|          ; 33 (33)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L6        ; work         ;
 ;       |REG_IN:L7|          ; 46 (46)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L7        ; work         ;
-;       |REG_IN:L8|          ; 40 (40)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L8        ; work         ;
+;       |REG_IN:L8|          ; 39 (39)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L8        ; work         ;
 ;       |REG_IN:L9|          ; 32 (32)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L9        ; work         ;
-;    |topo_SELECTORS:L5|     ; 98 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5                  ; work         ;
-;       |Decod7seg:L22|      ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L22    ; work         ;
+;    |topo_SELECTORS:L5|     ; 106 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5                  ; work         ;
+;       |Decod7seg:L22|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L22    ; work         ;
 ;       |Decod7seg:L23|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L23    ; work         ;
 ;       |Decod7seg:L24|      ; 9 (9)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L24    ; work         ;
 ;       |Decod7seg:L25|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L25    ; work         ;
 ;       |Decod7seg:L26|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L26    ; work         ;
 ;       |mux2x1_10:L1|       ; 46 (46)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux2x1_10:L1     ; work         ;
-;       |mux4x1_30:L18|      ; 19 (19)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_30:L18    ; work         ;
+;       |mux4x1_30:L18|      ; 23 (23)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_30:L18    ; work         ;
+;       |mux4x1_32:L10|      ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_32:L10    ; work         ;
 ;       |mux4x1_32:L8|       ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_32:L8     ; work         ;
-;       |mux4x1_32:L9|       ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_32:L9     ; work         ;
 ;       |mux8x1:L19|         ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux8x1:L19       ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -534,7 +534,8 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L23|F[0]  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[10] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[13] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[21] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[11] ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L23|F[6]  ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[4]  ;
 ; 17:1               ; 9 bits    ; 99 LEs        ; 99 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux2x1_10:L1|m[7]   ;
@@ -840,7 +841,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Jun 04 20:26:00 2017
+    Info: Processing started: Mon Jun 05 12:14:26 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file comparators/topo_comparators.vhd
@@ -937,14 +938,13 @@ Info (12127): Elaborating entity "topo" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at topo.vhd(141): used implicit default value for signal "sREGROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10036): Verilog HDL or VHDL warning at topo.vhd(156): object "sREGOUT" assigned a value but never read
 Info (12128): Elaborating entity "topo_REGISTERS" for hierarchy "topo_REGISTERS:L0"
-Warning (10541): VHDL Signal Declaration warning at topo_REGISTERS.vhd(14): used implicit default value for signal "SPEED" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "FSM_Position" for hierarchy "topo_REGISTERS:L0|FSM_Position:L0"
 Warning (10492): VHDL Process Statement warning at FSM_Position.vhd(25): signal "enter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "FSM_Speed" for hierarchy "topo_REGISTERS:L0|FSM_Speed:L1"
 Warning (10492): VHDL Process Statement warning at FSM_Speed.vhd(22): signal "EN_TIME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "REG_IN" for hierarchy "topo_REGISTERS:L0|REG_IN:L2"
-Warning (10492): VHDL Process Statement warning at REG_IN.vhd(25): signal "REG_IN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at REG_IN.vhd(26): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at REG_IN.vhd(26): signal "REG_IN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at REG_IN.vhd(27): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "topo_COUNTERS" for hierarchy "topo_COUNTERS:L1"
 Info (12128): Elaborating entity "FSM_Clock" for hierarchy "topo_COUNTERS:L1|FSM_Clock:L0"
 Warning (10492): VHDL Process Statement warning at FSM_Clock.vhd(18): signal "cont1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -1281,7 +1281,6 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
     Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L17|signalshift[31]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L17|signalshift[31]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
     Warning (13310): Register "topo_REGISTERS:L0|REG_IN:L14|signalshift[31]" is converted into an equivalent circuit using register "topo_REGISTERS:L0|REG_IN:L14|signalshift[31]~_emulated" and latch "topo_REGISTERS:L0|REG_IN:L8|signalshift[22]~1"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX4[1]" is stuck at GND
     Warning (13410): Pin "HEX5[1]" is stuck at VCC
     Warning (13410): Pin "HEX5[2]" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
@@ -1321,14 +1320,14 @@ Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[4]"
     Warning (15610): No output dependent on input pin "SW[5]"
     Warning (15610): No output dependent on input pin "SW[6]"
-Info (21057): Implemented 1105 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1111 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 1038 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 353 warnings
-    Info: Peak virtual memory: 613 megabytes
-    Info: Processing ended: Sun Jun 04 20:26:14 2017
+    Info (21061): Implemented 1044 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 351 warnings
+    Info: Peak virtual memory: 629 megabytes
+    Info: Processing ended: Mon Jun 05 12:14:40 2017
     Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Total CPU time (on all processors): 00:00:13
 
 

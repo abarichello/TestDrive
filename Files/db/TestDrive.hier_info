@@ -658,9 +658,9 @@ REG_IN_15[28] => REG_IN:L17.REG_IN[28]
 REG_IN_15[29] => REG_IN:L17.REG_IN[29]
 REG_IN_15[30] => REG_IN:L17.REG_IN[30]
 REG_IN_15[31] => REG_IN:L17.REG_IN[31]
-SPEED[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-SPEED[1] <= SPEED[1].DB_MAX_OUTPUT_PORT_TYPE
-SPEED[2] <= SPEED[2].DB_MAX_OUTPUT_PORT_TYPE
+SPEED[0] <= FSM_Speed:L1.SPEED[0]
+SPEED[1] <= FSM_Speed:L1.SPEED[1]
+SPEED[2] <= FSM_Speed:L1.SPEED[2]
 UP_DOWN[0] <= FSM_Position:L0.UP_DOWN[0]
 UP_DOWN[1] <= FSM_Position:L0.UP_DOWN[1]
 UP_DOWN[2] <= FSM_Position:L0.UP_DOWN[2]
@@ -1216,6 +1216,7 @@ SPEED[2] <= SPEED.DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L2
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -1353,6 +1354,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L3
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -1490,6 +1492,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L4
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -1627,6 +1630,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L5
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -1764,6 +1768,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L6
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -1901,6 +1906,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L7
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -2038,6 +2044,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L8
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -2175,6 +2182,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L9
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -2312,6 +2320,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L10
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -2449,6 +2458,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L11
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -2586,6 +2596,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L12
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -2723,6 +2734,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L13
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -2860,6 +2872,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L14
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -2997,6 +3010,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L15
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -3134,6 +3148,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L16
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
@@ -3271,6 +3286,7 @@ REG_OUT_EXIT[31] <= signalshift[31].DB_MAX_OUTPUT_PORT_TYPE
 
 |topo|topo_REGISTERS:L0|REG_IN:L17
 SET_ROL => signalshift[31].IN0
+SET_ROL => process_0.IN1
 EN_TIME => enable.IN1
 CLOCK_M => signalshift[0].CLK
 CLOCK_M => signalshift[1].CLK
