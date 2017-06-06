@@ -2,11 +2,10 @@
 Assignment for EEL5105
 
 ## Introduction.
-A game made in VHDL for CYCLONE V (5CSEMA5F31C6 kit), the game consists of a car and a track. The track can be customized using the maps vhdl files, 1's stand for the obstacles while the 0's stand for the clear lanes.  
-The goal of the game is to complete two laps on the circuit without hitting more than 3 times in 99 seconds. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A game made in VHDL for CYCLONE V (5CSEMA5F31C6 kit), the game consists of a car and a track. The track can be customized using the maps vhdl files, 1's stand for the obstacles while the 0's stand for the clear lanes.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The goal of the game is to complete two laps on the circuit without hitting more than 3 times in 99 seconds. 
 Speed can be selected from 0 to 5 (Keys 2 and 3), lanes can be switched using SW0 and SW1 switches, the LEDR's (9 downto 0) represent your horizontal view of the Map and unfortunately it's not possible to see other lanes without switching to them.  
-At the end of the game a pontuation is provided using the numbers of vertical colums you have progressed times your remaining number of lives(x2) 
-Unfortunately it's not possible to see other lanes without switching to them.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At the end of the game a pontuation is provided using the numbers of vertical colums you have progressed times your remaining number of lives(x2).
 
 ## Block Diagram
 ##### (signal naming and locations contains some errors).
