@@ -56,6 +56,7 @@ signal mux1_0,mux1_1,screensignal,HX: std_logic_vector(29 downto 0);
 signal mux2_0,mux2_1: std_logic_vector(9 downto 0);
 signal mux30_1,mux30_2,mux30_3: std_logic_vector(29 downto 0);
 signal signalReg: std_logic_vector(31 downto 0);
+signal sCLOCK_M: std_logic;
 
 component mux2x1 
 generic (N: natural := 30);
@@ -121,14 +122,14 @@ begin
 
 signalspeed <= SPEED;
 REG_OUT_31 <= signalReg(31);
-mux1_0 <= "11011"  &   "00" &   SPEED & "00000" & '0' & UP_DOWN & CNT_U;
-mux1_1 <= "01110"  & STATES & "01011" & CNT_B   & CNT_D;
-mux2_0 <= CLK5  & signalReg(30 downto 22);
+mux1_0 <= "10011"  &   "00" &   SPEED & "10100" & '0' & UP_DOWN & CNT_U; --Playing state
+mux1_1 <= "00101"  & STATES & "01011" & CNT_B   & CNT_D;
+mux2_0 <= sCLOCK_M  & signalReg(30 downto 22);
 mux2_1 <= "0000000000";
-mux30_1 <= "01110" & STATES & "101100101010111000" & SW(8) & SW(7);
-mux30_2 <= "01110" & STATES & "11111000000111101111";
-mux30_3 <= "01110" & STATES & "1011111010" & POINT;
-
+mux30_1 <= "00101" & STATES & "100000101010001000" & SW(8) & SW(7); --Map selection state.
+mux30_2 <= "00101" & STATES & "11111000000111101111";
+mux30_3 <= "00101" & STATES & "1011111010" & POINT; --Last state (shows the pontuation).
+CLOCK_M <= sCLOCK_M;
 
 	  L0: mux2x1    port map (mux1_0,   mux1_1,   SW(9),  screensignal);
 	  L1: mux2x1_10 port map (mux2_0,   mux2_1, SEL_LED,  LED_OUT);
@@ -151,7 +152,7 @@ mux30_3 <= "01110" & STATES & "1011111010" & POINT;
 	 L18: mux4x1_30 port map (screensignal, mux30_1, mux30_2, mux30_3, SEL_DISP, HX); --30.
 	 L19: mux8x1    port map (
 		CLK1,CLK1,CLK2,CLK3,CLK4,CLK5,CLK1,CLK1, 
-		signalspeed, CLOCK_M
+		signalspeed, sCLOCK_M
 	 );
 	 L20: mux16x1   port map (
 		REG_OUT_0, REG_OUT_1, REG_OUT_2, REG_OUT_3, REG_OUT_4, REG_OUT_5,
