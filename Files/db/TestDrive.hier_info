@@ -10673,6 +10673,7 @@ CLK1 => mux8x1:L19.h
 CLK2 => mux8x1:L19.c
 CLK3 => mux8x1:L19.d
 CLK4 => mux8x1:L19.e
+CLK5 => mux2x1_10:L1.w[9]
 CLK5 => mux8x1:L19.f
 CLOCK_M <= mux8x1:L19.m
 LED_OUT[0] <= mux2x1_10:L1.m[0]

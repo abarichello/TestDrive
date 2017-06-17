@@ -1,6 +1,6 @@
 Analysis & Synthesis report for TestDrive
-Thu Jun  8 15:31:52 2017
-Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Sat Jun 17 15:43:28 2017
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -48,37 +48,35 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
  40. Port Connectivity Checks: "topo_SELECTORS:L5|mux2x1_10:L1"
  41. Port Connectivity Checks: "topo_SELECTORS:L5|mux2x1:L0"
  42. Port Connectivity Checks: "topo_SELECTORS:L5"
- 43. Post-Synthesis Netlist Statistics for Top Partition
- 44. Elapsed Time Per Partition
- 45. Analysis & Synthesis Messages
+ 43. Elapsed Time Per Partition
+ 44. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2013 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Jun  8 15:31:52 2017      ;
-; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Analysis & Synthesis Status     ; Successful - Sat Jun 17 15:43:28 2017      ;
+; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; TestDrive                                  ;
 ; Top-level Entity Name           ; topo                                       ;
 ; Family                          ; Cyclone V                                  ;
@@ -91,7 +89,7 @@ agreement for further details.
 ; Total HSSI RX PCSs              ; 0                                          ;
 ; Total HSSI PMA RX Deserializers ; 0                                          ;
 ; Total HSSI TX PCSs              ; 0                                          ;
-; Total HSSI PMA TX Serializers   ; 0                                          ;
+; Total HSSI TX Channels          ; 0                                          ;
 ; Total PLLs                      ; 0                                          ;
 ; Total DLLs                      ; 0                                          ;
 +---------------------------------+--------------------------------------------+
@@ -163,7 +161,7 @@ agreement for further details.
 ; Report Connectivity Checks                                                      ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; PowerPlay Power Optimization                                                    ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                               ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
@@ -181,7 +179,6 @@ agreement for further details.
 ; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
 ; Synthesis Seed                                                                  ; 1                  ; 1                  ;
 ; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
@@ -196,42 +193,42 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                    ; Library ;
-+-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
-; Comparators/topo_COMPARATORS.vhd          ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Comparators/topo_COMPARATORS.vhd          ;         ;
-; Debouncer/ButtonSync.vhd                  ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Debouncer/ButtonSync.vhd                  ;         ;
-; topo.vhd                                  ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/topo.vhd                                  ;         ;
-; Maps/map4.vhd                             ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Maps/map4.vhd                             ;         ;
-; Maps/map3.vhd                             ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Maps/map3.vhd                             ;         ;
-; Maps/map2.vhd                             ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Maps/map2.vhd                             ;         ;
-; Maps/map1.vhd                             ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Maps/map1.vhd                             ;         ;
-; Comparators/Comparator1.vhd               ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Comparators/Comparator1.vhd               ;         ;
-; Comparators/Comparator2.vhd               ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Comparators/Comparator2.vhd               ;         ;
-; Comparators/Comparator3.vhd               ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Comparators/Comparator3.vhd               ;         ;
-; Comparators/Adder.vhd                     ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Comparators/Adder.vhd                     ;         ;
-; Counters/FSM_Clock.vhd                    ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Counters/FSM_Clock.vhd                    ;         ;
-; Maps/topo_MAPS.vhd                        ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Maps/topo_MAPS.vhd                        ;         ;
-; Controller/FSM_Control.vhd                ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Controller/FSM_Control.vhd                ;         ;
-; Counters/CONTA_DES.vhd                    ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Counters/CONTA_DES.vhd                    ;         ;
-; Counters/CONTA_ASC.vhd                    ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Counters/CONTA_ASC.vhd                    ;         ;
-; Counters/CONTA_BONUS.vhd                  ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Counters/CONTA_BONUS.vhd                  ;         ;
-; Counters/topo_COUNTERS.vhd                ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Counters/topo_COUNTERS.vhd                ;         ;
-; Registers/FSM_Position.vhd                ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Registers/FSM_Position.vhd                ;         ;
-; Registers/FSM_Speed.vhd                   ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Registers/FSM_Speed.vhd                   ;         ;
-; Registers/REG_IN.vhd                      ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Registers/REG_IN.vhd                      ;         ;
-; Registers/topo_REGISTERS.vhd              ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Registers/topo_REGISTERS.vhd              ;         ;
-; Selectors and Decoders/mux8x1.vhd         ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Selectors and Decoders/mux8x1.vhd         ;         ;
-; Selectors and Decoders/mux4x1_32.vhd      ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Selectors and Decoders/mux4x1_32.vhd      ;         ;
-; Selectors and Decoders/mux16x1.vhd        ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Selectors and Decoders/mux16x1.vhd        ;         ;
-; Selectors and Decoders/mux2x1.vhd         ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Selectors and Decoders/mux2x1.vhd         ;         ;
-; Selectors and Decoders/Decod7seg.vhd      ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Selectors and Decoders/Decod7seg.vhd      ;         ;
-; Selectors and Decoders/mux4x1_30.vhd      ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Selectors and Decoders/mux4x1_30.vhd      ;         ;
-; Selectors and Decoders/topo_SELECTORS.vhd ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Selectors and Decoders/topo_SELECTORS.vhd ;         ;
-; Selectors and Decoders/mux2x1_10.vhd      ; yes             ; User VHDL File  ; /home/alunos/Desktop/1208B/AULA3/proj/testdrive/Files/Selectors and Decoders/mux2x1_10.vhd      ;         ;
-+-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                              ; Library ;
++-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
+; Comparators/topo_COMPARATORS.vhd          ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Comparators/topo_COMPARATORS.vhd          ;         ;
+; Debouncer/ButtonSync.vhd                  ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Debouncer/ButtonSync.vhd                  ;         ;
+; topo.vhd                                  ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/topo.vhd                                  ;         ;
+; Maps/map4.vhd                             ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Maps/map4.vhd                             ;         ;
+; Maps/map3.vhd                             ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Maps/map3.vhd                             ;         ;
+; Maps/map2.vhd                             ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Maps/map2.vhd                             ;         ;
+; Maps/map1.vhd                             ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Maps/map1.vhd                             ;         ;
+; Comparators/Comparator1.vhd               ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Comparators/Comparator1.vhd               ;         ;
+; Comparators/Comparator2.vhd               ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Comparators/Comparator2.vhd               ;         ;
+; Comparators/Comparator3.vhd               ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Comparators/Comparator3.vhd               ;         ;
+; Comparators/Adder.vhd                     ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Comparators/Adder.vhd                     ;         ;
+; Counters/FSM_Clock.vhd                    ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/FSM_Clock.vhd                    ;         ;
+; Maps/topo_MAPS.vhd                        ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Maps/topo_MAPS.vhd                        ;         ;
+; Controller/FSM_Control.vhd                ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Controller/FSM_Control.vhd                ;         ;
+; Counters/CONTA_DES.vhd                    ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/CONTA_DES.vhd                    ;         ;
+; Counters/CONTA_ASC.vhd                    ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/CONTA_ASC.vhd                    ;         ;
+; Counters/CONTA_BONUS.vhd                  ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/CONTA_BONUS.vhd                  ;         ;
+; Counters/topo_COUNTERS.vhd                ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Counters/topo_COUNTERS.vhd                ;         ;
+; Registers/FSM_Position.vhd                ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/FSM_Position.vhd                ;         ;
+; Registers/FSM_Speed.vhd                   ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/FSM_Speed.vhd                   ;         ;
+; Registers/REG_IN.vhd                      ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/REG_IN.vhd                      ;         ;
+; Registers/topo_REGISTERS.vhd              ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Registers/topo_REGISTERS.vhd              ;         ;
+; Selectors and Decoders/mux8x1.vhd         ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux8x1.vhd         ;         ;
+; Selectors and Decoders/mux4x1_32.vhd      ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux4x1_32.vhd      ;         ;
+; Selectors and Decoders/mux16x1.vhd        ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux16x1.vhd        ;         ;
+; Selectors and Decoders/mux2x1.vhd         ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux2x1.vhd         ;         ;
+; Selectors and Decoders/Decod7seg.vhd      ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/Decod7seg.vhd      ;         ;
+; Selectors and Decoders/mux4x1_30.vhd      ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux4x1_30.vhd      ;         ;
+; Selectors and Decoders/topo_SELECTORS.vhd ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/topo_SELECTORS.vhd ;         ;
+; Selectors and Decoders/mux2x1_10.vhd      ; yes             ; User VHDL File  ; C:/Users/artur/Documents/GitHub/TestDrive/Files/Selectors and Decoders/mux2x1_10.vhd      ;         ;
++-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------+
@@ -239,25 +236,23 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------------------------+
 ; Resource                                    ; Usage                          ;
 +---------------------------------------------+--------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 564                            ;
+; Estimate of Logic utilization (ALMs needed) ; 567                            ;
 ;                                             ;                                ;
 ; Combinational ALUT usage for logic          ; 998                            ;
 ;     -- 7 input functions                    ; 10                             ;
-;     -- 6 input functions                    ; 99                             ;
-;     -- 5 input functions                    ; 317                            ;
-;     -- 4 input functions                    ; 41                             ;
-;     -- <=3 input functions                  ; 531                            ;
+;     -- 6 input functions                    ; 107                            ;
+;     -- 5 input functions                    ; 313                            ;
+;     -- 4 input functions                    ; 44                             ;
+;     -- <=3 input functions                  ; 524                            ;
 ;                                             ;                                ;
 ; Dedicated logic registers                   ; 736                            ;
 ;                                             ;                                ;
 ; I/O pins                                    ; 67                             ;
-;                                             ;                                ;
 ; Total DSP Blocks                            ; 0                              ;
-;                                             ;                                ;
 ; Maximum fan-out node                        ; topo_SELECTORS:L5|mux8x1:L19|m ;
-; Maximum fan-out                             ; 544                            ;
-; Total fan-out                               ; 6347                           ;
-; Average fan-out                             ; 3.40                           ;
+; Maximum fan-out                             ; 543                            ;
+; Total fan-out                               ; 6367                           ;
+; Average fan-out                             ; 3.41                           ;
 +---------------------------------------------+--------------------------------+
 
 
@@ -266,7 +261,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
-; |topo                      ; 998 (6)           ; 736 (0)      ; 0                 ; 0          ; 67   ; 0            ; |topo                                    ; work         ;
+; |topo                      ; 998 (0)           ; 736 (0)      ; 0                 ; 0          ; 67   ; 0            ; |topo                                    ; work         ;
 ;    |ButtonSync:L6|         ; 8 (8)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |topo|ButtonSync:L6                      ; work         ;
 ;    |FSM_Control:L4|        ; 7 (7)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |topo|FSM_Control:L4                     ; work         ;
 ;    |topo_COMPARATORS:L2|   ; 15 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2                ; work         ;
@@ -279,9 +274,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |CONTA_BONUS:L3|     ; 6 (6)             ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|CONTA_BONUS:L3    ; work         ;
 ;       |CONTA_DES:L1|       ; 20 (20)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|CONTA_DES:L1      ; work         ;
 ;       |FSM_Clock:L0|       ; 200 (200)         ; 165 (165)    ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|FSM_Clock:L0      ; work         ;
-;    |topo_REGISTERS:L0|     ; 604 (0)           ; 534 (0)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0                  ; work         ;
+;    |topo_REGISTERS:L0|     ; 606 (0)           ; 534 (0)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0                  ; work         ;
 ;       |FSM_Position:L0|    ; 28 (28)           ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|FSM_Position:L0  ; work         ;
-;       |FSM_Speed:L1|       ; 6 (6)             ; 6 (6)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|FSM_Speed:L1     ; work         ;
+;       |FSM_Speed:L1|       ; 8 (8)             ; 6 (6)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|FSM_Speed:L1     ; work         ;
 ;       |REG_IN:L10|         ; 29 (29)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L10       ; work         ;
 ;       |REG_IN:L11|         ; 37 (37)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L11       ; work         ;
 ;       |REG_IN:L12|         ; 29 (29)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L12       ; work         ;
@@ -298,18 +293,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |REG_IN:L7|          ; 46 (46)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L7        ; work         ;
 ;       |REG_IN:L8|          ; 26 (26)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L8        ; work         ;
 ;       |REG_IN:L9|          ; 32 (32)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|REG_IN:L9        ; work         ;
-;    |topo_SELECTORS:L5|     ; 114 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5                  ; work         ;
+;    |topo_SELECTORS:L5|     ; 118 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5                  ; work         ;
 ;       |Decod7seg:L21|      ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L21    ; work         ;
-;       |Decod7seg:L22|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L22    ; work         ;
+;       |Decod7seg:L22|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L22    ; work         ;
 ;       |Decod7seg:L23|      ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L23    ; work         ;
 ;       |Decod7seg:L24|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L24    ; work         ;
 ;       |Decod7seg:L25|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L25    ; work         ;
 ;       |Decod7seg:L26|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|Decod7seg:L26    ; work         ;
 ;       |mux16x1:L20|        ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux16x1:L20      ; work         ;
 ;       |mux2x1_10:L1|       ; 46 (46)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux2x1_10:L1     ; work         ;
-;       |mux4x1_30:L18|      ; 21 (21)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_30:L18    ; work         ;
+;       |mux4x1_30:L18|      ; 19 (19)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_30:L18    ; work         ;
+;       |mux4x1_32:L14|      ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_32:L14    ; work         ;
 ;       |mux4x1_32:L17|      ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_32:L17    ; work         ;
-;       |mux4x1_32:L6|       ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux4x1_32:L6     ; work         ;
 ;       |mux8x1:L19|         ; 11 (11)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_SELECTORS:L5|mux8x1:L19       ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -455,8 +450,8 @@ Encoding Type:  One-Hot
 ; topo_COUNTERS:L1|CONTA_DES:L1|counter[8]   ; 5       ;
 ; topo_COUNTERS:L1|CONTA_BONUS:L3|counter[0] ; 8       ;
 ; topo_COUNTERS:L1|CONTA_BONUS:L3|counter[1] ; 7       ;
-; topo_COUNTERS:L1|FSM_Clock:L0|cont1[0]     ; 2       ;
 ; topo_COUNTERS:L1|FSM_Clock:L0|cont5[0]     ; 2       ;
+; topo_COUNTERS:L1|FSM_Clock:L0|cont1[0]     ; 2       ;
 ; topo_COUNTERS:L1|FSM_Clock:L0|cont4[0]     ; 2       ;
 ; topo_COUNTERS:L1|FSM_Clock:L0|cont3[0]     ; 2       ;
 ; topo_COUNTERS:L1|FSM_Clock:L0|cont2[0]     ; 2       ;
@@ -472,16 +467,16 @@ Encoding Type:  One-Hot
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[10] ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[21] ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[11] ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[2]  ;
-; 17:1               ; 9 bits    ; 99 LEs        ; 99 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux2x1_10:L1|m[8]   ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux4x1_30:L18|m[7]  ;
+; 17:1               ; 9 bits    ; 99 LEs        ; 99 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|mux2x1_10:L1|m[7]   ;
 ; 9:1                ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L23|F[3]  ;
 ; 10:1               ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L23|F[4]  ;
-; 18:1               ; 3 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L26|F[0]  ;
+; 18:1               ; 3 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L26|F[5]  ;
 ; 18:1               ; 3 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L25|F[5]  ;
-; 18:1               ; 3 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L24|F[0]  ;
-; 19:1               ; 4 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L26|F[3]  ;
-; 19:1               ; 4 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L25|F[1]  ;
-; 19:1               ; 4 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L24|F[3]  ;
+; 18:1               ; 3 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L24|F[4]  ;
+; 19:1               ; 4 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L26|F[6]  ;
+; 19:1               ; 4 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L25|F[3]  ;
+; 19:1               ; 4 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |topo|topo_SELECTORS:L5|Decod7seg:L24|F[6]  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 
 
@@ -767,43 +762,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 736                         ;
-;     CLR               ; 3                           ;
-;     ENA CLR           ; 560                         ;
-;     SCLR              ; 155                         ;
-;     plain             ; 18                          ;
-; arriav_lcell_comb     ; 1006                        ;
-;     arith             ; 189                         ;
-;         1 data inputs ; 184                         ;
-;         2 data inputs ; 5                           ;
-;     extend            ; 10                          ;
-;         7 data inputs ; 10                          ;
-;     normal            ; 807                         ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 15                          ;
-;         2 data inputs ; 313                         ;
-;         3 data inputs ; 20                          ;
-;         4 data inputs ; 41                          ;
-;         5 data inputs ; 317                         ;
-;         6 data inputs ; 99                          ;
-; boundary_port         ; 67                          ;
-;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 2.64                        ;
-+-----------------------+-----------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -812,98 +776,98 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Thu Jun  8 15:31:29 2017
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Sat Jun 17 15:43:13 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file Comparators/topo_COMPARATORS.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file comparators/topo_comparators.vhd
     Info (12022): Found design unit 1: topo_COMPARATORS-topo_COMPARATORS
     Info (12023): Found entity 1: topo_COMPARATORS
-Info (12021): Found 2 design units, including 1 entities, in source file Debouncer/ButtonSync.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file debouncer/buttonsync.vhd
     Info (12022): Found design unit 1: ButtonSync-ButtonSyncImpl
     Info (12023): Found entity 1: ButtonSync
 Info (12021): Found 2 design units, including 1 entities, in source file topo.vhd
     Info (12022): Found design unit 1: topo-topo_stru
     Info (12023): Found entity 1: topo
-Info (12021): Found 2 design units, including 1 entities, in source file Maps/map4.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file maps/map4.vhd
     Info (12022): Found design unit 1: map4-map4_struct
     Info (12023): Found entity 1: map4
-Info (12021): Found 2 design units, including 1 entities, in source file Maps/map3.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file maps/map3.vhd
     Info (12022): Found design unit 1: map3-map3_struct
     Info (12023): Found entity 1: map3
-Info (12021): Found 2 design units, including 1 entities, in source file Maps/map2.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file maps/map2.vhd
     Info (12022): Found design unit 1: map2-map2_struct
     Info (12023): Found entity 1: map2
-Info (12021): Found 2 design units, including 1 entities, in source file Maps/map1.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file maps/map1.vhd
     Info (12022): Found design unit 1: map1-map1_struct
     Info (12023): Found entity 1: map1
-Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Comparator1.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparator1.vhd
     Info (12022): Found design unit 1: Comparator1-compare1
     Info (12023): Found entity 1: Comparator1
-Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Comparator2.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparator2.vhd
     Info (12022): Found design unit 1: Comparator2-compare2
     Info (12023): Found entity 1: Comparator2
-Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Comparator3.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file comparators/comparator3.vhd
     Info (12022): Found design unit 1: Comparator3-compare3
     Info (12023): Found entity 1: Comparator3
-Info (12021): Found 2 design units, including 1 entities, in source file Comparators/Adder.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file comparators/adder.vhd
     Info (12022): Found design unit 1: Adder-add
     Info (12023): Found entity 1: Adder
-Info (12021): Found 2 design units, including 1 entities, in source file Counters/FSM_Clock.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file counters/fsm_clock.vhd
     Info (12022): Found design unit 1: FSM_Clock-bhv
     Info (12023): Found entity 1: FSM_Clock
-Info (12021): Found 2 design units, including 1 entities, in source file Maps/topo_MAPS.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file maps/topo_maps.vhd
     Info (12022): Found design unit 1: topo_MAPS-topo_map
     Info (12023): Found entity 1: topo_MAPS
-Info (12021): Found 2 design units, including 1 entities, in source file Controller/FSM_Control.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file controller/fsm_control.vhd
     Info (12022): Found design unit 1: FSM_Control-bhv
     Info (12023): Found entity 1: FSM_Control
-Info (12021): Found 2 design units, including 1 entities, in source file Counters/CONTA_DES.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file counters/conta_des.vhd
     Info (12022): Found design unit 1: CONTA_DES-bhv
     Info (12023): Found entity 1: CONTA_DES
-Info (12021): Found 2 design units, including 1 entities, in source file Counters/CONTA_ASC.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file counters/conta_asc.vhd
     Info (12022): Found design unit 1: CONTA_ASC-bhv
     Info (12023): Found entity 1: CONTA_ASC
-Info (12021): Found 2 design units, including 1 entities, in source file Counters/CONTA_BONUS.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file counters/conta_bonus.vhd
     Info (12022): Found design unit 1: CONTA_BONUS-bhv
     Info (12023): Found entity 1: CONTA_BONUS
-Info (12021): Found 2 design units, including 1 entities, in source file Counters/topo_COUNTERS.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file counters/topo_counters.vhd
     Info (12022): Found design unit 1: topo_COUNTERS-topo_stru
     Info (12023): Found entity 1: topo_COUNTERS
-Info (12021): Found 2 design units, including 1 entities, in source file Registers/FSM_Position.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file registers/fsm_position.vhd
     Info (12022): Found design unit 1: FSM_Position-bhv
     Info (12023): Found entity 1: FSM_Position
-Info (12021): Found 2 design units, including 1 entities, in source file Registers/FSM_Speed.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file registers/fsm_speed.vhd
     Info (12022): Found design unit 1: FSM_Speed-bhv
     Info (12023): Found entity 1: FSM_Speed
-Info (12021): Found 2 design units, including 1 entities, in source file Registers/REG_IN.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file registers/reg_in.vhd
     Info (12022): Found design unit 1: REG_IN-bhv
     Info (12023): Found entity 1: REG_IN
-Info (12021): Found 2 design units, including 1 entities, in source file Registers/topo_REGISTERS.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file registers/topo_registers.vhd
     Info (12022): Found design unit 1: topo_REGISTERS-topo
     Info (12023): Found entity 1: topo_REGISTERS
-Info (12021): Found 2 design units, including 1 entities, in source file Selectors and Decoders/mux8x1.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/mux8x1.vhd
     Info (12022): Found design unit 1: mux8x1-mux
     Info (12023): Found entity 1: mux8x1
-Info (12021): Found 2 design units, including 1 entities, in source file Selectors and Decoders/mux4x1_32.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/mux4x1_32.vhd
     Info (12022): Found design unit 1: mux4x1_32-mux
     Info (12023): Found entity 1: mux4x1_32
-Info (12021): Found 2 design units, including 1 entities, in source file Selectors and Decoders/mux16x1.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/mux16x1.vhd
     Info (12022): Found design unit 1: mux16x1-mux
     Info (12023): Found entity 1: mux16x1
-Info (12021): Found 2 design units, including 1 entities, in source file Selectors and Decoders/mux2x1.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/mux2x1.vhd
     Info (12022): Found design unit 1: mux2x1-mux
     Info (12023): Found entity 1: mux2x1
-Info (12021): Found 2 design units, including 1 entities, in source file Selectors and Decoders/Decod7seg.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/decod7seg.vhd
     Info (12022): Found design unit 1: Decod7seg-decod_bhv
     Info (12023): Found entity 1: Decod7seg
-Info (12021): Found 2 design units, including 1 entities, in source file Selectors and Decoders/mux4x1_30.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/mux4x1_30.vhd
     Info (12022): Found design unit 1: mux4x1_30-mux
     Info (12023): Found entity 1: mux4x1_30
-Info (12021): Found 2 design units, including 1 entities, in source file Selectors and Decoders/topo_SELECTORS.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/topo_selectors.vhd
     Info (12022): Found design unit 1: topo_SELECTORS-topo
     Info (12023): Found entity 1: topo_SELECTORS
-Info (12021): Found 2 design units, including 1 entities, in source file Selectors and Decoders/mux2x1_10.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file selectors and decoders/mux2x1_10.vhd
     Info (12022): Found design unit 1: mux2x1_10-mux
     Info (12023): Found entity 1: mux2x1_10
 Info (12127): Elaborating entity "topo" for the top level hierarchy
@@ -1280,9 +1244,9 @@ Info (21057): Implemented 1254 device resources after synthesis - the final reso
     Info (21059): Implemented 52 output pins
     Info (21061): Implemented 1187 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 336 warnings
-    Info: Peak virtual memory: 1088 megabytes
-    Info: Processing ended: Thu Jun  8 15:31:52 2017
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:43
+    Info: Peak virtual memory: 625 megabytes
+    Info: Processing ended: Sat Jun 17 15:43:28 2017
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:14
 
 

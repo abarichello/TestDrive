@@ -56,7 +56,7 @@ signal mux1_0,mux1_1,screensignal,HX: std_logic_vector(29 downto 0);
 signal mux2_0,mux2_1: std_logic_vector(9 downto 0);
 signal mux30_1,mux30_2,mux30_3: std_logic_vector(29 downto 0);
 signal signalReg: std_logic_vector(31 downto 0);
-signal sCLOCK_M: std_logic;
+signal sCLOCK_M,sCLK5: std_logic;
 
 component mux2x1 
 generic (N: natural := 30);
@@ -121,10 +121,11 @@ end component;
 begin
 
 signalspeed <= SPEED;
+sCLK5 <= CLK5;
 REG_OUT_31 <= signalReg(31);
 mux1_0 <= "10011"  &   "00" &   SPEED & "10100" & '0' & UP_DOWN & CNT_U; --Playing state
 mux1_1 <= "00101"  & STATES & "01011" & CNT_B   & CNT_D;
-mux2_0 <= sCLOCK_M  & signalReg(30 downto 22);
+mux2_0 <= sCLK5  & signalReg(30 downto 22);
 mux2_1 <= "0000000000";
 mux30_1 <= "00101" & STATES & "100000101010001000" & SW(8) & SW(7); --Map selection state.
 mux30_2 <= "00101" & STATES & "11111000000111101111";
@@ -151,7 +152,7 @@ CLOCK_M <= sCLOCK_M;
 	 L17: mux4x1_32 port map (MAP1_15, MAP2_15, MAP3_15, MAP4_15, SW(8 downto 7), REG_IN_15);
 	 L18: mux4x1_30 port map (screensignal, mux30_1, mux30_2, mux30_3, SEL_DISP, HX); --30.
 	 L19: mux8x1    port map (
-		CLK1,CLK1,CLK2,CLK3,CLK4,CLK5,CLK1,CLK1, 
+		CLK1,CLK1,CLK2,CLK3,CLK4,sCLK5,CLK1,CLK1, 
 		signalspeed, sCLOCK_M
 	 );
 	 L20: mux16x1   port map (

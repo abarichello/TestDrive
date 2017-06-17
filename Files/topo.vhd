@@ -75,22 +75,22 @@ port(
 	--map1
 	MAP1_0,MAP1_1,MAP1_2,MAP1_3,MAP1_4,MAP1_5,MAP1_6,
 	MAP1_7,MAP1_8,MAP1_9,MAP1_10,MAP1_11,MAP1_12,
-	MAP1_13,MAP1_14,MAP1_15: in std_logic_vector(31 downto 0);
+	MAP1_13,MAP1_14,MAP1_15:   in std_logic_vector(31 downto 0);
 	
 	--map2
 	MAP2_0,MAP2_1,MAP2_2,MAP2_3,MAP2_4,MAP2_5,MAP2_6,
 	MAP2_7,MAP2_8,MAP2_9,MAP2_10,MAP2_11,MAP2_12,
-	MAP2_13,MAP2_14,MAP2_15: in std_logic_vector(31 downto 0);
+	MAP2_13,MAP2_14,MAP2_15:   in std_logic_vector(31 downto 0);
 	
 	--map3
 	MAP3_0,MAP3_1,MAP3_2,MAP3_3,MAP3_4,MAP3_5,MAP3_6,
 	MAP3_7,MAP3_8,MAP3_9,MAP3_10,MAP3_11,MAP3_12,
-	MAP3_13,MAP3_14,MAP3_15: in std_logic_vector(31 downto 0);
+	MAP3_13,MAP3_14,MAP3_15:   in std_logic_vector(31 downto 0);
 	
 	--map4
 	MAP4_0,MAP4_1,MAP4_2,MAP4_3,MAP4_4,MAP4_5,MAP4_6,
 	MAP4_7,MAP4_8,MAP4_9,MAP4_10,MAP4_11,MAP4_12,
-	MAP4_13,MAP4_14,MAP4_15: in std_logic_vector(31 downto 0);
+	MAP4_13,MAP4_14,MAP4_15:   in std_logic_vector(31 downto 0);
 	
 	CNT_D,CNT_U,POINT: 			in std_logic_vector(9 downto 0);
 	
@@ -179,7 +179,7 @@ begin
 		topo_COUNTERS port map ( --clock problem
 			sRST,sENTIME,sCLOCKM, CLOCK_50, sREGOUT31,
 			sSPEED,
-			CLK1, CLK2, CLK3, CLK4, CLK5,
+			CLK1, CLK2, CLK3, CLK4, sCLK5,
 			sCNTD, sCNTU, sCNTB
 		);
 	
@@ -217,7 +217,7 @@ begin
 			sREG_OUT_6, sREG_OUT_7, sREG_OUT_8, sREG_OUT_9, sREG_OUT_10,
 			sREG_OUT_11, sREG_OUT_12, sREG_OUT_13, sREG_OUT_14,sREG_OUT_15,
 			
-			sSELDISP, sSELLED, sSPEED, sUPDOWN, sCNTB, sSTATES, CLK1, ClK2, ClK3, CLK4, CLK5,
+			sSELDISP, sSELLED, sSPEED, sUPDOWN, sCNTB, sSTATES, CLK1, ClK2, ClK3, CLK4, sCLK5,
 			sCLOCKM, sLEDOUT, sH,
 			sREG_IN_0, sREG_IN_1, sREG_IN_2, sREG_IN_3, sREG_IN_4, sREG_IN_5,
 			sREG_IN_6, sREG_IN_7, sREG_IN_8, sREG_IN_9, sREG_IN_10,

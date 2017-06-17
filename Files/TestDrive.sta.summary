@@ -2,212 +2,212 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -8.890
-TNS   : -2543.774
-
 Type  : Slow 1100mV 85C Model Setup 'clock_50'
-Slack : -5.638
-TNS   : -443.369
+Slack : -9.317
+TNS   : -424.362
+
+Type  : Slow 1100mV 85C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -6.918
+TNS   : -2569.828
 
 Type  : Slow 1100mV 85C Model Hold 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -4.563
-TNS   : -1237.040
+Slack : -7.766
+TNS   : -2895.886
 
 Type  : Slow 1100mV 85C Model Hold 'clock_50'
-Slack : -2.297
-TNS   : -2.800
-
-Type  : Slow 1100mV 85C Model Recovery 'FSM_Control:L4|CS.E1'
-Slack : -4.591
-TNS   : -55.580
+Slack : -0.504
+TNS   : -0.514
 
 Type  : Slow 1100mV 85C Model Recovery 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -3.655
-TNS   : -1683.089
+Slack : -5.494
+TNS   : -2761.665
+
+Type  : Slow 1100mV 85C Model Recovery 'FSM_Control:L4|CS.E1'
+Slack : -4.829
+TNS   : -56.619
 
 Type  : Slow 1100mV 85C Model Recovery 'clock_50'
-Slack : -0.942
-TNS   : -7.063
+Slack : -1.392
+TNS   : -13.213
 
 Type  : Slow 1100mV 85C Model Removal 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -3.949
-TNS   : -1895.492
+Slack : -6.452
+TNS   : -3404.792
 
 Type  : Slow 1100mV 85C Model Removal 'clock_50'
-Slack : 0.570
+Slack : 1.133
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'FSM_Control:L4|CS.E1'
-Slack : 2.707
+Slack : 2.567
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -2.736
-TNS   : -4746.505
+Slack : -3.139
+TNS   : -6157.592
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_50'
-Slack : -0.402
-TNS   : -97.988
+Slack : -0.513
+TNS   : -96.446
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
-Slack : 0.200
+Slack : 0.290
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -8.581
-TNS   : -2544.419
-
 Type  : Slow 1100mV 0C Model Setup 'clock_50'
-Slack : -5.263
-TNS   : -436.446
+Slack : -9.079
+TNS   : -421.927
+
+Type  : Slow 1100mV 0C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -6.921
+TNS   : -2566.291
 
 Type  : Slow 1100mV 0C Model Hold 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -4.380
-TNS   : -1151.308
+Slack : -7.659
+TNS   : -2824.070
 
 Type  : Slow 1100mV 0C Model Hold 'clock_50'
-Slack : -2.359
-TNS   : -3.068
-
-Type  : Slow 1100mV 0C Model Recovery 'FSM_Control:L4|CS.E1'
-Slack : -4.578
-TNS   : -55.964
+Slack : -0.570
+TNS   : -0.674
 
 Type  : Slow 1100mV 0C Model Recovery 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -3.701
-TNS   : -1722.794
+Slack : -5.501
+TNS   : -2759.175
+
+Type  : Slow 1100mV 0C Model Recovery 'FSM_Control:L4|CS.E1'
+Slack : -4.782
+TNS   : -56.002
 
 Type  : Slow 1100mV 0C Model Recovery 'clock_50'
-Slack : -0.905
-TNS   : -6.506
+Slack : -1.382
+TNS   : -12.173
 
 Type  : Slow 1100mV 0C Model Removal 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -3.781
-TNS   : -1808.070
+Slack : -6.247
+TNS   : -3295.516
 
 Type  : Slow 1100mV 0C Model Removal 'clock_50'
-Slack : 0.563
+Slack : 1.162
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'FSM_Control:L4|CS.E1'
-Slack : 2.726
+Slack : 2.538
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -2.661
-TNS   : -4557.973
+Slack : -3.104
+TNS   : -6096.051
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_50'
-Slack : -0.421
-TNS   : -106.050
+Slack : -0.525
+TNS   : -105.862
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
-Slack : 0.258
+Slack : 0.287
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -5.160
-TNS   : -1532.690
-
 Type  : Fast 1100mV 85C Model Setup 'clock_50'
-Slack : -2.883
-TNS   : -191.614
+Slack : -4.838
+TNS   : -178.572
+
+Type  : Fast 1100mV 85C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -3.694
+TNS   : -1510.139
 
 Type  : Fast 1100mV 85C Model Hold 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -2.642
-TNS   : -661.527
+Slack : -4.278
+TNS   : -1403.315
 
 Type  : Fast 1100mV 85C Model Hold 'clock_50'
-Slack : -1.494
-TNS   : -1.900
-
-Type  : Fast 1100mV 85C Model Recovery 'FSM_Control:L4|CS.E1'
-Slack : -2.468
-TNS   : -28.820
+Slack : -0.330
+TNS   : -0.504
 
 Type  : Fast 1100mV 85C Model Recovery 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -2.367
-TNS   : -1061.976
+Slack : -3.956
+TNS   : -1592.487
+
+Type  : Fast 1100mV 85C Model Recovery 'FSM_Control:L4|CS.E1'
+Slack : -2.602
+TNS   : -29.877
 
 Type  : Fast 1100mV 85C Model Recovery 'clock_50'
-Slack : -0.070
-TNS   : -0.269
+Slack : -0.403
+TNS   : -3.777
 
 Type  : Fast 1100mV 85C Model Removal 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -2.324
-TNS   : -1111.134
+Slack : -3.554
+TNS   : -1864.254
 
 Type  : Fast 1100mV 85C Model Removal 'clock_50'
-Slack : 0.318
+Slack : 0.494
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'FSM_Control:L4|CS.E1'
-Slack : 1.674
+Slack : 1.513
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -1.468
-TNS   : -2001.802
+Slack : -1.542
+TNS   : -2575.387
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_50'
-Slack : -0.429
-TNS   : -16.012
+Slack : -0.496
+TNS   : -16.263
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
-Slack : 0.263
+Slack : 0.318
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -4.538
-TNS   : -1463.353
-
 Type  : Fast 1100mV 0C Model Setup 'clock_50'
-Slack : -2.413
-TNS   : -164.062
+Slack : -4.410
+TNS   : -155.979
+
+Type  : Fast 1100mV 0C Model Setup 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
+Slack : -3.509
+TNS   : -1434.800
 
 Type  : Fast 1100mV 0C Model Hold 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -2.404
-TNS   : -594.946
+Slack : -4.089
+TNS   : -1313.176
 
 Type  : Fast 1100mV 0C Model Hold 'clock_50'
-Slack : -1.553
-TNS   : -2.127
-
-Type  : Fast 1100mV 0C Model Recovery 'FSM_Control:L4|CS.E1'
-Slack : -2.340
-TNS   : -27.650
+Slack : -0.504
+TNS   : -0.783
 
 Type  : Fast 1100mV 0C Model Recovery 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -2.303
-TNS   : -1058.504
+Slack : -3.714
+TNS   : -1600.364
+
+Type  : Fast 1100mV 0C Model Recovery 'FSM_Control:L4|CS.E1'
+Slack : -2.488
+TNS   : -28.641
 
 Type  : Fast 1100mV 0C Model Recovery 'clock_50'
-Slack : -0.010
-TNS   : -0.031
+Slack : -0.322
+TNS   : -2.690
 
 Type  : Fast 1100mV 0C Model Removal 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -2.112
-TNS   : -1007.385
+Slack : -3.306
+TNS   : -1730.596
 
 Type  : Fast 1100mV 0C Model Removal 'clock_50'
-Slack : 0.286
+Slack : 0.447
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'FSM_Control:L4|CS.E1'
-Slack : 1.679
+Slack : 1.539
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'topo_COUNTERS:L1|FSM_Clock:L0|CLK1'
-Slack : -1.286
-TNS   : -1736.016
+Slack : -1.411
+TNS   : -2318.848
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_50'
-Slack : -0.436
-TNS   : -15.971
+Slack : -0.494
+TNS   : -16.298
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FSM_Control:L4|CS.E1'
-Slack : 0.323
+Slack : 0.349
 TNS   : 0.000
 
 ------------------------------------------------------------
