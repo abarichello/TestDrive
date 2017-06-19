@@ -6,4 +6,8 @@
  * meet someday, and you think this stuff is worth it, you can
  * buy me a beer in return.
  * ------------------------------------------------------------
+<<<<<<< HEAD
  */
+=======
+ */
+>>>>>>> f25602bd203659ff44f3c762ac8b881db3af20e0
