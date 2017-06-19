@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TestDrive
-Sat Jun 17 15:43:28 2017
+Mon Jun 19 14:51:03 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Jun 17 15:43:28 2017      ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun 19 14:51:03 2017      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; TestDrive                                  ;
 ; Top-level Entity Name           ; topo                                       ;
@@ -238,12 +238,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------------------------+
 ; Estimate of Logic utilization (ALMs needed) ; 567                            ;
 ;                                             ;                                ;
-; Combinational ALUT usage for logic          ; 998                            ;
+; Combinational ALUT usage for logic          ; 999                            ;
 ;     -- 7 input functions                    ; 10                             ;
 ;     -- 6 input functions                    ; 107                            ;
 ;     -- 5 input functions                    ; 313                            ;
 ;     -- 4 input functions                    ; 44                             ;
-;     -- <=3 input functions                  ; 524                            ;
+;     -- <=3 input functions                  ; 525                            ;
 ;                                             ;                                ;
 ; Dedicated logic registers                   ; 736                            ;
 ;                                             ;                                ;
@@ -251,7 +251,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Total DSP Blocks                            ; 0                              ;
 ; Maximum fan-out node                        ; topo_SELECTORS:L5|mux8x1:L19|m ;
 ; Maximum fan-out                             ; 543                            ;
-; Total fan-out                               ; 6367                           ;
+; Total fan-out                               ; 6369                           ;
 ; Average fan-out                             ; 3.41                           ;
 +---------------------------------------------+--------------------------------+
 
@@ -261,7 +261,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
-; |topo                      ; 998 (0)           ; 736 (0)      ; 0                 ; 0          ; 67   ; 0            ; |topo                                    ; work         ;
+; |topo                      ; 999 (0)           ; 736 (0)      ; 0                 ; 0          ; 67   ; 0            ; |topo                                    ; work         ;
 ;    |ButtonSync:L6|         ; 8 (8)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |topo|ButtonSync:L6                      ; work         ;
 ;    |FSM_Control:L4|        ; 7 (7)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |topo|FSM_Control:L4                     ; work         ;
 ;    |topo_COMPARATORS:L2|   ; 15 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2                ; work         ;
@@ -269,11 +269,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |Comparator1:L0|     ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2|Comparator1:L0 ; work         ;
 ;       |Comparator2:L1|     ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2|Comparator2:L1 ; work         ;
 ;       |Comparator3:L2|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COMPARATORS:L2|Comparator3:L2 ; work         ;
-;    |topo_COUNTERS:L1|      ; 244 (0)           ; 190 (0)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1                   ; work         ;
+;    |topo_COUNTERS:L1|      ; 245 (0)           ; 190 (0)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1                   ; work         ;
 ;       |CONTA_ASC:L2|       ; 18 (18)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|CONTA_ASC:L2      ; work         ;
 ;       |CONTA_BONUS:L3|     ; 6 (6)             ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|CONTA_BONUS:L3    ; work         ;
 ;       |CONTA_DES:L1|       ; 20 (20)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|CONTA_DES:L1      ; work         ;
-;       |FSM_Clock:L0|       ; 200 (200)         ; 165 (165)    ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|FSM_Clock:L0      ; work         ;
+;       |FSM_Clock:L0|       ; 201 (201)         ; 165 (165)    ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_COUNTERS:L1|FSM_Clock:L0      ; work         ;
 ;    |topo_REGISTERS:L0|     ; 606 (0)           ; 534 (0)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0                  ; work         ;
 ;       |FSM_Position:L0|    ; 28 (28)           ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|FSM_Position:L0  ; work         ;
 ;       |FSM_Speed:L1|       ; 8 (8)             ; 6 (6)        ; 0                 ; 0          ; 0    ; 0            ; |topo|topo_REGISTERS:L0|FSM_Speed:L1     ; work         ;
@@ -777,7 +777,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sat Jun 17 15:43:13 2017
+    Info: Processing started: Mon Jun 19 14:50:49 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestDrive -c TestDrive
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file comparators/topo_comparators.vhd
@@ -1244,9 +1244,9 @@ Info (21057): Implemented 1254 device resources after synthesis - the final reso
     Info (21059): Implemented 52 output pins
     Info (21061): Implemented 1187 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 336 warnings
-    Info: Peak virtual memory: 625 megabytes
-    Info: Processing ended: Sat Jun 17 15:43:28 2017
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 617 megabytes
+    Info: Processing ended: Mon Jun 19 14:51:03 2017
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:13
 
 

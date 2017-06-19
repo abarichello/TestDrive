@@ -5,7 +5,7 @@ use ieee.std_logic_unsigned.all;
 entity FSM_Clock is
 	port(
 		clock_50: in std_logic;
-		CLK1,CLK2,CLK3,CLK4,CLK5: out std_logic
+		CLK1,CLK2,CLK3,CLK4,CLK5: buffer std_logic
 	);
 end FSM_Clock;
 	
@@ -50,11 +50,15 @@ P1:process(CLOCK_50)
 			CLK4 <= '0';
 		end if;
 		
-		if cont5 = 10000000 then --10000000
-			CLK5 <= '1';
-			cont5 <= 0;
-		else
-			CLK5 <= '0';
+		if(clock_50'event and CLOCK_50 = '1') then
+			if (cont5 = 10000000) then
+				cont5 <= 0;
+				if CLK5 <= '0' then
+					CLK5 <= '1';
+				else
+					CLK5 <= '0';
+				end if;
+			end if;
 		end if;
 	end if;
 	end process; 

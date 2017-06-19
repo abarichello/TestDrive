@@ -19,12 +19,12 @@ enter <= (SPEED(2) or SPEED(1) or SPEED(0)) and (EN_TIME);
 P1:process(CLOCK_M,RST)
 	begin
 		if RST = '1' then
-			counter <= "0000000000";
+			counter <= "0000000000"; --resets to 0.
 		elsif CLOCK_M'EVENT and CLOCK_M = '1' and enter = '1' then 
 			counter <= counter + '1';
-			if counter(4 downto 0) = "01111" then
-				counter(4 downto 0) <= "00000";
-				counter(9 downto 5) <= counter(9 downto 5) + '1';
+			if counter(4 downto 0) = "01111" then --if the last digit is 15
+				counter(4 downto 0) <= "00000"; --reset it to 0
+				counter(9 downto 5) <= counter(9 downto 5) + '1'; --increase the other digit
 			end if;
 		end if;
 	end process; 

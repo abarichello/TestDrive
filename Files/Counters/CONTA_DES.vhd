@@ -16,10 +16,10 @@ begin
 process(CLK1,RST)
 	begin
 		if RST = '1' then
-			counter <= "0100101001";
+			counter <= "0100101001"; --resets to 99
 		elsif CLK1'EVENT and CLK1 = '1' and EN_TIME = '1' then 
-			counter <= counter - '1';
-			if counter(4 downto 0) = "00000" then
+			counter <= counter - '1'; 
+			if counter(4 downto 0) = "00000" then --If the first decimal is 0 decrease 1 from the LS number.
 				counter(4 downto 0) <= "01001";
 				counter(9 downto 5) <= counter(9 downto 5) - '1';
 			end if;

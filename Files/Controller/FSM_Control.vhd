@@ -62,7 +62,7 @@ P2: process(CS, Enter) --state
 		end case;
 	end process;
 
-P3: process(CS) --output
+P3: process(CS) --outputs
 	begin
 		case CS is
 			when E0 => 

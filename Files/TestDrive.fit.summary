@@ -1,4 +1,4 @@
-Fitter Status : Successful - Sat Jun 17 15:48:25 2017
+Fitter Status : Successful - Mon Jun 19 14:56:45 2017
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : TestDrive
 Top-level Entity Name : topo
@@ -6,7 +6,7 @@ Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Preliminary
 Logic utilization (in ALMs) : 541 / 32,070 ( 2 % )
-Total registers : 739
+Total registers : 742
 Total pins : 67 / 457 ( 15 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )
