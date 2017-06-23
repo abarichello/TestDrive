@@ -69,3 +69,6 @@ veiculo e horizonte visível do mapa de obstáculos.<br/>
 • Debouncer: Visando evitar problemas de temporização em função do aperto de um KEY por um ser humano durar
 muitos ciclos de clock, o Button Press Synchronizer (ButtonSync) será fornecido em conjunto com o projeto deve
 ser utilizado.
+#
+<img src="http://i.imgur.com/KeB30jR.png" align="left">
+
