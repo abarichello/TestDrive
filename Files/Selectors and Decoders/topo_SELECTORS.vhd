@@ -133,7 +133,7 @@ mux2_0  <= CLK5     & signalReg(30 downto 22);
 mux2_1  <= "0000000000";
 mux30_1 <= "00101"  & STATES & "100000101010001000" & SW(8) & SW(7); --Map selection state.
 mux30_2 <= "00101"  & STATES & "11111000000111101111";
-mux30_3 <= "00101"  & STATES & "1011111010" & POINT; --Last state (shows the pontuation).
+mux30_3 <= "00101"  & STATES & "1000110010" & POINT; --Last state (shows the pontuation).
 CLOCK_M <= sCLOCK_M;
 
 	  L0: mux2x1    port map (mux1_0,   mux1_1,   SW(9),  screensignal);

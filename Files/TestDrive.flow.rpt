@@ -1,5 +1,5 @@
 Flow report for TestDrive
-Mon Jun 19 14:58:22 2017
+Mon Jun 26 11:01:36 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,14 +40,14 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Mon Jun 19 14:58:22 2017      ;
+; Flow Status                     ; Successful - Mon Jun 26 11:01:36 2017      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; TestDrive                                  ;
 ; Top-level Entity Name           ; topo                                       ;
 ; Family                          ; Cyclone V                                  ;
 ; Device                          ; 5CSEMA5F31C6                               ;
 ; Timing Models                   ; Preliminary                                ;
-; Logic utilization (in ALMs)     ; 541 / 32,070 ( 2 % )                       ;
+; Logic utilization (in ALMs)     ; 542 / 32,070 ( 2 % )                       ;
 ; Total registers                 ; 742                                        ;
 ; Total pins                      ; 67 / 457 ( 15 % )                          ;
 ; Total virtual pins              ; 0                                          ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/19/2017 14:50:51 ;
+; Start date & time ; 06/26/2017 10:54:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TestDrive           ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 145667774930218.149789465013264       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 145667774930218.149848524204472       ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; ENABLE_OCT_DONE                     ; Off                                   ; On            ; --          ; --             ;
@@ -104,13 +104,13 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 613 MB              ; 00:00:12                           ;
-; I/O Assignment Analysis   ; 00:00:29     ; 1.0                     ; 1065 MB             ; 00:00:29                           ;
-; Fitter                    ; 00:05:07     ; 1.0                     ; 1479 MB             ; 00:05:04                           ;
-; Assembler                 ; 00:00:44     ; 1.0                     ; 644 MB              ; 00:00:44                           ;
-; TimeQuest Timing Analyzer ; 00:00:35     ; 1.0                     ; 844 MB              ; 00:00:33                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 504 MB              ; 00:00:03                           ;
-; Total                     ; 00:07:11     ; --                      ; --                  ; 00:07:05                           ;
+; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 615 MB              ; 00:00:16                           ;
+; I/O Assignment Analysis   ; 00:00:43     ; 1.0                     ; 1074 MB             ; 00:00:37                           ;
+; Fitter                    ; 00:04:59     ; 1.0                     ; 1470 MB             ; 00:04:39                           ;
+; Assembler                 ; 00:00:33     ; 1.0                     ; 656 MB              ; 00:00:29                           ;
+; TimeQuest Timing Analyzer ; 00:00:33     ; 1.0                     ; 831 MB              ; 00:00:32                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 505 MB              ; 00:00:03                           ;
+; Total                     ; 00:07:13     ; --                      ; --                  ; 00:06:36                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
