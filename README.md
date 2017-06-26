@@ -8,7 +8,6 @@ Speed can be selected from 0 to 5 (Keys 2 and 3), lanes can be switched using SW
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At the end of the game a pontuation is provided using the numbers of vertical colums you have progressed times your remaining number of lives(x2).
 
 ## Block Diagram
-##### (signal naming and locations contains some errors).
 More diagrams can be found on project(1).pdf in this repository.
 <img src="http://i.imgur.com/PUujCty.png" align="middle">
 
